@@ -4,13 +4,13 @@ using System.Collections;
 public class CameraControllerScript : MonoBehaviour
 {
     //The amount of time the camera takes to update it's position.
-    private float m_DampTime = 0.1f;
+    private float m_DampTime = 0.25f;
 
     //Amount of extra zoom to keep the player away form the edges
-    private float m_ScreenEdgeOffset = 0.5f;
+    private float m_ScreenEdgeOffset = 0.25f;
 
     //The minimum amount of zoom.
-    private float m_MinSize =1.5f;
+    private float m_MinSize =1f;
 
     //Camera target/s
    /* [HideInInspector]*/ public Transform[] m_Targets;
@@ -38,6 +38,7 @@ public class CameraControllerScript : MonoBehaviour
 
     private void Move()
     {
+
         FindAveragePosition();
 
         transform.position = Vector3.SmoothDamp(transform.position, m_DesiredPosition, ref m_MoveVelocity, m_DampTime);
@@ -45,24 +46,32 @@ public class CameraControllerScript : MonoBehaviour
 
     private void FindAveragePosition()
     {
-        Vector3 averagePos = new Vector3();
+        //The position between all the targets.
+        Vector3 AveragePosition = new Vector3();
+
+        //This float helps the above vector.
+        float NumberOfTargets = 0f;
 
         for (int i = 0; i < m_Targets.Length; i++)
         {
-            averagePos += m_Targets[i].position;
+            if(m_Targets[i] != null) //Must use m_Targets[i].gameObject.activeSelf for every enemy.
+            {
+                NumberOfTargets++;
+                AveragePosition += m_Targets[i].position;
+            }
         }
 
-        if (m_Targets .Length > 0)
+        if (NumberOfTargets > 0)
         {
-            averagePos /= m_Targets.Length;
+            AveragePosition /= NumberOfTargets;
         }
 
         //Make the average position stay at z = 0, and keep the player's y.
         //averagePos.y = m_Targets[0].position.y;
-        averagePos.z = transform.position.z;
+        AveragePosition.z = transform.position.z;
         
 
-        m_DesiredPosition = averagePos;
+        m_DesiredPosition = AveragePosition;
     }
 
     private void Zoom()
@@ -81,13 +90,17 @@ public class CameraControllerScript : MonoBehaviour
 
         for (int i = 0; i < m_Targets.Length; i++)
         {
-            //Distance from every target to the desired position.
-            Vector3 TargetLocalPosition = transform.InverseTransformPoint(m_Targets[i].position);
-            Vector3 DesiredPositionToTarget = TargetLocalPosition - DesiredLocalPosition;
+            if (m_Targets[i] != null)  //Must use m_Targets[i].gameObject.activeSelf for every enemy.
+            {
+                //Distance from every target to the desired position.
+                Vector3 TargetLocalPosition = transform.InverseTransformPoint(m_Targets[i].position);
+                Vector3 DesiredPositionToTarget = TargetLocalPosition - DesiredLocalPosition;
 
-            //Save the maximum absolute value (x/aspectRatio) to adjust camera's zoom to make every target fit. 
-            MaximumSize = Mathf.Max(MaximumSize, Mathf.Abs(DesiredPositionToTarget.y));
-            MaximumSize = Mathf.Max(MaximumSize, Mathf.Abs(DesiredPositionToTarget.x) / m_Camera.aspect);
+                //Save the maximum absolute value (x/aspectRatio) to adjust camera's zoom to make every target fit. 
+                MaximumSize = Mathf.Max(MaximumSize, Mathf.Abs(DesiredPositionToTarget.y));
+                MaximumSize = Mathf.Max(MaximumSize, Mathf.Abs(DesiredPositionToTarget.x) / m_Camera.aspect);
+            }
+            
         }
         
         MaximumSize += m_ScreenEdgeOffset;
@@ -99,11 +112,14 @@ public class CameraControllerScript : MonoBehaviour
 
     public void SetStartPositionAndSize()
     {
+
         FindAveragePosition();
 
         transform.position = m_DesiredPosition;
 
         m_Camera.orthographicSize = FindRequiredSize();
     }
+
+
 
 }
