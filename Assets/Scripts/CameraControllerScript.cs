@@ -4,7 +4,8 @@ using System.Collections;
 public class CameraControllerScript : MonoBehaviour
 {
     //The amount of time the camera takes to update it's position.
-    private float m_DampTime = 0.25f;
+    private float m_MovementDampTime = 0.1f;
+    private float m_ZoomDampTime = 0.1f;
 
     //Amount of extra zoom to keep the player away form the edges
     private float m_ScreenEdgeOffset = 0.25f;
@@ -41,7 +42,7 @@ public class CameraControllerScript : MonoBehaviour
 
         FindAveragePosition();
 
-        transform.position = Vector3.SmoothDamp(transform.position, m_DesiredPosition, ref m_MoveVelocity, m_DampTime);
+        transform.position = Vector3.SmoothDamp(transform.position, m_DesiredPosition, ref m_MoveVelocity, m_MovementDampTime);
     }
 
     private void FindAveragePosition()
@@ -77,7 +78,7 @@ public class CameraControllerScript : MonoBehaviour
     private void Zoom()
     {
         float requiredSize = FindRequiredSize();
-        m_Camera.orthographicSize = Mathf.SmoothDamp(m_Camera.orthographicSize, requiredSize, ref m_ZoomSpeed, m_DampTime);
+        m_Camera.orthographicSize = Mathf.SmoothDamp(m_Camera.orthographicSize, requiredSize, ref m_ZoomSpeed, m_ZoomDampTime);
     }
 
 
