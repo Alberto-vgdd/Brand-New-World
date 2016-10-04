@@ -58,6 +58,10 @@ public class PlayerMovementScript : MonoBehaviour
         m_IsFacingRight = true;
         m_IsWalking = 0f;
 
+        m_WalkSpeedValue = 0.75f;
+        m_RunSpeedValue = 0.75f;
+        m_JumpSpeedValue = 2.25f;
+
         m_WalkJumpBoost = 1.1f;
         m_RunJumpBoost = 1.25f;
 

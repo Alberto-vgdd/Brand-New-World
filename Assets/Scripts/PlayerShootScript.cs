@@ -57,7 +57,7 @@ public class PlayerShootScript : MonoBehaviour {
     {
         m_HandTransform = transform.FindChild("Hand");
         m_PlayerSprite = GetComponent<SpriteRenderer>();
-        m_HandForce = 10f;
+        m_HandForce = 5f;
         m_FacingRight = true;
     }
 

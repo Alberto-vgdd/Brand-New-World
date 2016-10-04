@@ -8,7 +8,7 @@ public class CameraControllerScript : MonoBehaviour
     private float m_ZoomDampTime = 0.1f;
 
     //Amount of extra zoom to keep the player away form the edges
-    private float m_ScreenEdgeOffset = 0.25f;
+    private float m_ScreenEdgeOffset = 0.5f;
 
     //The minimum amount of zoom.
     private float m_MinSize =1f;
