@@ -27,17 +27,20 @@ public class PlayerShootScript : MonoBehaviour {
     //Variables to flip the character
     private bool m_FacingRight;
     private SpriteRenderer m_PlayerSprite;
-    
+
+
+    //store the point where the user clicked the context button
+    public float contextMouseX, contextMouseY;
 
 
 
+    //testing stuff DO NOT LOOK DIRECTLY
+    public bool prueba;
+    public float intervalo;
 
 
     //To DO: 
-    //Player's "rigth" follow mouse movement
-    //Bullets destoy after 2 seconds  (yt video)
-    //Associate Bullet prefab to this script via code, not public shit.
-    //
+    //Associate Bullet prefab to this script via code, not public stuff
     //
     //
 
@@ -48,11 +51,15 @@ public class PlayerShootScript : MonoBehaviour {
         ApplyCursorTexture();
         InitializeVariables();
     }
+
+
     void ApplyCursorTexture()
     {
         //Cursor.SetCursor(m_MouseCrosshairTexture,  Vector2.zero, CursorMode.Auto);
         Cursor.SetCursor(m_MouseCrosshairTexture, new Vector2(m_MouseCrosshairTexture.width / 2, m_MouseCrosshairTexture.height / 2), CursorMode.Auto);
     }
+
+
     void InitializeVariables()
     {
         m_HandTransform = transform.FindChild("Hand");
@@ -66,6 +73,7 @@ public class PlayerShootScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+        intervalo = Time.fixedDeltaTime;
         UpdateCrosshairPosition();
 
         if (Input.GetButtonDown("Shoot"))
@@ -74,6 +82,22 @@ public class PlayerShootScript : MonoBehaviour {
             m_BulletClone = Instantiate(m_BulletPrefab, m_HandPosition, m_HandRotation) as Rigidbody2D;
             m_BulletClone.AddForce(m_BulletDirection * m_HandForce);
         }
+
+        if (Input.GetButtonDown("Context"))
+        {
+            Time.timeScale = GlobalData.SLOW_TIME_SPEED;
+            Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
+            contextMouseX = Input.mousePosition.x;
+            contextMouseY = Input.mousePosition.y;
+        }
+
+
+        if (Input.GetButtonUp("Context"))
+        {
+            Time.timeScale = GlobalData.NORMAL_TIME_SPEED;
+            Time.fixedDeltaTime = Time.fixedDeltaTime / GlobalData.SLOW_TIME_SPEED;
+        }
+
 	
 	}
     void UpdateCrosshairPosition()
@@ -81,6 +105,8 @@ public class PlayerShootScript : MonoBehaviour {
         //Now we look for the mouse position
         m_CrosshairPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
     }
+
+
     void CalculateBulletTrayectory()
     {
         //First we update hand's values

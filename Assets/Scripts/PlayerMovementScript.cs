@@ -78,6 +78,8 @@ public class PlayerMovementScript : MonoBehaviour
 
         //Jumping
         if (Input.GetButton("Jump") == true  && m_IsOnGround == true) { m_IsJumping = true; } else { m_IsJumping = false; }
+
+        //m_PlayerRigidbody.transform.Translate(new Vector2(0.1f,0.1f) * Time.fixedDeltaTime);
 	}
 
     //FixedUpdate is called every frame in Time.DeltaTime
