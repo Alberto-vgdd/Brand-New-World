@@ -8,6 +8,11 @@ using System.Collections;
 //      Diferent enemies may also need one of those materials
 
 
+//CHANGES MADE BY ALBERTO:
+//      SetHorizontalVelocity() now sets m_HorizontalVelocity as m_PlayerAnimator.speed
+//      FlipPlayerAnimation() has been changed too for the same reason.
+//          These changes have been made to avoid using m_PlayerAnimatior.speed....
+
 public class PlayerMovementScript : MonoBehaviour
 {
     private Rigidbody2D m_PlayerRigidbody;
@@ -103,7 +108,7 @@ public class PlayerMovementScript : MonoBehaviour
         SetHorizontalVelocity();
 
         //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
-        ChangeAnimationSpeed();
+        FlipPlayerAnimation();
 
         //Change animations.
          ChangeAnimation();
@@ -113,15 +118,15 @@ public class PlayerMovementScript : MonoBehaviour
 
     }
 
-    void ChangeAnimationSpeed()
+    void FlipPlayerAnimation()
     {
         if (((m_IsFacingRight && m_IsWalking < 0) || (!m_IsFacingRight && m_IsWalking > 0)))
         {
-            m_PlayerAnimator.SetFloat("Speed", -1f);
+            m_PlayerAnimator.SetFloat("Speed", m_PlayerAnimator.GetFloat("Speed") * -1f);
         }
         else
         {
-            m_PlayerAnimator.SetFloat("Speed", 1f);
+            m_PlayerAnimator.SetFloat("Speed", m_PlayerAnimator.GetFloat("Speed") * 1f);
         }        
     }
     void ChangeAnimation()
@@ -141,17 +146,14 @@ public class PlayerMovementScript : MonoBehaviour
     {
             m_HorizontalVelocity = m_WalkSpeedValue; 
 
-            if (m_IsRunning && m_IsWalking != 0) 
+            if (m_IsRunning) 
             {
                 m_HorizontalVelocity += m_RunSpeedValue;
-                m_PlayerAnimator.speed = 1.5f;
-            }
-            else
-            {
-                m_PlayerAnimator.speed = 1f;
             }
 
-            m_HorizontalVelocity *= m_IsWalking;
+        m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
+        m_HorizontalVelocity *= m_IsWalking;
+
     }
 
     void Jump()
