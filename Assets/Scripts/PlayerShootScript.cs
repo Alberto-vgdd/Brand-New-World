@@ -29,9 +29,11 @@ public class PlayerShootScript : MonoBehaviour {
     private SpriteRenderer m_PlayerSprite;
 
 
-    //store the point where the user clicked the context button
-    public float contextMouseX, contextMouseY;
+    //crouch
+    private bool crouch;
 
+    //Object to control the canvas and its elements
+    private CanvasControl controlCanvas;
 
 
     //testing stuff DO NOT LOOK DIRECTLY
@@ -66,6 +68,7 @@ public class PlayerShootScript : MonoBehaviour {
         m_PlayerSprite = GetComponent<SpriteRenderer>();
         m_HandForce = 5f;
         m_FacingRight = true;
+        controlCanvas = GameObject.Find("Player").GetComponent<CanvasControl>();
     }
 
 
@@ -87,8 +90,7 @@ public class PlayerShootScript : MonoBehaviour {
         {
             Time.timeScale = GlobalData.SLOW_TIME_SPEED;
             Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
-            contextMouseX = Input.mousePosition.x;
-            contextMouseY = Input.mousePosition.y;
+            controlCanvas.MuestraContextual(Input.mousePosition.x, Input.mousePosition.y);
         }
 
 
@@ -96,7 +98,20 @@ public class PlayerShootScript : MonoBehaviour {
         {
             Time.timeScale = GlobalData.NORMAL_TIME_SPEED;
             Time.fixedDeltaTime = Time.fixedDeltaTime / GlobalData.SLOW_TIME_SPEED;
+            controlCanvas.EscondeContextual();
         }
+
+        if (Input.GetButtonDown("Crouch"))
+        {
+            crouch = true;   
+        }
+
+        if (Input.GetButtonUp("Crouch"))
+        {
+            crouch = false;
+        }
+
+
 
 	
 	}
@@ -141,7 +156,10 @@ public class PlayerShootScript : MonoBehaviour {
         return m_FacingRight;
     }
 
-    
+    public bool GetCrouching()
+    {
+        return crouch;
+    }
 
 
 }

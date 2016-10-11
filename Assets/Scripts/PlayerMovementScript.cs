@@ -34,6 +34,7 @@ public class PlayerMovementScript : MonoBehaviour
     private bool m_IsFacingRight;
     private bool m_IsRunning;
     private float m_IsWalking; // 3 different states ---> -1, 0, 1
+    private bool crouching;
 
 
 
@@ -82,23 +83,40 @@ public class PlayerMovementScript : MonoBehaviour
         //m_PlayerRigidbody.transform.Translate(new Vector2(0.1f,0.1f) * Time.fixedDeltaTime);
 	}
 
+
+
     //FixedUpdate is called every frame in Time.DeltaTime
     void FixedUpdate() 
     {
+        //REVISAR CON IRGUNCIA
         CheckOnGround();
         CheckFacing();
+        CheckCrouching();
+
+
         Move();
         Jump();   
+    }
+
+
+
+    private void CheckCrouching()
+    {
+        crouching = m_PlayerShootScript.GetCrouching();
     }
 
     void CheckOnGround()
     {
         m_IsOnGround = m_PlayerFeetScript.GetOnGround();
     }
+
+
     void CheckFacing()
     {
         m_IsFacingRight = m_PlayerShootScript.GetFacing();
     }
+
+
     void Move()
     {
         //Velocity in case either m_IsWalking or m_IsRunning are true
@@ -115,6 +133,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     }
 
+
     void ChangeAnimationSpeed()
     {
         if (((m_IsFacingRight && m_IsWalking < 0) || (!m_IsFacingRight && m_IsWalking > 0)))
@@ -126,6 +145,8 @@ public class PlayerMovementScript : MonoBehaviour
             m_PlayerAnimator.SetFloat("Speed", 1f);
         }        
     }
+
+
     void ChangeAnimation()
     {
         if (m_IsWalking !=0)
@@ -136,8 +157,13 @@ public class PlayerMovementScript : MonoBehaviour
         {
             m_PlayerAnimator.SetBool("Walk", false);
         }
-        
+
+        if (crouching)
+            m_PlayerAnimator.SetBool("Crouch", true);
+        else
+            m_PlayerAnimator.SetBool("Crouch", false);
     }
+
 
     void SetHorizontalVelocity()
     {
@@ -155,6 +181,7 @@ public class PlayerMovementScript : MonoBehaviour
 
             m_HorizontalVelocity *= m_IsWalking;
     }
+
 
     void Jump()
     {
