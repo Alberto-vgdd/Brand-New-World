@@ -1,0 +1,11 @@
+TEXTO DE PRUEBA//PROHIBIDÍSIMO USAR '-' EXCEPTO EN LA LINEA 'ETIQUETA'
+
+ETIQUETA-1
+historia historia historia
+
+ETIQUETA-2
+historia historia historia
+
+ETIQUETA-1-2
+historia historia historia
+
