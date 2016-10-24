@@ -3,18 +3,11 @@ using System.Collections;
 
 
 
-//IMPORTANT:
-//      Every Single platform type requires now a different Physics2D material. (Player may stick on walls, ask Alberto for more details)
-//      Diferent enemies may also need one of those materials
 
-
-//CHANGES MADE BY ALBERTO:
-//      SetHorizontalVelocity() now sets m_HorizontalVelocity as m_PlayerAnimator.speed
-//      FlipPlayerAnimation() has been changed too for the same reason.
-//          These changes have been made to avoid using m_PlayerAnimatior.speed....
 
 public class PlayerMovementScript : MonoBehaviour
 {
+    //Components attached to the player that are needed here.
     private Rigidbody2D m_PlayerRigidbody;
     private Animator m_PlayerAnimator;
     private FeetControllerScript m_PlayerFeetScript;
@@ -25,15 +18,17 @@ public class PlayerMovementScript : MonoBehaviour
     public float m_RunSpeedValue;
     public float m_JumpSpeedValue;
 
+    //How  walking/running affects  the jump.
+    private float m_WalkJumpBoost;
+    private float m_RunJumpBoost;
+
+
     //this variable manages the amount of horizontal velocity that the player is given
     private float m_HorizontalVelocity;
 
     //Variables to manage jumping & falling.
     private bool m_IsOnGround;
     private bool m_IsJumping;
-
-    private float m_WalkJumpBoost;
-    private float m_RunJumpBoost;
 
     //Variables to reverse animation speed, and change between movement animations
     private bool m_IsFacingRight;
@@ -63,16 +58,17 @@ public class PlayerMovementScript : MonoBehaviour
         m_IsFacingRight = true;
         m_IsWalking = 0f;
 
-        m_WalkSpeedValue = 0.75f;
-        m_RunSpeedValue = 0.75f;
-        m_JumpSpeedValue = 2.25f;
+        m_WalkSpeedValue = 1f;
+        m_RunSpeedValue = 1f;
+        m_JumpSpeedValue = 3f;
+
 
         m_WalkJumpBoost = 1.1f;
         m_RunJumpBoost = 1.25f;
 
     }
 
-    // Update is called once per frame
+    // Update is called once per frame. Read any input here.
     void Update ()
     {
         //Walking
@@ -85,23 +81,33 @@ public class PlayerMovementScript : MonoBehaviour
         if (Input.GetButton("Jump") == true  && m_IsOnGround == true) { m_IsJumping = true; } else { m_IsJumping = false; }
 	}
 
-    //FixedUpdate is called every frame in Time.DeltaTime
+    //FixedUpdate is called every frame in Time.fixedDeltaTime, physics related stuff here.
     void FixedUpdate() 
     {
+        //This function updates m_IsOnGround, to enable or not jumping.
         CheckOnGround();
+
+        //This funciton updates where the player should be looking at  based on  mouse position.
         CheckFacing();
+
+        //Horizontal Speed based on inputs
         Move();
-        Jump();   
+
+        //Vertical Speed based on inputs
+        Jump();
+
     }
 
     void CheckOnGround()
     {
         m_IsOnGround = m_PlayerFeetScript.GetOnGround();
     }
+
     void CheckFacing()
     {
         m_IsFacingRight = m_PlayerShootScript.GetFacing();
     }
+
     void Move()
     {
         //Velocity in case either m_IsWalking or m_IsRunning are true
@@ -151,9 +157,9 @@ public class PlayerMovementScript : MonoBehaviour
                 m_HorizontalVelocity += m_RunSpeedValue;
             }
 
+        
         m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
         m_HorizontalVelocity *= m_IsWalking;
-
     }
 
     void Jump()
@@ -177,7 +183,8 @@ public class PlayerMovementScript : MonoBehaviour
     }
 
 
-   
 
-    
+
+
+
 }
