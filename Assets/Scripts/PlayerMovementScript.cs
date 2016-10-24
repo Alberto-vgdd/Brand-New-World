@@ -34,6 +34,7 @@ public class PlayerMovementScript : MonoBehaviour
     private bool m_IsFacingRight;
     private bool m_IsRunning;
     private float m_IsWalking; // 3 different states ---> -1, 0, 1
+    private bool crouching;
 
 
 
@@ -90,12 +91,22 @@ public class PlayerMovementScript : MonoBehaviour
         //This funciton updates where the player should be looking at  based on  mouse position.
         CheckFacing();
 
+        CheckCrouching();
+
+
         //Horizontal Speed based on inputs
         Move();
 
         //Vertical Speed based on inputs
         Jump();
 
+
+    }
+
+
+    private void CheckCrouching()
+    {
+        crouching = m_PlayerShootScript.GetCrouching();
     }
 
     void CheckOnGround()
@@ -137,7 +148,7 @@ public class PlayerMovementScript : MonoBehaviour
     }
     void ChangeAnimation()
     {
-        if (m_IsWalking !=0)
+        if (m_IsWalking != 0)
         {
             m_PlayerAnimator.SetBool("Walk", true);
         }
@@ -145,6 +156,11 @@ public class PlayerMovementScript : MonoBehaviour
         {
             m_PlayerAnimator.SetBool("Walk", false);
         }
+
+        if (crouching)
+            m_PlayerAnimator.SetBool("Crouch", true);
+        else
+            m_PlayerAnimator.SetBool("Crouch", false);
         
     }
 

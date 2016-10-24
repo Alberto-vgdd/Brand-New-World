@@ -27,8 +27,18 @@ public class PlayerShootScript : MonoBehaviour {
     //Variables to flip the character
     private bool m_FacingRight;
     private SpriteRenderer m_PlayerSprite;
-    
 
+
+    //crouch
+    private bool crouch;
+
+    //Object to control the canvas and its elements
+    private CanvasControl controlCanvas;
+
+
+    //testing stuff DO NOT LOOK DIRECTLY
+    public bool prueba;
+    public float intervalo;
 
 
 
@@ -59,23 +69,105 @@ public class PlayerShootScript : MonoBehaviour {
         m_PlayerSprite = GetComponent<SpriteRenderer>();
         m_HandForce = 5f;
         m_FacingRight = true;
+        controlCanvas = GameObject.Find("Player").GetComponent<CanvasControl>();
     }
 
 
 
 	// Update is called once per frame
-	void Update () 
+    void Update()
     {
+
+        intervalo = Time.fixedDeltaTime;
         UpdateCrosshairPosition();
 
-        if (Input.GetButtonDown("Shoot"))
+        //PAUSE/UNPAUSE
+        if (Input.GetButtonDown("Pause"))
         {
-            CalculateBulletTrayectory();
-            m_BulletClone = Instantiate(m_BulletPrefab, m_HandPosition, m_HandRotation) as Rigidbody2D;
-            m_BulletClone.AddForce(m_BulletDirection * m_HandForce);
+            if (GlobalData.PAUSE)
+            {
+                GlobalData.PAUSE = false;
+                Time.timeScale = GlobalData.NORMAL_TIME_SPEED;
+
+                /*to avoid bugs, we check if the player was crouching or
+                 * using the context menu before pausing and if he still is*/
+                if (GlobalData.CONTEXT_MENU)
+                {
+                    if (!Input.GetButton("Context"))
+                        quitContext();
+                    else
+                        Time.timeScale = GlobalData.SLOW_TIME_SPEED;
+                }
+
+                if (crouch)
+                {
+                    if (!Input.GetButton("Crouch"))
+                        crouch = false;
+                }
+            }
+            else
+            {
+                GlobalData.PAUSE = true;
+                Time.timeScale = GlobalData.PAUSED_TIME_SPEED;
+            }
+
         }
-	
-	}
+
+
+        //THEESE BUTTONS WILL ONLY BE CHEKED IF THE GAME IS NOT PAUSED
+        if (!GlobalData.PAUSE)
+        {
+            if (Input.GetButtonDown("Shoot"))
+            {
+                if (!GlobalData.CONTEXT_MENU)
+                {
+                    CalculateBulletTrayectory();
+                    m_BulletClone = Instantiate(m_BulletPrefab, m_HandPosition, m_HandRotation) as Rigidbody2D;
+                    m_BulletClone.AddForce(m_BulletDirection * m_HandForce);
+                }
+            }
+
+
+            //FIXED DELTA TIME IS ADJUSTED SO WITH THE NEW TIME SCALE THERE ARE  6O FPS PRODUCED
+            if (Input.GetButtonDown("Context"))
+            {
+                GlobalData.CONTEXT_MENU = true;
+                Time.timeScale = GlobalData.SLOW_TIME_SPEED;
+                Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
+                controlCanvas.MuestraContextual(Input.mousePosition.x, Input.mousePosition.y);
+            }
+
+
+            if (Input.GetButtonUp("Context"))
+            {
+                quitContext();
+            }
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+            }
+
+            if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
+
+        }
+
+
+    }
+
+
+    private void quitContext()
+    {
+        GlobalData.CONTEXT_MENU = false;
+        Time.timeScale = GlobalData.NORMAL_TIME_SPEED;
+        Time.fixedDeltaTime = Time.fixedDeltaTime / GlobalData.SLOW_TIME_SPEED;
+        controlCanvas.EscondeContextual();
+    }
+
+
     void UpdateCrosshairPosition()
     {
         //Now we look for the mouse position
@@ -115,7 +207,11 @@ public class PlayerShootScript : MonoBehaviour {
         return m_FacingRight;
     }
 
-    
+
+    public bool GetCrouching()
+    {
+        return crouch;
+    }
 
 
 }
