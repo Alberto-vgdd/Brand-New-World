@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2b7eff1d3941a3649ade853e4606c8dd
-timeCreated: 1476788073
+guid: a6a01ec28ae8cf44696319ec4ef34dcd
+timeCreated: 1477300738
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -86,7 +86,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -117,18 +117,18 @@ TextureImporter:
         y: 316
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -25, y: 44}
-        - {x: -49, y: 31}
-        - {x: -49, y: 11}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 13}
-        - {x: 49, y: 28}
-        - {x: 35, y: 44}
+      - - {x: -25, y: 22}
+        - {x: -49, y: 9}
+        - {x: -49, y: -11}
+        - {x: -36, y: -22}
+        - {x: 38, y: -22}
+        - {x: 49, y: -9}
+        - {x: 49, y: 6}
+        - {x: 35, y: 22}
     - name: Worm Sprite Sheet_1
       rect:
         serializedVersion: 2
@@ -136,18 +136,18 @@ TextureImporter:
         y: 316
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -25, y: 44}
-        - {x: -49, y: 31}
-        - {x: -49, y: 11}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 13}
-        - {x: 49, y: 28}
-        - {x: 35, y: 44}
+      - - {x: -25, y: 22}
+        - {x: -49, y: 9}
+        - {x: -49, y: -11}
+        - {x: -36, y: -22}
+        - {x: 38, y: -22}
+        - {x: 49, y: -9}
+        - {x: 49, y: 6}
+        - {x: 35, y: 22}
     - name: Worm Sprite Sheet_2
       rect:
         serializedVersion: 2
@@ -155,19 +155,19 @@ TextureImporter:
         y: 316
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 44}
-        - {x: -27, y: 44}
-        - {x: -49, y: 27}
-        - {x: -49, y: 13}
-        - {x: -37, y: 0}
-        - {x: 42, y: 0}
-        - {x: 49, y: 2}
-        - {x: 49, y: 32}
-        - {x: 44, y: 38}
+      - - {x: 23, y: 22}
+        - {x: -27, y: 22}
+        - {x: -49, y: 5}
+        - {x: -49, y: -9}
+        - {x: -37, y: -22}
+        - {x: 42, y: -22}
+        - {x: 49, y: -20}
+        - {x: 49, y: 10}
+        - {x: 44, y: 16}
     - name: Worm Sprite Sheet_3
       rect:
         serializedVersion: 2
@@ -175,20 +175,20 @@ TextureImporter:
         y: 316
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 44}
-        - {x: -14, y: 44}
-        - {x: -34, y: 35}
-        - {x: -49, y: 19}
-        - {x: -49, y: 12}
-        - {x: -37, y: 0}
-        - {x: 35, y: 0}
-        - {x: 49, y: 11}
-        - {x: 49, y: 20}
-        - {x: 41, y: 35}
+      - - {x: 19, y: 22}
+        - {x: -14, y: 22}
+        - {x: -34, y: 13}
+        - {x: -49, y: -3}
+        - {x: -49, y: -10}
+        - {x: -37, y: -22}
+        - {x: 35, y: -22}
+        - {x: 49, y: -11}
+        - {x: 49, y: -2}
+        - {x: 41, y: 13}
     - name: Worm Sprite Sheet_4
       rect:
         serializedVersion: 2
@@ -196,16 +196,16 @@ TextureImporter:
         y: 316
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -22, y: 44}
-        - {x: -49, y: 25}
-        - {x: -49, y: 0}
-        - {x: 49, y: 0}
-        - {x: 49, y: 27}
-        - {x: 31, y: 44}
+      - - {x: -22, y: 22}
+        - {x: -49, y: 3}
+        - {x: -49, y: -22}
+        - {x: 49, y: -22}
+        - {x: 49, y: 5}
+        - {x: 31, y: 22}
     - name: Worm Sprite Sheet_5
       rect:
         serializedVersion: 2
@@ -213,19 +213,19 @@ TextureImporter:
         y: 316
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 46, y: 39}
-        - {x: 31, y: 43}
-        - {x: -30, y: 43}
-        - {x: -49, y: 20}
-        - {x: -49, y: 9}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 9}
-        - {x: 49, y: 30}
+      - - {x: 46, y: 17.5}
+        - {x: 31, y: 21.5}
+        - {x: -30, y: 21.5}
+        - {x: -49, y: -1.5}
+        - {x: -49, y: -12.5}
+        - {x: -36, y: -21.5}
+        - {x: 38, y: -21.5}
+        - {x: 49, y: -12.5}
+        - {x: 49, y: 8.5}
     - name: Worm Sprite Sheet_6
       rect:
         serializedVersion: 2
@@ -233,20 +233,20 @@ TextureImporter:
         y: 316
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: 38}
-        - {x: 27, y: 43}
-        - {x: -18, y: 43}
-        - {x: -37, y: 38}
-        - {x: -49, y: 20}
-        - {x: -49, y: 13}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 9}
-        - {x: 49, y: 20}
+      - - {x: 36, y: 16.5}
+        - {x: 27, y: 21.5}
+        - {x: -18, y: 21.5}
+        - {x: -37, y: 16.5}
+        - {x: -49, y: -1.5}
+        - {x: -49, y: -8.5}
+        - {x: -36, y: -21.5}
+        - {x: 38, y: -21.5}
+        - {x: 49, y: -12.5}
+        - {x: 49, y: -1.5}
     - name: Worm Sprite Sheet_7
       rect:
         serializedVersion: 2
@@ -254,18 +254,18 @@ TextureImporter:
         y: 316
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -17, y: 43}
-        - {x: -49, y: 26}
-        - {x: -49, y: 10}
-        - {x: -42, y: 0}
-        - {x: 36, y: 0}
-        - {x: 49, y: 12}
-        - {x: 49, y: 25}
-        - {x: 23, y: 43}
+      - - {x: -17, y: 21.5}
+        - {x: -49, y: 4.5}
+        - {x: -49, y: -11.5}
+        - {x: -42, y: -21.5}
+        - {x: 36, y: -21.5}
+        - {x: 49, y: -9.5}
+        - {x: 49, y: 3.5}
+        - {x: 23, y: 21.5}
     - name: Worm Sprite Sheet_8
       rect:
         serializedVersion: 2
@@ -273,19 +273,19 @@ TextureImporter:
         y: 271
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 43}
-        - {x: -34, y: 38}
-        - {x: -49, y: 27}
-        - {x: -49, y: 10}
-        - {x: -42, y: 0}
-        - {x: 36, y: 0}
-        - {x: 49, y: 13}
-        - {x: 49, y: 24}
-        - {x: 24, y: 43}
+      - - {x: -16, y: 21.5}
+        - {x: -34, y: 16.5}
+        - {x: -49, y: 5.5}
+        - {x: -49, y: -11.5}
+        - {x: -42, y: -21.5}
+        - {x: 36, y: -21.5}
+        - {x: 49, y: -8.5}
+        - {x: 49, y: 2.5}
+        - {x: 24, y: 21.5}
     - name: Worm Sprite Sheet_9
       rect:
         serializedVersion: 2
@@ -293,19 +293,19 @@ TextureImporter:
         y: 271
         width: 100
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -21, y: 42}
-        - {x: -38, y: 38}
-        - {x: -50, y: 21}
-        - {x: -50, y: 11}
-        - {x: -36, y: 0}
-        - {x: 45, y: 0}
+      - - {x: -21, y: 21}
+        - {x: -38, y: 17}
+        - {x: -50, y: 0}
+        - {x: -50, y: -10}
+        - {x: -36, y: -21}
+        - {x: 45, y: -21}
+        - {x: 50, y: -19}
         - {x: 50, y: 2}
-        - {x: 50, y: 23}
-        - {x: 30, y: 42}
+        - {x: 30, y: 21}
     - name: Worm Sprite Sheet_10
       rect:
         serializedVersion: 2
@@ -313,18 +313,18 @@ TextureImporter:
         y: 271
         width: 100
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -42, y: 42}
-        - {x: -50, y: 26}
-        - {x: -50, y: 7}
-        - {x: -39, y: 0}
-        - {x: 40, y: 0}
-        - {x: 50, y: 11}
-        - {x: 50, y: 25}
-        - {x: 33, y: 42}
+      - - {x: -42, y: 21}
+        - {x: -50, y: 5}
+        - {x: -50, y: -14}
+        - {x: -39, y: -21}
+        - {x: 40, y: -21}
+        - {x: 50, y: -10}
+        - {x: 50, y: 4}
+        - {x: 33, y: 21}
     - name: Worm Sprite Sheet_11
       rect:
         serializedVersion: 2
@@ -332,18 +332,18 @@ TextureImporter:
         y: 271
         width: 102
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -47, y: 42}
-        - {x: -51, y: 32}
-        - {x: -51, y: 12}
-        - {x: -41, y: 0}
-        - {x: 40, y: 0}
-        - {x: 51, y: 6}
-        - {x: 51, y: 34}
-        - {x: 48, y: 42}
+      - - {x: -47, y: 21}
+        - {x: -51, y: 11}
+        - {x: -51, y: -9}
+        - {x: -41, y: -21}
+        - {x: 40, y: -21}
+        - {x: 51, y: -15}
+        - {x: 51, y: 13}
+        - {x: 48, y: 21}
     - name: Worm Sprite Sheet_12
       rect:
         serializedVersion: 2
@@ -351,19 +351,19 @@ TextureImporter:
         y: 271
         width: 102
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 20, y: 41}
-        - {x: -26, y: 41}
-        - {x: -51, y: 27}
-        - {x: -51, y: 10}
-        - {x: -41, y: 0}
-        - {x: 39, y: 0}
-        - {x: 51, y: 11}
-        - {x: 51, y: 21}
-        - {x: 28, y: 40}
+      - - {x: 20, y: 20.5}
+        - {x: -26, y: 20.5}
+        - {x: -51, y: 6.5}
+        - {x: -51, y: -10.5}
+        - {x: -41, y: -20.5}
+        - {x: 39, y: -20.5}
+        - {x: 51, y: -9.5}
+        - {x: 51, y: 0.5}
+        - {x: 28, y: 19.5}
     - name: Worm Sprite Sheet_13
       rect:
         serializedVersion: 2
@@ -371,20 +371,20 @@ TextureImporter:
         y: 271
         width: 104
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 41}
-        - {x: -23, y: 41}
-        - {x: -40, y: 38}
-        - {x: -52, y: 20}
-        - {x: -52, y: 8}
-        - {x: -39, y: 0}
-        - {x: 41, y: 0}
-        - {x: 52, y: 7}
-        - {x: 52, y: 20}
-        - {x: 39, y: 38}
+      - - {x: 19, y: 20.5}
+        - {x: -23, y: 20.5}
+        - {x: -40, y: 17.5}
+        - {x: -52, y: -0.5}
+        - {x: -52, y: -12.5}
+        - {x: -39, y: -20.5}
+        - {x: 41, y: -20.5}
+        - {x: 52, y: -13.5}
+        - {x: 52, y: -0.5}
+        - {x: 39, y: 17.5}
     - name: Worm Sprite Sheet_14
       rect:
         serializedVersion: 2
@@ -392,20 +392,20 @@ TextureImporter:
         y: 271
         width: 104
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 27, y: 41}
-        - {x: -18, y: 41}
-        - {x: -38, y: 36}
-        - {x: -52, y: 19}
-        - {x: -52, y: 12}
-        - {x: -38, y: 0}
-        - {x: 40, y: 0}
-        - {x: 52, y: 9}
-        - {x: 52, y: 19}
-        - {x: 43, y: 33}
+      - - {x: 27, y: 20.5}
+        - {x: -18, y: 20.5}
+        - {x: -38, y: 15.5}
+        - {x: -52, y: -1.5}
+        - {x: -52, y: -8.5}
+        - {x: -38, y: -20.5}
+        - {x: 40, y: -20.5}
+        - {x: 52, y: -11.5}
+        - {x: 52, y: -1.5}
+        - {x: 43, y: 12.5}
     - name: Worm Sprite Sheet_15
       rect:
         serializedVersion: 2
@@ -413,20 +413,20 @@ TextureImporter:
         y: 271
         width: 104
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 20, y: 40}
-        - {x: -23, y: 40}
-        - {x: -41, y: 36}
-        - {x: -52, y: 19}
-        - {x: -52, y: 8}
-        - {x: -38, y: 0}
-        - {x: 41, y: 0}
-        - {x: 52, y: 7}
-        - {x: 52, y: 19}
-        - {x: 39, y: 36}
+      - - {x: 20, y: 20}
+        - {x: -23, y: 20}
+        - {x: -41, y: 16}
+        - {x: -52, y: -1}
+        - {x: -52, y: -12}
+        - {x: -38, y: -20}
+        - {x: 41, y: -20}
+        - {x: 52, y: -13}
+        - {x: 52, y: -1}
+        - {x: 39, y: 16}
     - name: Worm Sprite Sheet_16
       rect:
         serializedVersion: 2
@@ -434,19 +434,19 @@ TextureImporter:
         y: 226
         width: 106
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -18, y: 40}
-        - {x: -38, y: 34}
-        - {x: -53, y: 24}
-        - {x: -53, y: 10}
-        - {x: -45, y: 0}
-        - {x: 45, y: 0}
-        - {x: 53, y: 9}
-        - {x: 53, y: 26}
-        - {x: 29, y: 40}
+      - - {x: -18, y: 20}
+        - {x: -38, y: 14}
+        - {x: -53, y: 4}
+        - {x: -53, y: -10}
+        - {x: -45, y: -20}
+        - {x: 45, y: -20}
+        - {x: 53, y: -11}
+        - {x: 53, y: 6}
+        - {x: 29, y: 20}
     - name: Worm Sprite Sheet_17
       rect:
         serializedVersion: 2
@@ -454,20 +454,20 @@ TextureImporter:
         y: 226
         width: 108
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 39}
-        - {x: -18, y: 39}
-        - {x: -37, y: 32}
-        - {x: -54, y: 23}
-        - {x: -54, y: 10}
-        - {x: -46, y: 0}
-        - {x: 41, y: 0}
-        - {x: 54, y: 7}
-        - {x: 54, y: 18}
-        - {x: 39, y: 36}
+      - - {x: 22, y: 19.5}
+        - {x: -18, y: 19.5}
+        - {x: -37, y: 12.5}
+        - {x: -54, y: 3.5}
+        - {x: -54, y: -9.5}
+        - {x: -46, y: -19.5}
+        - {x: 41, y: -19.5}
+        - {x: 54, y: -12.5}
+        - {x: 54, y: -1.5}
+        - {x: 39, y: 16.5}
     - name: Worm Sprite Sheet_18
       rect:
         serializedVersion: 2
@@ -475,19 +475,19 @@ TextureImporter:
         y: 226
         width: 108
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: 39}
-        - {x: -30, y: 39}
-        - {x: -54, y: 29}
-        - {x: -54, y: 5}
-        - {x: -48, y: 0}
-        - {x: 42, y: 0}
-        - {x: 54, y: 7}
-        - {x: 54, y: 18}
-        - {x: 40, y: 34}
+      - - {x: 35, y: 19.5}
+        - {x: -30, y: 19.5}
+        - {x: -54, y: 9.5}
+        - {x: -54, y: -14.5}
+        - {x: -48, y: -19.5}
+        - {x: 42, y: -19.5}
+        - {x: 54, y: -12.5}
+        - {x: 54, y: -1.5}
+        - {x: 40, y: 14.5}
     - name: Worm Sprite Sheet_19
       rect:
         serializedVersion: 2
@@ -495,20 +495,20 @@ TextureImporter:
         y: 226
         width: 108
         height: 38
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 29, y: 38}
-        - {x: -26, y: 38}
-        - {x: -42, y: 36}
-        - {x: -54, y: 19}
-        - {x: -54, y: 8}
-        - {x: -41, y: 0}
-        - {x: 42, y: 0}
-        - {x: 54, y: 7}
-        - {x: 54, y: 18}
-        - {x: 40, y: 35}
+      - - {x: 29, y: 19}
+        - {x: -26, y: 19}
+        - {x: -42, y: 17}
+        - {x: -54, y: 0}
+        - {x: -54, y: -11}
+        - {x: -41, y: -19}
+        - {x: 42, y: -19}
+        - {x: 54, y: -12}
+        - {x: 54, y: -1}
+        - {x: 40, y: 16}
     - name: Worm Sprite Sheet_20
       rect:
         serializedVersion: 2
@@ -516,19 +516,19 @@ TextureImporter:
         y: 226
         width: 108
         height: 38
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -23, y: 38}
-        - {x: -38, y: 31}
-        - {x: -54, y: 23}
-        - {x: -54, y: 10}
-        - {x: -46, y: 0}
-        - {x: 42, y: 0}
-        - {x: 54, y: 6}
-        - {x: 54, y: 19}
-        - {x: 42, y: 38}
+      - - {x: -23, y: 19}
+        - {x: -38, y: 12}
+        - {x: -54, y: 4}
+        - {x: -54, y: -9}
+        - {x: -46, y: -19}
+        - {x: 42, y: -19}
+        - {x: 54, y: -13}
+        - {x: 54, y: 0}
+        - {x: 42, y: 19}
     - name: Worm Sprite Sheet_21
       rect:
         serializedVersion: 2
@@ -536,17 +536,17 @@ TextureImporter:
         y: 226
         width: 110
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -39, y: 37}
-        - {x: -55, y: 22}
-        - {x: -55, y: 7}
-        - {x: -52, y: 0}
-        - {x: 55, y: 0}
-        - {x: 55, y: 31}
-        - {x: 38, y: 37}
+      - - {x: -39, y: 18.5}
+        - {x: -55, y: 3.5}
+        - {x: -55, y: -11.5}
+        - {x: -52, y: -18.5}
+        - {x: 55, y: -18.5}
+        - {x: 55, y: 12.5}
+        - {x: 38, y: 18.5}
     - name: Worm Sprite Sheet_22
       rect:
         serializedVersion: 2
@@ -554,17 +554,17 @@ TextureImporter:
         y: 226
         width: 112
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -39, y: 37}
-        - {x: -56, y: 24}
-        - {x: -56, y: 0}
-        - {x: 54, y: 0}
-        - {x: 56, y: 2}
-        - {x: 56, y: 26}
-        - {x: 28, y: 37}
+      - - {x: -39, y: 18.5}
+        - {x: -56, y: 5.5}
+        - {x: -56, y: -18.5}
+        - {x: 54, y: -18.5}
+        - {x: 56, y: -16.5}
+        - {x: 56, y: 7.5}
+        - {x: 28, y: 18.5}
     - name: Worm Sprite Sheet_23
       rect:
         serializedVersion: 2
@@ -572,18 +572,18 @@ TextureImporter:
         y: 226
         width: 114
         height: 36
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -43, y: 36}
-        - {x: -57, y: 19}
-        - {x: -57, y: 10}
-        - {x: -42, y: 0}
-        - {x: 44, y: 0}
-        - {x: 57, y: 7}
-        - {x: 57, y: 20}
-        - {x: 49, y: 36}
+      - - {x: -43, y: 18}
+        - {x: -57, y: 1}
+        - {x: -57, y: -8}
+        - {x: -42, y: -18}
+        - {x: 44, y: -18}
+        - {x: 57, y: -11}
+        - {x: 57, y: 2}
+        - {x: 49, y: 18}
     - name: Worm Sprite Sheet_24
       rect:
         serializedVersion: 2
@@ -591,17 +591,17 @@ TextureImporter:
         y: 181
         width: 114
         height: 36
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -34, y: 36}
-        - {x: -57, y: 23}
-        - {x: -57, y: 9}
-        - {x: -53, y: 0}
-        - {x: 57, y: 0}
-        - {x: 57, y: 20}
-        - {x: 27, y: 36}
+      - - {x: -34, y: 18}
+        - {x: -57, y: 5}
+        - {x: -57, y: -9}
+        - {x: -53, y: -18}
+        - {x: 57, y: -18}
+        - {x: 57, y: 2}
+        - {x: 27, y: 18}
     - name: Worm Sprite Sheet_25
       rect:
         serializedVersion: 2
@@ -609,19 +609,19 @@ TextureImporter:
         y: 181
         width: 114
         height: 35
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 35}
-        - {x: -43, y: 35}
-        - {x: -57, y: 22}
-        - {x: -57, y: 1}
-        - {x: -52, y: 0}
-        - {x: 53, y: 0}
-        - {x: 57, y: 7}
-        - {x: 57, y: 16}
-        - {x: 40, y: 29}
+      - - {x: 23, y: 17.5}
+        - {x: -43, y: 17.5}
+        - {x: -57, y: 4.5}
+        - {x: -57, y: -16.5}
+        - {x: -52, y: -17.5}
+        - {x: 53, y: -17.5}
+        - {x: 57, y: -10.5}
+        - {x: 57, y: -1.5}
+        - {x: 40, y: 11.5}
     - name: Worm Sprite Sheet_26
       rect:
         serializedVersion: 2
@@ -629,16 +629,16 @@ TextureImporter:
         y: 181
         width: 114
         height: 35
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -46, y: 35}
-        - {x: -57, y: 23}
-        - {x: -57, y: 0}
-        - {x: 57, y: 0}
-        - {x: 57, y: 23}
-        - {x: 51, y: 35}
+      - - {x: -46, y: 17.5}
+        - {x: -57, y: 5.5}
+        - {x: -57, y: -17.5}
+        - {x: 57, y: -17.5}
+        - {x: 57, y: 5.5}
+        - {x: 51, y: 17.5}
     - name: Worm Sprite Sheet_27
       rect:
         serializedVersion: 2
@@ -646,20 +646,20 @@ TextureImporter:
         y: 181
         width: 116
         height: 35
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 33, y: 35}
-        - {x: -21, y: 35}
-        - {x: -42, y: 30}
-        - {x: -58, y: 21}
-        - {x: -58, y: 9}
-        - {x: -50, y: 0}
-        - {x: 46, y: 0}
-        - {x: 58, y: 6}
-        - {x: 58, y: 19}
-        - {x: 56, y: 24}
+      - - {x: 33, y: 17.5}
+        - {x: -21, y: 17.5}
+        - {x: -42, y: 12.5}
+        - {x: -58, y: 3.5}
+        - {x: -58, y: -8.5}
+        - {x: -50, y: -17.5}
+        - {x: 46, y: -17.5}
+        - {x: 58, y: -11.5}
+        - {x: 58, y: 1.5}
+        - {x: 56, y: 6.5}
     - name: Worm Sprite Sheet_28
       rect:
         serializedVersion: 2
@@ -667,18 +667,18 @@ TextureImporter:
         y: 181
         width: 118
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -33, y: 34}
-        - {x: -59, y: 20}
-        - {x: -59, y: 7}
-        - {x: -55, y: 0}
-        - {x: 55, y: 0}
-        - {x: 59, y: 3}
-        - {x: 59, y: 16}
-        - {x: 45, y: 34}
+      - - {x: -33, y: 17}
+        - {x: -59, y: 3}
+        - {x: -59, y: -10}
+        - {x: -55, y: -17}
+        - {x: 55, y: -17}
+        - {x: 59, y: -14}
+        - {x: 59, y: -1}
+        - {x: 45, y: 17}
     - name: Worm Sprite Sheet_29
       rect:
         serializedVersion: 2
@@ -686,17 +686,17 @@ TextureImporter:
         y: 181
         width: 118
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -39, y: 34}
-        - {x: -59, y: 29}
-        - {x: -59, y: 0}
-        - {x: 55, y: 0}
-        - {x: 59, y: 7}
-        - {x: 59, y: 20}
-        - {x: 43, y: 34}
+      - - {x: -39, y: 17}
+        - {x: -59, y: 12}
+        - {x: -59, y: -17}
+        - {x: 55, y: -17}
+        - {x: 59, y: -10}
+        - {x: 59, y: 3}
+        - {x: 43, y: 17}
     - name: Worm Sprite Sheet_30
       rect:
         serializedVersion: 2
@@ -704,18 +704,18 @@ TextureImporter:
         y: 181
         width: 118
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -42, y: 34}
-        - {x: -59, y: 19}
-        - {x: -59, y: 1}
-        - {x: -49, y: 0}
-        - {x: 56, y: 0}
-        - {x: 59, y: 4}
-        - {x: 59, y: 25}
-        - {x: 31, y: 34}
+      - - {x: -42, y: 17}
+        - {x: -59, y: 2}
+        - {x: -59, y: -16}
+        - {x: -49, y: -17}
+        - {x: 56, y: -17}
+        - {x: 59, y: -13}
+        - {x: 59, y: 8}
+        - {x: 31, y: 17}
     - name: Worm Sprite Sheet_31
       rect:
         serializedVersion: 2
@@ -723,18 +723,18 @@ TextureImporter:
         y: 181
         width: 118
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -53, y: 33}
-        - {x: -59, y: 20}
-        - {x: -59, y: 6}
-        - {x: -45, y: 0}
-        - {x: 44, y: 0}
-        - {x: 59, y: 8}
-        - {x: 59, y: 16}
-        - {x: 51, y: 33}
+      - - {x: -53, y: 16.5}
+        - {x: -59, y: 3.5}
+        - {x: -59, y: -10.5}
+        - {x: -45, y: -16.5}
+        - {x: 44, y: -16.5}
+        - {x: 59, y: -8.5}
+        - {x: 59, y: -0.5}
+        - {x: 51, y: 16.5}
     - name: Worm Sprite Sheet_32
       rect:
         serializedVersion: 2
@@ -742,20 +742,20 @@ TextureImporter:
         y: 136
         width: 118
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 26, y: 33}
-        - {x: -28, y: 33}
-        - {x: -42, y: 28}
-        - {x: -59, y: 15}
-        - {x: -59, y: 8}
-        - {x: -44, y: 0}
-        - {x: 44, y: 0}
-        - {x: 59, y: 8}
-        - {x: 59, y: 15}
-        - {x: 44, y: 31}
+      - - {x: 26, y: 16.5}
+        - {x: -28, y: 16.5}
+        - {x: -42, y: 11.5}
+        - {x: -59, y: -1.5}
+        - {x: -59, y: -8.5}
+        - {x: -44, y: -16.5}
+        - {x: 44, y: -16.5}
+        - {x: 59, y: -8.5}
+        - {x: 59, y: -1.5}
+        - {x: 44, y: 14.5}
     - name: Worm Sprite Sheet_33
       rect:
         serializedVersion: 2
@@ -763,16 +763,16 @@ TextureImporter:
         y: 136
         width: 118
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -31, y: 33}
-        - {x: -59, y: 18}
-        - {x: -59, y: 0}
-        - {x: 59, y: 0}
-        - {x: 59, y: 16}
-        - {x: 45, y: 33}
+      - - {x: -31, y: 16.5}
+        - {x: -59, y: 1.5}
+        - {x: -59, y: -16.5}
+        - {x: 59, y: -16.5}
+        - {x: 59, y: -0.5}
+        - {x: 45, y: 16.5}
     - name: Worm Sprite Sheet_34
       rect:
         serializedVersion: 2
@@ -780,18 +780,18 @@ TextureImporter:
         y: 136
         width: 120
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -48, y: 33}
-        - {x: -60, y: 23}
-        - {x: -60, y: 9}
-        - {x: -50, y: 0}
-        - {x: 46, y: 0}
-        - {x: 60, y: 7}
-        - {x: 60, y: 25}
-        - {x: 33, y: 33}
+      - - {x: -48, y: 16.5}
+        - {x: -60, y: 6.5}
+        - {x: -60, y: -7.5}
+        - {x: -50, y: -16.5}
+        - {x: 46, y: -16.5}
+        - {x: 60, y: -9.5}
+        - {x: 60, y: 8.5}
+        - {x: 33, y: 16.5}
     - name: Worm Sprite Sheet_35
       rect:
         serializedVersion: 2
@@ -799,17 +799,17 @@ TextureImporter:
         y: 136
         width: 120
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -37, y: 33}
-        - {x: -60, y: 15}
-        - {x: -60, y: 7}
-        - {x: -55, y: 0}
-        - {x: 60, y: 0}
-        - {x: 60, y: 29}
-        - {x: 44, y: 33}
+      - - {x: -37, y: 16.5}
+        - {x: -60, y: -1.5}
+        - {x: -60, y: -9.5}
+        - {x: -55, y: -16.5}
+        - {x: 60, y: -16.5}
+        - {x: 60, y: 12.5}
+        - {x: 44, y: 16.5}
     - name: Worm Sprite Sheet_36
       rect:
         serializedVersion: 2
@@ -817,17 +817,17 @@ TextureImporter:
         y: 136
         width: 120
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -48, y: 32}
-        - {x: -60, y: 29}
-        - {x: -60, y: 0}
-        - {x: 55, y: 0}
-        - {x: 60, y: 7}
-        - {x: 60, y: 19}
-        - {x: 46, y: 32}
+      - - {x: -48, y: 16}
+        - {x: -60, y: 13}
+        - {x: -60, y: -16}
+        - {x: 55, y: -16}
+        - {x: 60, y: -9}
+        - {x: 60, y: 3}
+        - {x: 46, y: 16}
     - name: Worm Sprite Sheet_37
       rect:
         serializedVersion: 2
@@ -835,17 +835,17 @@ TextureImporter:
         y: 136
         width: 120
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -38, y: 32}
-        - {x: -60, y: 26}
-        - {x: -60, y: 0}
-        - {x: 55, y: 0}
-        - {x: 60, y: 6}
-        - {x: 60, y: 20}
-        - {x: 42, y: 32}
+      - - {x: -38, y: 16}
+        - {x: -60, y: 10}
+        - {x: -60, y: -16}
+        - {x: 55, y: -16}
+        - {x: 60, y: -10}
+        - {x: 60, y: 4}
+        - {x: 42, y: 16}
     - name: Worm Sprite Sheet_38
       rect:
         serializedVersion: 2
@@ -853,18 +853,18 @@ TextureImporter:
         y: 136
         width: 122
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -26, y: 32}
-        - {x: -45, y: 29}
-        - {x: -61, y: 14}
-        - {x: -61, y: 7}
-        - {x: -56, y: 0}
-        - {x: 61, y: 0}
-        - {x: 61, y: 18}
-        - {x: 33, y: 32}
+      - - {x: -26, y: 16}
+        - {x: -45, y: 13}
+        - {x: -61, y: -2}
+        - {x: -61, y: -9}
+        - {x: -56, y: -16}
+        - {x: 61, y: -16}
+        - {x: 61, y: 2}
+        - {x: 33, y: 16}
     - name: Worm Sprite Sheet_39
       rect:
         serializedVersion: 2
@@ -872,18 +872,18 @@ TextureImporter:
         y: 136
         width: 122
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -26, y: 32}
-        - {x: -45, y: 29}
-        - {x: -61, y: 14}
-        - {x: -61, y: 7}
-        - {x: -56, y: 0}
-        - {x: 61, y: 0}
-        - {x: 61, y: 18}
-        - {x: 33, y: 32}
+      - - {x: -26, y: 16}
+        - {x: -45, y: 13}
+        - {x: -61, y: -2}
+        - {x: -61, y: -9}
+        - {x: -56, y: -16}
+        - {x: 61, y: -16}
+        - {x: 61, y: 2}
+        - {x: 33, y: 16}
     - name: Worm Sprite Sheet_40
       rect:
         serializedVersion: 2
@@ -891,17 +891,17 @@ TextureImporter:
         y: 91
         width: 120
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -38, y: 32}
-        - {x: -60, y: 26}
-        - {x: -60, y: 0}
-        - {x: 55, y: 0}
-        - {x: 60, y: 6}
-        - {x: 60, y: 20}
-        - {x: 42, y: 32}
+      - - {x: -38, y: 16}
+        - {x: -60, y: 10}
+        - {x: -60, y: -16}
+        - {x: 55, y: -16}
+        - {x: 60, y: -10}
+        - {x: 60, y: 4}
+        - {x: 42, y: 16}
     - name: Worm Sprite Sheet_41
       rect:
         serializedVersion: 2
@@ -909,17 +909,17 @@ TextureImporter:
         y: 91
         width: 120
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -37, y: 33}
-        - {x: -60, y: 15}
-        - {x: -60, y: 7}
-        - {x: -55, y: 0}
-        - {x: 60, y: 0}
-        - {x: 60, y: 29}
-        - {x: 44, y: 33}
+      - - {x: -37, y: 16.5}
+        - {x: -60, y: -1.5}
+        - {x: -60, y: -9.5}
+        - {x: -55, y: -16.5}
+        - {x: 60, y: -16.5}
+        - {x: 60, y: 12.5}
+        - {x: 44, y: 16.5}
     - name: Worm Sprite Sheet_42
       rect:
         serializedVersion: 2
@@ -927,16 +927,16 @@ TextureImporter:
         y: 91
         width: 118
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -31, y: 33}
-        - {x: -59, y: 18}
-        - {x: -59, y: 0}
-        - {x: 59, y: 0}
-        - {x: 59, y: 16}
-        - {x: 45, y: 33}
+      - - {x: -31, y: 16.5}
+        - {x: -59, y: 1.5}
+        - {x: -59, y: -16.5}
+        - {x: 59, y: -16.5}
+        - {x: 59, y: -0.5}
+        - {x: 45, y: 16.5}
     - name: Worm Sprite Sheet_43
       rect:
         serializedVersion: 2
@@ -944,18 +944,18 @@ TextureImporter:
         y: 91
         width: 118
         height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -53, y: 33}
-        - {x: -59, y: 20}
-        - {x: -59, y: 6}
-        - {x: -45, y: 0}
-        - {x: 44, y: 0}
-        - {x: 59, y: 8}
-        - {x: 59, y: 16}
-        - {x: 51, y: 33}
+      - - {x: -53, y: 16.5}
+        - {x: -59, y: 3.5}
+        - {x: -59, y: -10.5}
+        - {x: -45, y: -16.5}
+        - {x: 44, y: -16.5}
+        - {x: 59, y: -8.5}
+        - {x: 59, y: -0.5}
+        - {x: 51, y: 16.5}
     - name: Worm Sprite Sheet_44
       rect:
         serializedVersion: 2
@@ -963,18 +963,18 @@ TextureImporter:
         y: 91
         width: 118
         height: 34
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -54, y: 34}
-        - {x: -59, y: 26}
-        - {x: -59, y: 1}
-        - {x: -51, y: 0}
-        - {x: 55, y: 0}
-        - {x: 59, y: 7}
-        - {x: 59, y: 16}
-        - {x: 48, y: 34}
+      - - {x: -54, y: 17}
+        - {x: -59, y: 9}
+        - {x: -59, y: -16}
+        - {x: -51, y: -17}
+        - {x: 55, y: -17}
+        - {x: 59, y: -10}
+        - {x: 59, y: -1}
+        - {x: 48, y: 17}
     - name: Worm Sprite Sheet_45
       rect:
         serializedVersion: 2
@@ -982,17 +982,17 @@ TextureImporter:
         y: 91
         width: 116
         height: 35
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -27, y: 35}
-        - {x: -58, y: 20}
-        - {x: -58, y: 0}
-        - {x: 54, y: 0}
-        - {x: 58, y: 6}
-        - {x: 58, y: 20}
-        - {x: 31, y: 35}
+      - - {x: -27, y: 17.5}
+        - {x: -58, y: 2.5}
+        - {x: -58, y: -17.5}
+        - {x: 54, y: -17.5}
+        - {x: 58, y: -11.5}
+        - {x: 58, y: 2.5}
+        - {x: 31, y: 17.5}
     - name: Worm Sprite Sheet_46
       rect:
         serializedVersion: 2
@@ -1000,20 +1000,20 @@ TextureImporter:
         y: 91
         width: 114
         height: 35
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 35}
-        - {x: -28, y: 35}
-        - {x: -40, y: 30}
-        - {x: -57, y: 16}
-        - {x: -57, y: 1}
-        - {x: -47, y: 0}
-        - {x: 52, y: 0}
-        - {x: 57, y: 8}
-        - {x: 57, y: 16}
-        - {x: 42, y: 32}
+      - - {x: 23, y: 17.5}
+        - {x: -28, y: 17.5}
+        - {x: -40, y: 12.5}
+        - {x: -57, y: -1.5}
+        - {x: -57, y: -16.5}
+        - {x: -47, y: -17.5}
+        - {x: 52, y: -17.5}
+        - {x: 57, y: -9.5}
+        - {x: 57, y: -1.5}
+        - {x: 42, y: 14.5}
     - name: Worm Sprite Sheet_47
       rect:
         serializedVersion: 2
@@ -1021,19 +1021,19 @@ TextureImporter:
         y: 91
         width: 114
         height: 36
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 36}
-        - {x: -25, y: 36}
-        - {x: -57, y: 24}
-        - {x: -57, y: 9}
-        - {x: -51, y: 0}
-        - {x: 43, y: 0}
-        - {x: 57, y: 10}
-        - {x: 57, y: 16}
-        - {x: 40, y: 34}
+      - - {x: 23, y: 18}
+        - {x: -25, y: 18}
+        - {x: -57, y: 6}
+        - {x: -57, y: -9}
+        - {x: -51, y: -18}
+        - {x: 43, y: -18}
+        - {x: 57, y: -8}
+        - {x: 57, y: -2}
+        - {x: 40, y: 16}
     - name: Worm Sprite Sheet_48
       rect:
         serializedVersion: 2
@@ -1041,18 +1041,18 @@ TextureImporter:
         y: 46
         width: 112
         height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -20, y: 37}
-        - {x: -39, y: 30}
-        - {x: -56, y: 18}
-        - {x: -56, y: 9}
-        - {x: -53, y: 0}
-        - {x: 56, y: 0}
-        - {x: 56, y: 19}
-        - {x: 26, y: 37}
+      - - {x: -20, y: 18.5}
+        - {x: -39, y: 11.5}
+        - {x: -56, y: -0.5}
+        - {x: -56, y: -9.5}
+        - {x: -53, y: -18.5}
+        - {x: 56, y: -18.5}
+        - {x: 56, y: 0.5}
+        - {x: 26, y: 18.5}
     - name: Worm Sprite Sheet_49
       rect:
         serializedVersion: 2
@@ -1060,20 +1060,20 @@ TextureImporter:
         y: 46
         width: 108
         height: 38
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 33, y: 38}
-        - {x: -28, y: 38}
-        - {x: -40, y: 36}
-        - {x: -54, y: 26}
-        - {x: -54, y: 9}
-        - {x: -48, y: 0}
-        - {x: 43, y: 0}
-        - {x: 54, y: 6}
-        - {x: 54, y: 18}
-        - {x: 40, y: 35}
+      - - {x: 33, y: 19}
+        - {x: -28, y: 19}
+        - {x: -40, y: 17}
+        - {x: -54, y: 7}
+        - {x: -54, y: -10}
+        - {x: -48, y: -19}
+        - {x: 43, y: -19}
+        - {x: 54, y: -13}
+        - {x: 54, y: -1}
+        - {x: 40, y: 16}
     - name: Worm Sprite Sheet_50
       rect:
         serializedVersion: 2
@@ -1081,20 +1081,20 @@ TextureImporter:
         y: 46
         width: 108
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 31, y: 39}
-        - {x: -24, y: 39}
-        - {x: -37, y: 33}
-        - {x: -54, y: 24}
-        - {x: -54, y: 10}
-        - {x: -46, y: 0}
-        - {x: 42, y: 0}
-        - {x: 54, y: 7}
-        - {x: 54, y: 19}
-        - {x: 39, y: 38}
+      - - {x: 31, y: 19.5}
+        - {x: -24, y: 19.5}
+        - {x: -37, y: 13.5}
+        - {x: -54, y: 4.5}
+        - {x: -54, y: -9.5}
+        - {x: -46, y: -19.5}
+        - {x: 42, y: -19.5}
+        - {x: 54, y: -12.5}
+        - {x: 54, y: -0.5}
+        - {x: 39, y: 18.5}
     - name: Worm Sprite Sheet_51
       rect:
         serializedVersion: 2
@@ -1102,19 +1102,19 @@ TextureImporter:
         y: 46
         width: 104
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 34, y: 40}
-        - {x: -44, y: 40}
-        - {x: -52, y: 23}
-        - {x: -52, y: 7}
-        - {x: -41, y: 0}
-        - {x: 42, y: 0}
-        - {x: 52, y: 6}
-        - {x: 52, y: 20}
-        - {x: 40, y: 37}
+      - - {x: 34, y: 20}
+        - {x: -44, y: 20}
+        - {x: -52, y: 3}
+        - {x: -52, y: -13}
+        - {x: -41, y: -20}
+        - {x: 42, y: -20}
+        - {x: 52, y: -14}
+        - {x: 52, y: 0}
+        - {x: 40, y: 17}
     - name: Worm Sprite Sheet_52
       rect:
         serializedVersion: 2
@@ -1122,17 +1122,17 @@ TextureImporter:
         y: 46
         width: 104
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 51, y: 41}
-        - {x: -52, y: 41}
-        - {x: -52, y: 4}
-        - {x: -42, y: 0}
-        - {x: 38, y: 0}
-        - {x: 52, y: 8}
-        - {x: 52, y: 37}
+      - - {x: 51, y: 20.5}
+        - {x: -52, y: 20.5}
+        - {x: -52, y: -16.5}
+        - {x: -42, y: -20.5}
+        - {x: 38, y: -20.5}
+        - {x: 52, y: -12.5}
+        - {x: 52, y: 16.5}
     - name: Worm Sprite Sheet_53
       rect:
         serializedVersion: 2
@@ -1140,19 +1140,19 @@ TextureImporter:
         y: 46
         width: 102
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 35, y: 42}
-        - {x: -24, y: 42}
-        - {x: -51, y: 29}
-        - {x: -51, y: 6}
-        - {x: -45, y: 0}
-        - {x: 39, y: 0}
-        - {x: 51, y: 8}
-        - {x: 51, y: 20}
-        - {x: 40, y: 38}
+      - - {x: 35, y: 21}
+        - {x: -24, y: 21}
+        - {x: -51, y: 8}
+        - {x: -51, y: -15}
+        - {x: -45, y: -21}
+        - {x: 39, y: -21}
+        - {x: 51, y: -13}
+        - {x: 51, y: -1}
+        - {x: 40, y: 17}
     - name: Worm Sprite Sheet_54
       rect:
         serializedVersion: 2
@@ -1160,15 +1160,15 @@ TextureImporter:
         y: 46
         width: 100
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -50, y: 0}
-        - {x: 50, y: 0}
-        - {x: 50, y: 42}
-        - {x: -46, y: 42}
-        - {x: -50, y: 31}
+      - - {x: -50, y: -21}
+        - {x: 50, y: -21}
+        - {x: 50, y: 21}
+        - {x: -46, y: 21}
+        - {x: -50, y: 10}
     - name: Worm Sprite Sheet_55
       rect:
         serializedVersion: 2
@@ -1176,16 +1176,16 @@ TextureImporter:
         y: 46
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -49, y: 43}
-        - {x: -49, y: 2}
-        - {x: -40, y: 0}
-        - {x: 46, y: 0}
-        - {x: 49, y: 5}
-        - {x: 49, y: 43}
+      - - {x: -49, y: 21.5}
+        - {x: -49, y: -19.5}
+        - {x: -40, y: -21.5}
+        - {x: 46, y: -21.5}
+        - {x: 49, y: -16.5}
+        - {x: 49, y: 21.5}
     - name: Worm Sprite Sheet_56
       rect:
         serializedVersion: 2
@@ -1193,20 +1193,20 @@ TextureImporter:
         y: 1
         width: 98
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: 38}
-        - {x: 27, y: 43}
-        - {x: -18, y: 43}
-        - {x: -37, y: 38}
-        - {x: -49, y: 20}
-        - {x: -49, y: 13}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 9}
-        - {x: 49, y: 20}
+      - - {x: 36, y: 16.5}
+        - {x: 27, y: 21.5}
+        - {x: -18, y: 21.5}
+        - {x: -37, y: 16.5}
+        - {x: -49, y: -1.5}
+        - {x: -49, y: -8.5}
+        - {x: -36, y: -21.5}
+        - {x: 38, y: -21.5}
+        - {x: 49, y: -12.5}
+        - {x: 49, y: -1.5}
     - name: Worm Sprite Sheet_57
       rect:
         serializedVersion: 2
@@ -1214,19 +1214,19 @@ TextureImporter:
         y: 1
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 31, y: 44}
-        - {x: -29, y: 44}
-        - {x: -49, y: 27}
-        - {x: -49, y: 4}
-        - {x: -40, y: 0}
-        - {x: 36, y: 0}
-        - {x: 49, y: 10}
-        - {x: 49, y: 24}
-        - {x: 43, y: 38}
+      - - {x: 31, y: 22}
+        - {x: -29, y: 22}
+        - {x: -49, y: 5}
+        - {x: -49, y: -18}
+        - {x: -40, y: -22}
+        - {x: 36, y: -22}
+        - {x: 49, y: -12}
+        - {x: 49, y: 2}
+        - {x: 43, y: 16}
     - name: Worm Sprite Sheet_58
       rect:
         serializedVersion: 2
@@ -1234,19 +1234,19 @@ TextureImporter:
         y: 1
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 23, y: 44}
-        - {x: -27, y: 44}
-        - {x: -49, y: 27}
-        - {x: -49, y: 13}
-        - {x: -37, y: 0}
-        - {x: 42, y: 0}
-        - {x: 49, y: 2}
-        - {x: 49, y: 32}
-        - {x: 44, y: 38}
+      - - {x: 23, y: 22}
+        - {x: -27, y: 22}
+        - {x: -49, y: 5}
+        - {x: -49, y: -9}
+        - {x: -37, y: -22}
+        - {x: 42, y: -22}
+        - {x: 49, y: -20}
+        - {x: 49, y: 10}
+        - {x: 44, y: 16}
     - name: Worm Sprite Sheet_59
       rect:
         serializedVersion: 2
@@ -1254,18 +1254,18 @@ TextureImporter:
         y: 1
         width: 98
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -25, y: 44}
-        - {x: -49, y: 31}
-        - {x: -49, y: 11}
-        - {x: -36, y: 0}
-        - {x: 38, y: 0}
-        - {x: 49, y: 13}
-        - {x: 49, y: 28}
-        - {x: 35, y: 44}
+      - - {x: -25, y: 22}
+        - {x: -49, y: 9}
+        - {x: -49, y: -11}
+        - {x: -36, y: -22}
+        - {x: 38, y: -22}
+        - {x: 49, y: -9}
+        - {x: 49, y: 6}
+        - {x: 35, y: 22}
     outline: []
   spritePackingTag: 
   userData: 
