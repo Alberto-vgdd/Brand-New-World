@@ -94,7 +94,7 @@ public class ObjectGenerator : MonoBehaviour
          * THE OTHERS WILL HAVE NO POWER*/
 
 
-        int[] aux = GlobalData.GetDates(); //to store the minimmum and maximmum dates
+        int[] aux = GlobalDataScript.GetDates(); //to store the minimmum and maximmum dates
 
         for (int i = 0; i < objectsToGenerate.Length; i++)
         {
@@ -112,29 +112,29 @@ public class ObjectGenerator : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-                        obj.SetPower(GlobalData.FIRE_POWER);
+                        obj.SetPower(GlobalDataScript.FIRE_POWER);
                         break;
 
                     case 1:
-                        obj.SetPower(GlobalData.ICE_POWER);
+                        obj.SetPower(GlobalDataScript.ICE_POWER);
                         break;
 
                     case 2:
-                        obj.SetPower(GlobalData.STICKY_POWER);
+                        obj.SetPower(GlobalDataScript.STICKY_POWER);
                         break;
 
                     case 3:
-                        obj.SetPower(GlobalData.POWER_4);
+                        obj.SetPower(GlobalDataScript.POWER_4);
                         break;
                 }
             }
 
             else
-                obj.SetPower(GlobalData.NO_POWER);
+                obj.SetPower(GlobalDataScript.NO_POWER);
 
             //setting the objects fragment and date
-            obj.SetFragment(fragments[GlobalData.GetFragmentsTag()] //we get the list
-                [Random.Range(0, fragments[GlobalData.GetFragmentsTag()].Count)]); //we extract a random fragment
+            obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
+                [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment
 
             obj.SetDate(Random.Range(aux[0], aux[1]));
 

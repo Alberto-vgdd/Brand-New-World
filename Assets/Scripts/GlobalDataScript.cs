@@ -1,22 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GlobalData : MonoBehaviour {
+public class GlobalDataScript : MonoBehaviour {
 
 
     //POWER-RELATED CONSTANTS
     public const int NO_POWER = 0;
     public const int FIRE_POWER = 1;
-    public const  int ICE_POWER = 2;
+    public const int ICE_POWER = 2;
     public const int STICKY_POWER = 3;
     public const int POWER_4 = 4;
 
 
-    public  const float NORMAL_TIME_SPEED = 1f;
-    public  const float SLOW_TIME_SPEED = 0.2f;
-    public  const float PAUSED_TIME_SPEED = 0f;
+    public const float NORMAL_TIME_SPEED = 1f;
+    public const float NORMAL_FIXED_DELTA_TIME = 0.02f;
+    public const float SLOW_TIME_SPEED = 0.025f;
+    public const float SLOW_FIXED_DELTA_TIME = NORMAL_FIXED_DELTA_TIME * SLOW_TIME_SPEED;
+    public const float PAUSED_TIME_SPEED = 0f;
+    public const float PAUSED_FIXED_DELTA_TIME = 0f;
     public static bool CONTEXT_MENU;
-    public static bool PAUSE;
+    public static bool PAUSE_MENU;
 
 
 
