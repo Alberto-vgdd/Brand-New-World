@@ -14,6 +14,10 @@ public class WormScript : MonoBehaviour
     private float m_WormSpeed;
     public bool m_FacingRight;
 
+    private bool m_IsFalling;
+    private float m_MaximunFallingTime;
+    private float m_ElapsedFallingTime;
+
 
     private Rigidbody2D m_WormRigidbody;
     private BoxCollider2D m_WormCollider;
@@ -28,40 +32,28 @@ public class WormScript : MonoBehaviour
         m_WormCollider = gameObject.GetComponent<BoxCollider2D>();
         m_WormSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        //"transform.position - gameObject.GetComponent<Collider2D>().bounds.extents" calls the raycast at the end of Worm's collider.
-        RaycastHit2D RayHit = Physics2D.Raycast(transform.position - m_WormCollider.bounds.extents, Vector2.down, Mathf.Infinity);
-
-        // Check if there is any platform down the enemy.
-        if (RayHit.collider != null)
-        {
-            m_PlatformCenter = RayHit.transform.position;
-            m_PlatformLength = RayHit.collider.bounds.extents.x;
-        }
-        //If there's no platform down the Worm, the Worm will be destroyed.
-        else
-        {
-            Destroy(gameObject, 0.05f);
-        }
+        m_IsFalling = true;
+        m_ElapsedFallingTime = 0.0f;
+        m_MaximunFallingTime = 1.5f;
 
         //Set Initial m_WormSpeed And Sprite Direction; 
         if (!m_FacingRight)
         {
             m_WormSpeed *= -1;
         }
-
     }
 
 
-    // Update is called once per frame
-    void FixedUpdate ()
-   {
+
+    void FixedUpdate()
+    {
+        //Set sprite's size to the collider.
         ChangeColliderSize();
-      if ((((transform.position.x + m_WormCollider.bounds.extents.x) >= (m_PlatformCenter.x + m_PlatformLength)) && m_FacingRight) || (((transform.position.x - m_WormCollider.bounds.extents.x) <= (m_PlatformCenter.x - m_PlatformLength)) && !m_FacingRight))
-      {
-            ChangeMovementDirection();
-       }
 
+        //Worm's Main Function.
+        WormAI();
 
+        //Move the worm
         m_WormRigidbody.velocity = new Vector2(m_WormSpeed*Time.fixedDeltaTime,  m_WormRigidbody.velocity.y);
     }
 
@@ -77,6 +69,34 @@ public class WormScript : MonoBehaviour
         m_WormCollider.size = new Vector2(m_WormSpriteRenderer.bounds.size.x * 1f / transform.localScale.x, m_WormSpriteRenderer.bounds.size.y * 1f / transform.localScale.y);
     }
 
+    void WormAI()
+    {
+        if (!m_IsFalling)
+        {
+            //check if worm is about to fall, the turn worm around.
+            if ((((transform.position.x + m_WormCollider.bounds.extents.x) >= (m_PlatformCenter.x + m_PlatformLength)) && m_FacingRight) || (((transform.position.x - m_WormCollider.bounds.extents.x) <= (m_PlatformCenter.x - m_PlatformLength)) && !m_FacingRight))
+            {
+                ChangeMovementDirection();
+
+                //If worm has fallen, find a new platform for it.
+                if (transform.position.y < m_PlatformCenter.y)
+                {
+                    m_IsFalling = true;
+                    m_ElapsedFallingTime = 0.0f;
+                }
+            }
+        }
+        //If it is falling, wait until worm finds a new platform before 1.5s, if there isn't a new platform,  destroy the gameobject.
+        else
+        {
+            m_ElapsedFallingTime += Time.fixedDeltaTime;
+            if (m_ElapsedFallingTime >= m_MaximunFallingTime)
+            {
+                Destroy(gameObject, 0.5f);
+            }
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Fireball"))
@@ -89,6 +109,17 @@ public class WormScript : MonoBehaviour
             if ((collision.transform.position.x <= m_WormRigidbody.position.x && !m_FacingRight) || (collision.transform.position.x >= m_WormRigidbody.position.x && m_FacingRight))
             {
                 ChangeMovementDirection();
+            }
+        }
+
+        if (m_IsFalling)
+        {
+            if (collision.gameObject.layer == LayerMask.NameToLayer("Scenario"))
+            {
+                m_PlatformCenter = collision.transform.position;
+                m_PlatformLength = collision.collider.bounds.extents.x;
+
+                m_IsFalling = false;
             }
         }
     }

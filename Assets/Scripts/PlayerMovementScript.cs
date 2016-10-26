@@ -15,8 +15,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     //These values change how fast/high  does the player run/jump
     public float m_WalkSpeedValue;
-    public float m_CrouchSpeedValue;
-    public float m_RunSpeedValue;
+    public float m_CrouchSpeedModifier;
+    public float m_RunSpeedModifier;
     public float m_JumpSpeedValue;
 
     //How  walking/running affects  the jump.
@@ -62,13 +62,13 @@ public class PlayerMovementScript : MonoBehaviour
         m_IsWalking = 0f;
 
         m_WalkSpeedValue = 1f;
-        m_CrouchSpeedValue = 0.75f;
-        m_RunSpeedValue = 1f;
-        m_JumpSpeedValue = 3f;
+        m_CrouchSpeedModifier = 0.75f;
+        m_RunSpeedModifier = 0.5f;
+        m_JumpSpeedValue = 3.25f;
 
 
-        m_WalkJumpBoost = 1.1f;
-        m_RunJumpBoost = 1.25f;
+        m_WalkJumpBoost = 1.10f;
+        m_RunJumpBoost = 1.2f;
 
     }
 
@@ -178,11 +178,11 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (m_IsCrouching)
         {
-            m_HorizontalVelocity -= m_CrouchSpeedValue;
+            m_HorizontalVelocity -= m_CrouchSpeedModifier;
         }
         else if (m_IsRunning) 
         {
-            m_HorizontalVelocity += m_RunSpeedValue;
+            m_HorizontalVelocity += m_RunSpeedModifier;
         }
 
         

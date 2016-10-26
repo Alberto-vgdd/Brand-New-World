@@ -20,6 +20,7 @@ public class PlayerShootScript : MonoBehaviour {
     //...and which direcction should the bullet go.
     private Vector2 m_BulletDirection;
 
+
     //The texture we are going to use as crosshair.
     public Texture2D m_MouseCrosshairTexture;
 
@@ -27,18 +28,6 @@ public class PlayerShootScript : MonoBehaviour {
     //Variables to flip the character
     private bool m_FacingRight;
     private SpriteRenderer m_PlayerSprite;
-
-
-
-
-
-    //To DO: 
-    //Player's "rigth" follow mouse movement
-    //Bullets destoy after 2 seconds  (yt video)
-    //Associate Bullet prefab to this script via code, not public shit.
-    //
-    //
-    //
 
 
 	// Use this for initialization
