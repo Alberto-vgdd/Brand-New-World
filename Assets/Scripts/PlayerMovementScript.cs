@@ -104,13 +104,17 @@ public class PlayerMovementScript : MonoBehaviour
         //Change Player Animations.
         ChangeAnimation();
 
+        //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
+        FlipPlayerAnimation();
+
         //Horizontal Speed
         Move();
 
         //Vertical Speed
         Jump();
 
-
+        //This prevents Player doesn't slide on ground platforms.
+        AvoidSliding();
     }
 
 
@@ -129,11 +133,8 @@ public class PlayerMovementScript : MonoBehaviour
         //Velocity in case either m_IsWalking or m_IsRunning are true
         SetHorizontalVelocity();
 
-        //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
-        FlipPlayerAnimation();
-
         //Set the Speed
-         m_PlayerRigidbody.velocity = new Vector2(m_HorizontalVelocity, m_PlayerRigidbody.velocity.y);
+        m_PlayerRigidbody.velocity = new Vector2(m_HorizontalVelocity, m_PlayerRigidbody.velocity.y);
 
     }
 
@@ -168,8 +169,6 @@ public class PlayerMovementScript : MonoBehaviour
         {
             m_PlayerAnimator.SetBool("Crouch", false);
         }
-            
-        
     }
 
     void SetHorizontalVelocity()
@@ -210,6 +209,18 @@ public class PlayerMovementScript : MonoBehaviour
         }
     }
 
+    void AvoidSliding()
+    {
+        if (m_IsWalking == 0 && !m_IsJumping && m_IsOnGround)
+        {
+            m_PlayerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+        else
+        {
+            m_PlayerRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+    }
 
 
 
