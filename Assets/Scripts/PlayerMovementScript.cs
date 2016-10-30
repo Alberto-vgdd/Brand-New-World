@@ -15,7 +15,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     //These values change how fast/high  does the player run/jump
     public float m_WalkSpeedValue;
-    public float m_RunSpeedValue;
+    public float m_CrouchSpeedModifier;
+    public float m_RunSpeedModifier;
     public float m_JumpSpeedValue;
 
     //How  walking/running affects  the jump.
@@ -34,6 +35,7 @@ public class PlayerMovementScript : MonoBehaviour
     private bool m_IsFacingRight;
     private bool m_IsRunning;
     private float m_IsWalking; // 3 different states ---> -1, 0, 1
+    private bool m_IsCrouching;
 
 
 
@@ -56,30 +58,39 @@ public class PlayerMovementScript : MonoBehaviour
         m_IsJumping = false;
         m_IsOnGround = false;
         m_IsFacingRight = true;
+        m_IsCrouching = false;
         m_IsWalking = 0f;
 
         m_WalkSpeedValue = 1f;
-        m_RunSpeedValue = 1f;
-        m_JumpSpeedValue = 3f;
+        m_CrouchSpeedModifier = 0.75f;
+        m_RunSpeedModifier = 0.5f;
+        m_JumpSpeedValue = 3.25f;
 
 
-        m_WalkJumpBoost = 1.1f;
-        m_RunJumpBoost = 1.25f;
+        m_WalkJumpBoost = 1.10f;
+        m_RunJumpBoost = 1.2f;
 
     }
 
     // Update is called once per frame. Read any input here.
     void Update ()
     {
-        //Walking
-        m_IsWalking = Input.GetAxis("MovementAxisX");
+        //The player won't be able to move while the game is in slowmotion/paused.
+        if (!GlobalDataScript.CONTEXT_MENU && !GlobalDataScript.PAUSE_MENU)
+        {
+            //Walking
+            m_IsWalking = Input.GetAxis("MovementAxisX");
 
-        //Running
-        if(Input.GetButton("Run") == true) { m_IsRunning = true; } else { m_IsRunning = false; }
+            //Running
+            if (Input.GetButton("Run") == true) { m_IsRunning = true; } else { m_IsRunning = false; }
 
-        //Jumping
-        if (Input.GetButton("Jump") == true  && m_IsOnGround == true) { m_IsJumping = true; } else { m_IsJumping = false; }
-	}
+            //Jumping. 
+            if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_IsJumping = true;} else { m_IsJumping = false; }
+
+            //Crouching
+            if (Input.GetButton("Crouch") == true) { m_IsCrouching = true; } else { m_IsCrouching = false; }
+        }
+    }
 
     //FixedUpdate is called every frame in Time.fixedDeltaTime, physics related stuff here.
     void FixedUpdate() 
@@ -90,13 +101,18 @@ public class PlayerMovementScript : MonoBehaviour
         //This funciton updates where the player should be looking at  based on  mouse position.
         CheckFacing();
 
-        //Horizontal Speed based on inputs
+        //Change Player Animations.
+        ChangeAnimation();
+
+        //Horizontal Speed
         Move();
 
-        //Vertical Speed based on inputs
+        //Vertical Speed
         Jump();
 
+
     }
+
 
     void CheckOnGround()
     {
@@ -116,9 +132,6 @@ public class PlayerMovementScript : MonoBehaviour
         //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
         FlipPlayerAnimation();
 
-        //Change animations.
-         ChangeAnimation();
-
         //Set the Speed
          m_PlayerRigidbody.velocity = new Vector2(m_HorizontalVelocity, m_PlayerRigidbody.velocity.y);
 
@@ -135,9 +148,10 @@ public class PlayerMovementScript : MonoBehaviour
             m_PlayerAnimator.SetFloat("Speed", m_PlayerAnimator.GetFloat("Speed") * 1f);
         }        
     }
+
     void ChangeAnimation()
     {
-        if (m_IsWalking !=0)
+        if (m_IsWalking != 0)
         {
             m_PlayerAnimator.SetBool("Walk", true);
         }
@@ -145,17 +159,31 @@ public class PlayerMovementScript : MonoBehaviour
         {
             m_PlayerAnimator.SetBool("Walk", false);
         }
+
+        if (m_IsCrouching)
+        {
+            m_PlayerAnimator.SetBool("Crouch", true);
+        }
+        else
+        {
+            m_PlayerAnimator.SetBool("Crouch", false);
+        }
+            
         
     }
 
     void SetHorizontalVelocity()
     {
-            m_HorizontalVelocity = m_WalkSpeedValue; 
+        m_HorizontalVelocity = m_WalkSpeedValue; 
 
-            if (m_IsRunning) 
-            {
-                m_HorizontalVelocity += m_RunSpeedValue;
-            }
+        if (m_IsCrouching)
+        {
+            m_HorizontalVelocity -= m_CrouchSpeedModifier;
+        }
+        else if (m_IsRunning) 
+        {
+            m_HorizontalVelocity += m_RunSpeedModifier;
+        }
 
         
         m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
@@ -164,7 +192,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
-        if (m_IsJumping == true)
+        if (m_IsJumping  && m_IsOnGround)
         {
             if (m_IsRunning && m_IsWalking !=0)
             {

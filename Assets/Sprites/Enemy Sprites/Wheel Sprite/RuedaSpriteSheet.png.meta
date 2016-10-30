@@ -1,0 +1,1277 @@
+fileFormatVersion: 2
+guid: 89419805c42b68c4b9155fc99008552d
+timeCreated: 1475660311
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RuedaSpriteSheet_0
+    21300002: RuedaSpriteSheet_1
+    21300004: RuedaSpriteSheet_2
+    21300006: RuedaSpriteSheet_3
+    21300008: RuedaSpriteSheet_4
+    21300010: RuedaSpriteSheet_5
+    21300012: RuedaSpriteSheet_6
+    21300014: RuedaSpriteSheet_7
+    21300016: RuedaSpriteSheet_8
+    21300018: RuedaSpriteSheet_9
+    21300020: RuedaSpriteSheet_10
+    21300022: RuedaSpriteSheet_11
+    21300024: RuedaSpriteSheet_12
+    21300026: RuedaSpriteSheet_13
+    21300028: RuedaSpriteSheet_14
+    21300030: RuedaSpriteSheet_15
+    21300032: RuedaSpriteSheet_16
+    21300034: RuedaSpriteSheet_17
+    21300036: RuedaSpriteSheet_18
+    21300038: RuedaSpriteSheet_19
+    21300040: RuedaSpriteSheet_20
+    21300042: RuedaSpriteSheet_21
+    21300044: RuedaSpriteSheet_22
+    21300046: RuedaSpriteSheet_23
+    21300048: RuedaSpriteSheet_24
+    21300050: RuedaSpriteSheet_25
+    21300052: RuedaSpriteSheet_26
+    21300054: RuedaSpriteSheet_27
+    21300056: RuedaSpriteSheet_28
+    21300058: RuedaSpriteSheet_29
+    21300060: RuedaSpriteSheet_30
+    21300062: RuedaSpriteSheet_31
+    21300064: RuedaSpriteSheet_32
+    21300066: RuedaSpriteSheet_33
+    21300068: RuedaSpriteSheet_34
+    21300070: RuedaSpriteSheet_35
+    21300072: RuedaSpriteSheet_36
+    21300074: RuedaSpriteSheet_37
+    21300076: RuedaSpriteSheet_38
+    21300078: RuedaSpriteSheet_39
+    21300080: RuedaSpriteSheet_40
+    21300082: RuedaSpriteSheet_41
+    21300084: RuedaSpriteSheet_42
+    21300086: RuedaSpriteSheet_43
+    21300088: RuedaSpriteSheet_44
+    21300090: RuedaSpriteSheet_45
+    21300092: RuedaSpriteSheet_46
+    21300094: RuedaSpriteSheet_47
+    21300096: RuedaSpriteSheet_48
+    21300098: RuedaSpriteSheet_49
+    21300100: RuedaSpriteSheet_50
+    21300102: RuedaSpriteSheet_51
+    21300104: RuedaSpriteSheet_52
+    21300106: RuedaSpriteSheet_53
+    21300108: RuedaSpriteSheet_54
+    21300110: RuedaSpriteSheet_55
+    21300112: RuedaSpriteSheet_56
+    21300114: RuedaSpriteSheet_57
+    21300116: RuedaSpriteSheet_58
+    21300118: RuedaSpriteSheet_59
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RuedaSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 29}
+        - {x: -23, y: 28}
+        - {x: -29, y: 24}
+        - {x: -29, y: -20}
+        - {x: -24, y: -29}
+        - {x: 20, y: -29}
+        - {x: 23, y: -28}
+        - {x: 29, y: -13}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 22}
+        - {x: -29, y: -28}
+        - {x: -28, y: -29}
+        - {x: 20, y: -29}
+        - {x: 29, y: -24}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -16}
+        - {x: -24, y: -29}
+        - {x: 15, y: -29}
+        - {x: 29, y: -22}
+        - {x: 29, y: 20}
+        - {x: 24, y: 29}
+    - name: RuedaSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 451
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 29}
+        - {x: -24, y: 29}
+        - {x: -29, y: 19}
+        - {x: -29, y: -22}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 16, y: -29}
+        - {x: 26, y: -21}
+        - {x: 29, y: -18}
+        - {x: 29, y: 18}
+    - name: RuedaSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -18}
+        - {x: -15, y: -29}
+        - {x: 17, y: -29}
+        - {x: 29, y: -19}
+        - {x: 29, y: 19}
+        - {x: 26, y: 29}
+    - name: RuedaSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 29}
+        - {x: -20, y: 29}
+        - {x: -29, y: 16}
+        - {x: -29, y: -14}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 19, y: -29}
+        - {x: 27, y: -22}
+        - {x: 29, y: -17}
+        - {x: 29, y: 21}
+    - name: RuedaSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -24}
+        - {x: -18, y: -29}
+        - {x: 21, y: -29}
+        - {x: 29, y: -20}
+        - {x: 29, y: 17}
+        - {x: 19, y: 29}
+    - name: RuedaSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 387
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 29}
+        - {x: -23, y: 28}
+        - {x: -29, y: 24}
+        - {x: -29, y: -20}
+        - {x: -24, y: -29}
+        - {x: 20, y: -29}
+        - {x: 23, y: -28}
+        - {x: 29, y: -13}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 22}
+        - {x: -29, y: -28}
+        - {x: -28, y: -29}
+        - {x: 20, y: -29}
+        - {x: 29, y: -24}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -16}
+        - {x: -24, y: -29}
+        - {x: 15, y: -29}
+        - {x: 29, y: -22}
+        - {x: 29, y: 20}
+        - {x: 24, y: 29}
+    - name: RuedaSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 323
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 29}
+        - {x: -20, y: 29}
+        - {x: -29, y: 16}
+        - {x: -29, y: -14}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 19, y: -29}
+        - {x: 27, y: -22}
+        - {x: 29, y: -17}
+        - {x: 29, y: 21}
+    - name: RuedaSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -24}
+        - {x: -18, y: -29}
+        - {x: 21, y: -29}
+        - {x: 29, y: -20}
+        - {x: 29, y: 17}
+        - {x: 19, y: 29}
+    - name: RuedaSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 29}
+        - {x: -17, y: 29}
+        - {x: -29, y: 25}
+        - {x: -29, y: -25}
+        - {x: -18, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -23}
+        - {x: 29, y: 25}
+    - name: RuedaSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 22}
+        - {x: -29, y: -24}
+        - {x: -23, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -22}
+        - {x: 29, y: 18}
+        - {x: 20, y: 29}
+    - name: RuedaSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 29}
+        - {x: -23, y: 28}
+        - {x: -29, y: 24}
+        - {x: -29, y: -20}
+        - {x: -24, y: -29}
+        - {x: 20, y: -29}
+        - {x: 23, y: -28}
+        - {x: 29, y: -13}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 22}
+        - {x: -29, y: -28}
+        - {x: -28, y: -29}
+        - {x: 20, y: -29}
+        - {x: 29, y: -24}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -16}
+        - {x: -24, y: -29}
+        - {x: 15, y: -29}
+        - {x: 29, y: -22}
+        - {x: 29, y: 20}
+        - {x: 24, y: 29}
+    - name: RuedaSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 195
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 29}
+        - {x: -20, y: 29}
+        - {x: -29, y: 16}
+        - {x: -29, y: -14}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 19, y: -29}
+        - {x: 27, y: -22}
+        - {x: 29, y: -17}
+        - {x: 29, y: 21}
+    - name: RuedaSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -24}
+        - {x: -18, y: -29}
+        - {x: 21, y: -29}
+        - {x: 29, y: -20}
+        - {x: 29, y: 17}
+        - {x: 19, y: 29}
+    - name: RuedaSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 29}
+        - {x: -23, y: 28}
+        - {x: -29, y: 24}
+        - {x: -29, y: -20}
+        - {x: -24, y: -29}
+        - {x: 20, y: -29}
+        - {x: 23, y: -28}
+        - {x: 29, y: -13}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 22}
+        - {x: -29, y: -28}
+        - {x: -28, y: -29}
+        - {x: 20, y: -29}
+        - {x: 29, y: -24}
+        - {x: 29, y: 17}
+        - {x: 16, y: 29}
+    - name: RuedaSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 131
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 29}
+        - {x: -19, y: 29}
+        - {x: -29, y: 19}
+        - {x: -29, y: -13}
+        - {x: -23, y: -29}
+        - {x: 26, y: -29}
+        - {x: 29, y: -18}
+        - {x: 29, y: 18}
+    - name: RuedaSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 29}
+        - {x: -24, y: 29}
+        - {x: -29, y: 19}
+        - {x: -29, y: -22}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 16, y: -29}
+        - {x: 26, y: -21}
+        - {x: 29, y: -18}
+        - {x: 29, y: 18}
+    - name: RuedaSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -16}
+        - {x: -24, y: -29}
+        - {x: 15, y: -29}
+        - {x: 29, y: -22}
+        - {x: 29, y: 20}
+        - {x: 24, y: 29}
+    - name: RuedaSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 29}
+        - {x: -20, y: 29}
+        - {x: -29, y: 16}
+        - {x: -29, y: -14}
+        - {x: -23, y: -28}
+        - {x: -17, y: -29}
+        - {x: 19, y: -29}
+        - {x: 27, y: -22}
+        - {x: 29, y: -17}
+        - {x: 29, y: 21}
+    - name: RuedaSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 3
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -24}
+        - {x: -18, y: -29}
+        - {x: 21, y: -29}
+        - {x: 29, y: -20}
+        - {x: 29, y: 17}
+        - {x: 19, y: 29}
+    - name: RuedaSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    - name: RuedaSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 29}
+        - {x: -29, y: 20}
+        - {x: -29, y: -23}
+        - {x: -27, y: -29}
+        - {x: 27, y: -29}
+        - {x: 29, y: -25}
+        - {x: 29, y: 17}
+        - {x: 25, y: 29}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
