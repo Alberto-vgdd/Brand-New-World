@@ -11,6 +11,7 @@ public class ObjectGenerator : MonoBehaviour
     public int actual;
     public string[] auxiliar, aux;
     public string prueba;
+    public int asf;
 
 
 
@@ -25,11 +26,12 @@ public class ObjectGenerator : MonoBehaviour
         for (int i = 0; i < 20; i++)
         {
             aux = new System.Collections.Generic.List<string>();
-            fragments[i] = aux; ;
+            fragments[i] = aux;
         }
 
         loadFragments();
-        //prueba = fragments[2][1];
+        prueba = fragments[1][0];
+        InitializeObjects();
     }
 
 
@@ -87,57 +89,67 @@ public class ObjectGenerator : MonoBehaviour
     }
 
 
-    public void InitializeObjects(GameObject[] objectsToGenerate)
+    public void InitializeObjects()
     {
+        GameObject auxObj;
+        Object[] objectArray;
+        int[] aux = GlobalDataScript.GetDates();
+        int iteration = 0, random;
+        asf = 0;
+        
+        //to store the minimmum and maximmum dates
         /*we ASSUME that every gameobject has an "object" script in it and a sprite renderer whoose image can be changed
          * THE FOUR FIRST OBJECTS WILL CONTAIN THE POWERS IN THE SAME ORDER THEY ARE DECLARED IN GLOBAL DATA
-         * THE OTHERS WILL HAVE NO POWER*/
+         * THE OTHERS WILL HAVE NO POWERs*/
 
+        objectArray = GetComponentsInChildren<Object>();    
 
-        int[] aux = GlobalDataScript.GetDates(); //to store the minimmum and maximmum dates
-
-        for (int i = 0; i < objectsToGenerate.Length; i++)
+        foreach(Object obj in objectArray)
         {
-            //code to change the objects sprite
+                //code to change the objects sprite
 
 
-            //code to give it a fragment, a date and a power if it unlocks one
+               // code to give it a fragment, a date and a power if it unlocks one
+            
+            random = Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count); //calculates a random number
+            obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()][0]); //sets the random fragment
+            fragments[GlobalDataScript.GetFragmentsTag()].Remove(obj.GetFragment()); //deletes that fragment from the list
+            obj.SetFragment(prueba);
 
-            Object obj = objectsToGenerate[i].GetComponent<Object>();
 
-
-            //DEPENDING ON THE ORDER WE GIVE THE OBJECT A POWER OR NONE
-            if (i < 4)
-            {
-                switch (i)
+                //DEPENDING ON THE ORDER WE GIVE THE OBJECT A POWER OR NONE
+                if (iteration < 4)
                 {
-                    case 0:
-                        obj.SetPower(GlobalDataScript.FIRE_POWER);
-                        break;
+                    switch (iteration)
+                    {
+                        case 0:
+                            obj.SetPower(GlobalDataScript.FIRE_POWER);
+                            break;
 
-                    case 1:
-                        obj.SetPower(GlobalDataScript.ICE_POWER);
-                        break;
+                        case 1:
+                            obj.SetPower(GlobalDataScript.ICE_POWER);
+                            break;
 
-                    case 2:
-                        obj.SetPower(GlobalDataScript.STICKY_POWER);
-                        break;
+                        case 2:
+                            obj.SetPower(GlobalDataScript.STICKY_POWER);
+                            break;
 
-                    case 3:
-                        obj.SetPower(GlobalDataScript.POWER_4);
-                        break;
+                        case 3:
+                            obj.SetPower(GlobalDataScript.POWER_4);
+                            break;
+                    }
                 }
-            }
 
-            else
-                obj.SetPower(GlobalDataScript.NO_POWER);
+                else
+                    obj.SetPower(GlobalDataScript.NO_POWER);
 
-            //setting the objects fragment and date
-            obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
-                [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment
+                //setting the objects fragment and date
+                obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
+                    [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment
 
-            obj.SetDate(Random.Range(aux[0], aux[1]));
+                obj.SetDate(Random.Range(aux[0], aux[1]));
 
+                iteration++;
         }
     }
 }

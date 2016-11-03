@@ -20,12 +20,13 @@ public class GlobalDataScript : MonoBehaviour {
     public const float PAUSED_FIXED_DELTA_TIME = 0f;
     public static bool CONTEXT_MENU;
     public static bool PAUSE_MENU;
+    public static bool CROUCHING;
 
 
 
     //data that has special conditions to be changed
-    private static bool tags_set;
-    private static int fragmentTags;
+    private static bool tags_set = true;
+    private static int fragmentTags = 1;
 
     private static int minimumDate;
     private static int maximumDate;

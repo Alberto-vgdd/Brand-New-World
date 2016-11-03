@@ -6,8 +6,8 @@ public class CanvasControllerScript: MonoBehaviour {
     private GameObject m_Canvas;
     private GameObject m_ContextMenu;
     private RectTransform m_ContextMenuTransform;
-    private bool m_OpenContextMenu;
     private bool m_PauseGame;
+    public bool prueba;
  
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
@@ -20,33 +20,44 @@ public class CanvasControllerScript: MonoBehaviour {
         InitializeVariables();
         PlaceRectTransform();
         HideContextMenu();
+        setCenter();
+    }
+
+    private void setCenter()
+    {
+        
     }
 
     void Update()
     {
-        //Check if the Context Menu Should be Displayed
-        if(Input.GetButton("BallsMenu") == true) { m_OpenContextMenu = true; } else { m_OpenContextMenu = false; }
+        if (!GlobalDataScript.PAUSE_MENU)
+        {
+            //Check if the Context Menu Should be Displayed
+            if (Input.GetButtonDown("BallsMenu") == true)
+                ShowContextMenu();
+
+            else if (Input.GetButtonUp("BallsMenu"))
+                HideContextMenu();
+        }
+
+        if (Input.GetButtonDown("Pause"))
+        {
+
+            if (!GlobalDataScript.PAUSE_MENU)
+                PauseGame();
+
+            else if (GlobalDataScript.PAUSE_MENU)
+                ResumeGame();
+        }
     }
 
-    void FixedUpdate()
-    {
-        if (m_OpenContextMenu && !GlobalDataScript.CONTEXT_MENU)
-        {
-            ShowContextMenu();
-        }
-        else if (!m_OpenContextMenu && GlobalDataScript.CONTEXT_MENU)
-        {
-            HideContextMenu();
-        }
-    }
+
 
     void  InitializeVariables()
     {
         m_Canvas = GameObject.Find("Canvas");
         m_ContextMenu = GameObject.Find("ContextMenu");
         m_ContextMenuTransform = m_ContextMenu.GetComponent<RectTransform>();
-
-        m_OpenContextMenu = false;
         m_PauseGame = false;
 
         //Center Context Menu.
@@ -85,8 +96,27 @@ public class CanvasControllerScript: MonoBehaviour {
     void ResumeGame()
     {
         GlobalDataScript.PAUSE_MENU = false;
-        Time.timeScale = GlobalDataScript.NORMAL_TIME_SPEED;
-        Time.fixedDeltaTime = GlobalDataScript.NORMAL_FIXED_DELTA_TIME;
+
+        if (GlobalDataScript.CONTEXT_MENU)
+        {
+            if (!Input.GetButton("BallsMenu"))
+            {
+                HideContextMenu();
+                Time.timeScale = GlobalDataScript.NORMAL_TIME_SPEED;
+                Time.fixedDeltaTime = GlobalDataScript.NORMAL_FIXED_DELTA_TIME;
+            }
+            else
+            {
+                Time.timeScale = GlobalDataScript.SLOW_TIME_SPEED;
+                Time.fixedDeltaTime = GlobalDataScript.SLOW_FIXED_DELTA_TIME;
+            }
+        }
+
+        if (GlobalDataScript.CROUCHING)
+        {
+            if (!Input.GetButton("Crouch"))
+                GlobalDataScript.CROUCHING = false;
+        }
     }
 
     void PlaceRectTransform()
@@ -95,5 +125,11 @@ public class CanvasControllerScript: MonoBehaviour {
         {
             m_ContextMenuTransform.FindChild(""+i).GetComponentInChildren<RectTransform>().anchoredPosition = new Vector2(150f * Mathf.Sin(Mathf.Deg2Rad * 45f*i), 150f * Mathf.Cos(Mathf.Deg2Rad * 45f * i));
         }
+    }
+
+    public void NewFragment(string fragment, int date)
+    {
+        //aqui se alamcenara el fragmento recogido para mostrarlo en la crono-linea
+        prueba = !prueba;
     }
 }

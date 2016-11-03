@@ -1,0 +1,10 @@
+TEXTO DE PRUEBA//PROHIBIDÍSIMO USAR '-' EXCEPTO EN LA LINEA 'ETIQUETA'
+
+ETIQUETA-1
+Objeto insignia del Consejo Mayor, organo responsable del control del mundo durante la edade dorada y próspera. Se dice que lo único comparable a la sabiduría de sus miembros era la fealdad de sus almas.
+
+ETIQUETA-2
+El incidente que desató la guerra fue tan solo la gota que colmó el vaso. Aquellos llamados los "ofendidos" llevan esto como símbolo de su furia.
+
+ETIQUETA-1-2
+Los pocos que quedaron forjaron este objeto como mensaje a generaciones venideras para evitar los errores del pasado. Voces arcaicas parecen oirse cuando uno se lo acerca. Tristemente, nunca serán escuchadas.
