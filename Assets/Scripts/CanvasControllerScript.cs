@@ -7,6 +7,8 @@ public class CanvasControllerScript: MonoBehaviour {
     private GameObject m_ContextMenu;
     private RectTransform m_ContextMenuTransform;
     private bool m_PauseGame;
+    private float centerX, centerY;
+    private float clickX, clickY;
     public bool prueba;
  
 
@@ -49,6 +51,30 @@ public class CanvasControllerScript: MonoBehaviour {
             else if (GlobalDataScript.PAUSE_MENU)
                 ResumeGame();
         }
+
+        if (Input.GetButtonUp("BallsMenu"))
+        {
+            clickX = Input.mousePosition.x;
+            clickY = Input.mousePosition.y;
+            determineSelection();
+        }
+    }
+
+    private void determineSelection()
+    {
+        float centerLineLength;
+        float centerToClickLength;
+        Vector2 centerToClick;
+
+        //2nd and 4th quadrant
+        if ((clickX > centerX && clickY < centerY) || (clickX < centerX && clickY > centerY))
+            centerLineLength = Mathf.Abs(clickX - centerX);
+        //1st and 3rd quadrant
+        else
+            centerLineLength = Mathf.Abs(clickY - centerY);
+
+        centerToClick = new Vector2(clickX - centerX, clickY - centerY);
+        centerToClickLength = centerToClick.magnitude;
     }
 
 
@@ -61,7 +87,9 @@ public class CanvasControllerScript: MonoBehaviour {
         m_PauseGame = false;
 
         //Center Context Menu.
-        m_ContextMenuTransform.position = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+        centerX = Screen.width / 2f;
+        centerY = Screen.height / 2f;
+        m_ContextMenuTransform.position = new Vector3(centerX, centerY, 0);
     }
 
     public void HideContextMenu()
@@ -110,6 +138,11 @@ public class CanvasControllerScript: MonoBehaviour {
                 Time.timeScale = GlobalDataScript.SLOW_TIME_SPEED;
                 Time.fixedDeltaTime = GlobalDataScript.SLOW_FIXED_DELTA_TIME;
             }
+        }
+        else
+        {
+            Time.timeScale = GlobalDataScript.NORMAL_TIME_SPEED;
+            Time.fixedDeltaTime = GlobalDataScript.NORMAL_FIXED_DELTA_TIME;
         }
 
         if (GlobalDataScript.CROUCHING)
