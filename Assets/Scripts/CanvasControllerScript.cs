@@ -10,6 +10,7 @@ public class CanvasControllerScript: MonoBehaviour {
     private float centerX, centerY;
     private float clickX, clickY;
     public bool prueba;
+    public float seleccion;
  
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
@@ -22,13 +23,9 @@ public class CanvasControllerScript: MonoBehaviour {
         InitializeVariables();
         PlaceRectTransform();
         HideContextMenu();
-        setCenter();
     }
 
-    private void setCenter()
-    {
-        
-    }
+
 
     void Update()
     {
@@ -64,23 +61,56 @@ public class CanvasControllerScript: MonoBehaviour {
     {
         float centerLineLength;
         float centerToClickLength;
+        float angle;
+        int quadrant;
         Vector2 centerToClick;
 
         //2nd and 4th quadrant
         if ((clickX > centerX && clickY < centerY) || (clickX < centerX && clickY > centerY))
+        {
             centerLineLength = Mathf.Abs(clickX - centerX);
+            if (clickX > centerX) //2nd
+                quadrant = 2;
+            else //4th
+                quadrant = 4;
+        }
         //1st and 3rd quadrant
         else
+        {
             centerLineLength = Mathf.Abs(clickY - centerY);
+            if (clickX > centerX) //1st
+                quadrant = 1;
+            else //3rd
+                quadrant = 4;
+        }
 
         centerToClick = new Vector2(clickX - centerX, clickY - centerY);
         centerToClickLength = centerToClick.magnitude;
+        angle = Mathf.Rad2Deg * Mathf.Acos(centerLineLength / centerToClickLength);
+
+        switch (quadrant) //we add the angle corresponding to the adittion of the quadrants before
+        {
+            case 1:
+                break;
+            case 2:
+                angle += 90;
+                break;
+            case 3:
+                angle += 180;
+                break;
+            case 4:
+                angle += 270;
+                break;
+        }
+        
+        seleccion = angle;
     }
 
 
 
     void  InitializeVariables()
     {
+        seleccion = 0;
         m_Canvas = GameObject.Find("Canvas");
         m_ContextMenu = GameObject.Find("ContextMenu");
         m_ContextMenuTransform = m_ContextMenu.GetComponent<RectTransform>();
