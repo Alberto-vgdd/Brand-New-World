@@ -29,7 +29,9 @@ public class PlayerMovementScript : MonoBehaviour
 
     //Variables to manage jumping & falling.
     private bool m_IsOnGround;
+    private bool m_HasJump;
     private bool m_IsJumping;
+    private bool m_IsFalling;
 
     //Variables to reverse animation speed, and change between movement animations
     private bool m_IsFacingRight;
@@ -85,7 +87,7 @@ public class PlayerMovementScript : MonoBehaviour
             if (Input.GetButton("Run") == true) { m_IsRunning = true; } else { m_IsRunning = false; }
 
             //Jumping. 
-            if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_IsJumping = true;} else { m_IsJumping = false; }
+            if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_HasJump = true;} else { m_HasJump = false; }
 
             //Crouching
             if (Input.GetButton("Crouch") == true) { m_IsCrouching = true; } else { m_IsCrouching = false; }
@@ -121,6 +123,11 @@ public class PlayerMovementScript : MonoBehaviour
     void CheckOnGround()
     {
         m_IsOnGround = m_PlayerFeetScript.GetOnGround();
+
+        if (m_IsOnGround && m_IsJumping)
+        {
+            m_IsJumping = false;
+        }
     }
 
     void CheckFacing()
@@ -152,6 +159,14 @@ public class PlayerMovementScript : MonoBehaviour
 
     void ChangeAnimation()
     {
+        if (m_IsJumping)
+        {
+            m_PlayerAnimator.SetBool("Jump", true);
+        }
+        else
+        {
+            m_PlayerAnimator.SetBool("Jump", false);
+        }
         if (m_IsWalking != 0)
         {
             m_PlayerAnimator.SetBool("Walk", true);
@@ -191,7 +206,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
-        if (m_IsJumping  && m_IsOnGround)
+        if (m_HasJump && m_IsOnGround)
         {
             if (m_IsRunning && m_IsWalking !=0)
             {
@@ -205,6 +220,8 @@ public class PlayerMovementScript : MonoBehaviour
             {
                 m_PlayerRigidbody.velocity = new Vector2(m_PlayerRigidbody.velocity.x, m_JumpSpeedValue);
             }
+
+            m_IsJumping = true;
 
         }
     }

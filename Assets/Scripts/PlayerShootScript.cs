@@ -101,9 +101,10 @@ public class PlayerShootScript : MonoBehaviour {
     }
     void FlipCharacter()
     {
+        m_FacingRight = !m_FacingRight;
         m_PlayerSprite.flipX = m_FacingRight;
         m_HandTransform.localPosition = new Vector3(-m_HandTransform.localPosition.x, m_HandTransform.localPosition.y, m_HandTransform.localPosition.z);
-        m_FacingRight = !m_FacingRight;
+        
     }
 
 
