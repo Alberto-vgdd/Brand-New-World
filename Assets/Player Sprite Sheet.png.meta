@@ -1,0 +1,6382 @@
+fileFormatVersion: 2
+guid: 9648c097188b8184fb80cb14b8e52a07
+timeCreated: 1479116252
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player Sprite Sheet_0
+    21300002: Player Sprite Sheet_1
+    21300004: Player Sprite Sheet_2
+    21300006: Player Sprite Sheet_3
+    21300008: Player Sprite Sheet_4
+    21300010: Player Sprite Sheet_5
+    21300012: Player Sprite Sheet_6
+    21300014: Player Sprite Sheet_7
+    21300016: Player Sprite Sheet_8
+    21300018: Player Sprite Sheet_9
+    21300020: Player Sprite Sheet_10
+    21300022: Player Sprite Sheet_11
+    21300024: Player Sprite Sheet_12
+    21300026: Player Sprite Sheet_13
+    21300028: Player Sprite Sheet_14
+    21300030: Player Sprite Sheet_15
+    21300032: Player Sprite Sheet_16
+    21300034: Player Sprite Sheet_17
+    21300036: Player Sprite Sheet_18
+    21300038: Player Sprite Sheet_19
+    21300040: Player Sprite Sheet_20
+    21300042: Player Sprite Sheet_21
+    21300044: Player Sprite Sheet_22
+    21300046: Player Sprite Sheet_23
+    21300048: Player Sprite Sheet_24
+    21300050: Player Sprite Sheet_25
+    21300052: Player Sprite Sheet_26
+    21300054: Player Sprite Sheet_27
+    21300056: Player Sprite Sheet_28
+    21300058: Player Sprite Sheet_29
+    21300060: Player Sprite Sheet_30
+    21300062: Player Sprite Sheet_31
+    21300064: Player Sprite Sheet_32
+    21300066: Player Sprite Sheet_33
+    21300068: Player Sprite Sheet_34
+    21300070: Player Sprite Sheet_35
+    21300072: Player Sprite Sheet_36
+    21300074: Player Sprite Sheet_37
+    21300076: Player Sprite Sheet_38
+    21300078: Player Sprite Sheet_39
+    21300080: Player Sprite Sheet_40
+    21300082: Player Sprite Sheet_41
+    21300084: Player Sprite Sheet_42
+    21300086: Player Sprite Sheet_43
+    21300088: Player Sprite Sheet_44
+    21300090: Player Sprite Sheet_45
+    21300092: Player Sprite Sheet_46
+    21300094: Player Sprite Sheet_47
+    21300096: Player Sprite Sheet_48
+    21300098: Player Sprite Sheet_49
+    21300100: Player Sprite Sheet_50
+    21300102: Player Sprite Sheet_51
+    21300104: Player Sprite Sheet_52
+    21300106: Player Sprite Sheet_53
+    21300108: Player Sprite Sheet_54
+    21300110: Player Sprite Sheet_55
+    21300112: Player Sprite Sheet_56
+    21300114: Player Sprite Sheet_57
+    21300116: Player Sprite Sheet_58
+    21300118: Player Sprite Sheet_59
+    21300120: Player Sprite Sheet_60
+    21300122: Player Sprite Sheet_61
+    21300124: Player Sprite Sheet_62
+    21300126: Player Sprite Sheet_63
+    21300128: Player Sprite Sheet_64
+    21300130: Player Sprite Sheet_65
+    21300132: Player Sprite Sheet_66
+    21300134: Player Sprite Sheet_67
+    21300136: Player Sprite Sheet_68
+    21300138: Player Sprite Sheet_69
+    21300140: Player Sprite Sheet_70
+    21300142: Player Sprite Sheet_71
+    21300144: Player Sprite Sheet_72
+    21300146: Player Sprite Sheet_73
+    21300148: Player Sprite Sheet_74
+    21300150: Player Sprite Sheet_75
+    21300152: Player Sprite Sheet_76
+    21300154: Player Sprite Sheet_77
+    21300156: Player Sprite Sheet_78
+    21300158: Player Sprite Sheet_79
+    21300160: Player Sprite Sheet_80
+    21300162: Player Sprite Sheet_81
+    21300164: Player Sprite Sheet_82
+    21300166: Player Sprite Sheet_83
+    21300168: Player Sprite Sheet_84
+    21300170: Player Sprite Sheet_85
+    21300172: Player Sprite Sheet_86
+    21300174: Player Sprite Sheet_87
+    21300176: Player Sprite Sheet_88
+    21300178: Player Sprite Sheet_89
+    21300180: Player Sprite Sheet_90
+    21300182: Player Sprite Sheet_91
+    21300184: Player Sprite Sheet_92
+    21300186: Player Sprite Sheet_93
+    21300188: Player Sprite Sheet_94
+    21300190: Player Sprite Sheet_95
+    21300192: Player Sprite Sheet_96
+    21300194: Player Sprite Sheet_97
+    21300196: Player Sprite Sheet_98
+    21300198: Player Sprite Sheet_99
+    21300200: Player Sprite Sheet_100
+    21300202: Player Sprite Sheet_101
+    21300204: Player Sprite Sheet_102
+    21300206: Player Sprite Sheet_103
+    21300208: Player Sprite Sheet_104
+    21300210: Player Sprite Sheet_105
+    21300212: Player Sprite Sheet_106
+    21300214: Player Sprite Sheet_107
+    21300216: Player Sprite Sheet_108
+    21300218: Player Sprite Sheet_109
+    21300220: Player Sprite Sheet_110
+    21300222: Player Sprite Sheet_111
+    21300224: Player Sprite Sheet_112
+    21300226: Player Sprite Sheet_113
+    21300228: Player Sprite Sheet_114
+    21300230: Player Sprite Sheet_115
+    21300232: Player Sprite Sheet_116
+    21300234: Player Sprite Sheet_117
+    21300236: Player Sprite Sheet_118
+    21300238: Player Sprite Sheet_119
+    21300240: Player Sprite Sheet_120
+    21300242: Player Sprite Sheet_121
+    21300244: Player Sprite Sheet_122
+    21300246: Player Sprite Sheet_123
+    21300248: Player Sprite Sheet_124
+    21300250: Player Sprite Sheet_125
+    21300252: Player Sprite Sheet_126
+    21300254: Player Sprite Sheet_127
+    21300256: Player Sprite Sheet_128
+    21300258: Player Sprite Sheet_129
+    21300260: Player Sprite Sheet_130
+    21300262: Player Sprite Sheet_131
+    21300264: Player Sprite Sheet_132
+    21300266: Player Sprite Sheet_133
+    21300268: Player Sprite Sheet_134
+    21300270: Player Sprite Sheet_135
+    21300272: Player Sprite Sheet_136
+    21300274: Player Sprite Sheet_137
+    21300276: Player Sprite Sheet_138
+    21300278: Player Sprite Sheet_139
+    21300280: Player Sprite Sheet_140
+    21300282: Player Sprite Sheet_141
+    21300284: Player Sprite Sheet_142
+    21300286: Player Sprite Sheet_143
+    21300288: Player Sprite Sheet_144
+    21300290: Player Sprite Sheet_145
+    21300292: Player Sprite Sheet_146
+    21300294: Player Sprite Sheet_147
+    21300296: Player Sprite Sheet_148
+    21300298: Player Sprite Sheet_149
+    21300300: Player Sprite Sheet_150
+    21300302: Player Sprite Sheet_151
+    21300304: Player Sprite Sheet_152
+    21300306: Player Sprite Sheet_153
+    21300308: Player Sprite Sheet_154
+    21300310: Player Sprite Sheet_155
+    21300312: Player Sprite Sheet_156
+    21300314: Player Sprite Sheet_157
+    21300316: Player Sprite Sheet_158
+    21300318: Player Sprite Sheet_159
+    21300320: Player Sprite Sheet_160
+    21300322: Player Sprite Sheet_161
+    21300324: Player Sprite Sheet_162
+    21300326: Player Sprite Sheet_163
+    21300328: Player Sprite Sheet_164
+    21300330: Player Sprite Sheet_165
+    21300332: Player Sprite Sheet_166
+    21300334: Player Sprite Sheet_167
+    21300336: Player Sprite Sheet_168
+    21300338: Player Sprite Sheet_169
+    21300340: Player Sprite Sheet_170
+    21300342: Player Sprite Sheet_171
+    21300344: Player Sprite Sheet_172
+    21300346: Player Sprite Sheet_173
+    21300348: Player Sprite Sheet_174
+    21300350: Player Sprite Sheet_175
+    21300352: Player Sprite Sheet_176
+    21300354: Player Sprite Sheet_177
+    21300356: Player Sprite Sheet_178
+    21300358: Player Sprite Sheet_179
+    21300360: Player Sprite Sheet_180
+    21300362: Player Sprite Sheet_181
+    21300364: Player Sprite Sheet_182
+    21300366: Player Sprite Sheet_183
+    21300368: Player Sprite Sheet_184
+    21300370: Player Sprite Sheet_185
+    21300372: Player Sprite Sheet_186
+    21300374: Player Sprite Sheet_187
+    21300376: Player Sprite Sheet_188
+    21300378: Player Sprite Sheet_189
+    21300380: Player Sprite Sheet_190
+    21300382: Player Sprite Sheet_191
+    21300384: Player Sprite Sheet_192
+    21300386: Player Sprite Sheet_193
+    21300388: Player Sprite Sheet_194
+    21300390: Player Sprite Sheet_195
+    21300392: Player Sprite Sheet_196
+    21300394: Player Sprite Sheet_197
+    21300396: Player Sprite Sheet_198
+    21300398: Player Sprite Sheet_199
+    21300400: Player Sprite Sheet_200
+    21300402: Player Sprite Sheet_201
+    21300404: Player Sprite Sheet_202
+    21300406: Player Sprite Sheet_203
+    21300408: Player Sprite Sheet_204
+    21300410: Player Sprite Sheet_205
+    21300412: Player Sprite Sheet_206
+    21300414: Player Sprite Sheet_207
+    21300416: Player Sprite Sheet_208
+    21300418: Player Sprite Sheet_209
+    21300420: Player Sprite Sheet_210
+    21300422: Player Sprite Sheet_211
+    21300424: Player Sprite Sheet_212
+    21300426: Player Sprite Sheet_213
+    21300428: Player Sprite Sheet_214
+    21300430: Player Sprite Sheet_215
+    21300432: Player Sprite Sheet_216
+    21300434: Player Sprite Sheet_217
+    21300436: Player Sprite Sheet_218
+    21300438: Player Sprite Sheet_219
+    21300440: Player Sprite Sheet_220
+    21300442: Player Sprite Sheet_221
+    21300444: Player Sprite Sheet_222
+    21300446: Player Sprite Sheet_223
+    21300448: Player Sprite Sheet_224
+    21300450: Player Sprite Sheet_225
+    21300452: Player Sprite Sheet_226
+    21300454: Player Sprite Sheet_227
+    21300456: Player Sprite Sheet_228
+    21300458: Player Sprite Sheet_229
+    21300460: Player Sprite Sheet_230
+    21300462: Player Sprite Sheet_231
+    21300464: Player Sprite Sheet_232
+    21300466: Player Sprite Sheet_233
+    21300468: Player Sprite Sheet_234
+    21300470: Player Sprite Sheet_235
+    21300472: Player Sprite Sheet_236
+    21300474: Player Sprite Sheet_237
+    21300476: Player Sprite Sheet_238
+    21300478: Player Sprite Sheet_239
+    21300480: Player Sprite Sheet_240
+    21300482: Player Sprite Sheet_241
+    21300484: Player Sprite Sheet_242
+    21300486: Player Sprite Sheet_243
+    21300488: Player Sprite Sheet_244
+    21300490: Player Sprite Sheet_245
+    21300492: Player Sprite Sheet_246
+    21300494: Player Sprite Sheet_247
+    21300496: Player Sprite Sheet_248
+    21300498: Player Sprite Sheet_249
+    21300500: Player Sprite Sheet_250
+    21300502: Player Sprite Sheet_251
+    21300504: Player Sprite Sheet_252
+    21300506: Player Sprite Sheet_253
+    21300508: Player Sprite Sheet_254
+    21300510: Player Sprite Sheet_255
+    21300512: Player Sprite Sheet_256
+    21300514: Player Sprite Sheet_257
+    21300516: Player Sprite Sheet_258
+    21300518: Player Sprite Sheet_259
+    21300520: Player Sprite Sheet_260
+    21300522: Player Sprite Sheet_261
+    21300524: Player Sprite Sheet_262
+    21300526: Player Sprite Sheet_263
+    21300528: Player Sprite Sheet_264
+    21300530: Player Sprite Sheet_265
+    21300532: Player Sprite Sheet_266
+    21300534: Player Sprite Sheet_267
+    21300536: Player Sprite Sheet_268
+    21300538: Player Sprite Sheet_269
+    21300540: Player Sprite Sheet_270
+    21300542: Player Sprite Sheet_271
+    21300544: Player Sprite Sheet_272
+    21300546: Player Sprite Sheet_273
+    21300548: Player Sprite Sheet_274
+    21300550: Player Sprite Sheet_275
+    21300552: Player Sprite Sheet_276
+    21300554: Player Sprite Sheet_277
+    21300556: Player Sprite Sheet_278
+    21300558: Player Sprite Sheet_279
+    21300560: Player Sprite Sheet_280
+    21300562: Player Sprite Sheet_281
+    21300564: Player Sprite Sheet_282
+    21300566: Player Sprite Sheet_283
+    21300568: Player Sprite Sheet_284
+    21300570: Player Sprite Sheet_285
+    21300572: Player Sprite Sheet_286
+    21300574: Player Sprite Sheet_287
+    21300576: Player Sprite Sheet_288
+    21300578: Player Sprite Sheet_289
+    21300580: Player Sprite Sheet_290
+    21300582: Player Sprite Sheet_291
+    21300584: Player Sprite Sheet_292
+    21300586: Player Sprite Sheet_293
+    21300588: Player Sprite Sheet_294
+    21300590: Player Sprite Sheet_295
+    21300592: Player Sprite Sheet_296
+    21300594: Player Sprite Sheet_297
+    21300596: Player Sprite Sheet_298
+    21300598: Player Sprite Sheet_299
+    21300600: Player Sprite Sheet_300
+    21300602: Player Sprite Sheet_301
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Player Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3359
+        width: 69
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 2}
+        - {x: -25.5, y: -3}
+        - {x: -22.5, y: -1}
+        - {x: -14.5, y: 5}
+        - {x: -15.5, y: 1}
+        - {x: -34.5, y: -47}
+        - {x: -34.5, y: -59}
+        - {x: -22.5, y: -68}
+        - {x: 34.5, y: -68}
+        - {x: 34.5, y: -21}
+        - {x: 18.5, y: 65}
+        - {x: 14.5, y: 68}
+        - {x: -14.5, y: 68}
+        - {x: -34.5, y: 24}
+    - name: Player Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3359
+        width: 69
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 67.5}
+        - {x: -34.5, y: 20.5}
+        - {x: -34.5, y: -63.5}
+        - {x: 10.5, y: -67.5}
+        - {x: 34.5, y: -67.5}
+        - {x: 34.5, y: -49.5}
+        - {x: 13.5, y: 67.5}
+    - name: Player Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3360
+        width: 69
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 67}
+        - {x: -11.5, y: 67}
+        - {x: -34.5, y: 0}
+        - {x: -26.5, y: -1}
+        - {x: -22.5, y: -1}
+        - {x: -34.5, y: -50}
+        - {x: -34.5, y: -59}
+        - {x: -27.5, y: -62}
+        - {x: -21.5, y: -62}
+        - {x: 1.5, y: -67}
+        - {x: 33.5, y: -67}
+        - {x: 34.5, y: -66}
+        - {x: 34.5, y: -34}
+        - {x: 15.5, y: 66}
+    - name: Player Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 3360
+        width: 68
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 67}
+        - {x: -16, y: 67}
+        - {x: -34, y: 36}
+        - {x: -34, y: -62}
+        - {x: 9, y: -67}
+        - {x: 33, y: -67}
+        - {x: 34, y: -66}
+        - {x: 34, y: -50}
+        - {x: 28, y: -5}
+    - name: Player Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 3361
+        width: 68
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 40.5}
+        - {x: 11, y: 66.5}
+        - {x: -12, y: 66.5}
+        - {x: -15, y: 64.5}
+        - {x: -31, y: 0.5}
+        - {x: -26, y: -2.5}
+        - {x: -23, y: -2.5}
+        - {x: -18, y: 1.5}
+        - {x: -23, y: -18.5}
+        - {x: -34, y: -52.5}
+        - {x: -34, y: -60.5}
+        - {x: -20, y: -64.5}
+        - {x: -2, y: -66.5}
+        - {x: 29, y: -66.5}
+        - {x: 34, y: -64.5}
+        - {x: 34, y: -55.5}
+        - {x: 31, y: -50.5}
+    - name: Player Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3363
+        width: 68
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 53.5}
+        - {x: 6, y: 65.5}
+        - {x: -22, y: 65.5}
+        - {x: -34, y: 14.5}
+        - {x: -34, y: 0.5}
+        - {x: -28, y: -5.5}
+        - {x: -23, y: -3.5}
+        - {x: -19, y: -0.5}
+        - {x: -34, y: -29.5}
+        - {x: -34, y: -65.5}
+        - {x: 34, y: -65.5}
+        - {x: 34, y: -42.5}
+        - {x: 17, y: 38.5}
+    - name: Player Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 3364
+        width: 67
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: -2}
+        - {x: 24.5, y: 42}
+        - {x: 7.5, y: 65}
+        - {x: -14.5, y: 65}
+        - {x: -18.5, y: 64}
+        - {x: -33.5, y: 3}
+        - {x: -33.5, y: -64}
+        - {x: -29.5, y: -65}
+        - {x: -19.5, y: -65}
+        - {x: -16.5, y: -59}
+        - {x: 16.5, y: -65}
+        - {x: 33.5, y: -65}
+    - name: Player Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 3365
+        width: 66
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: -63.5}
+        - {x: 33, y: -44.5}
+        - {x: 11, y: 64.5}
+        - {x: -25, y: 64.5}
+        - {x: -33, y: 20.5}
+        - {x: -33, y: -64.5}
+        - {x: -18, y: -64.5}
+        - {x: -17, y: -62.5}
+        - {x: -8, y: -64.5}
+        - {x: 30, y: -64.5}
+    - name: Player Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 3364
+        width: 65
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -45}
+        - {x: 19.5, y: 9}
+        - {x: 7.5, y: 65}
+        - {x: -17.5, y: 65}
+        - {x: -20.5, y: 59}
+        - {x: -21.5, y: 48}
+        - {x: -32.5, y: 7}
+        - {x: -32.5, y: -65}
+        - {x: 22.5, y: -65}
+        - {x: 32.5, y: -59}
+        - {x: 32.5, y: -50}
+    - name: Player Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 3363
+        width: 64
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 65.5}
+        - {x: -32, y: 65.5}
+        - {x: -32, y: -65.5}
+        - {x: -1, y: -65.5}
+        - {x: 22, y: -62.5}
+        - {x: 32, y: -59.5}
+        - {x: 32, y: -33.5}
+        - {x: 8, y: 63.5}
+    - name: Player Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3362
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 66}
+        - {x: -25, y: 62}
+        - {x: -32, y: 25}
+        - {x: -32, y: -6}
+        - {x: -25, y: -7}
+        - {x: -20, y: 0}
+        - {x: -21, y: -3}
+        - {x: -29, y: -28}
+        - {x: -32, y: -51}
+        - {x: -32, y: -66}
+        - {x: 9, y: -66}
+        - {x: 32, y: -60}
+        - {x: 32, y: -15}
+        - {x: 3, y: 66}
+    - name: Player Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 3362
+        width: 63
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 65.5}
+        - {x: -27.5, y: 65.5}
+        - {x: -31.5, y: 34.5}
+        - {x: -31.5, y: -65.5}
+        - {x: 31.5, y: -65.5}
+        - {x: 31.5, y: 9.5}
+        - {x: 21.5, y: 49.5}
+    - name: Player Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 3361
+        width: 63
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 66}
+        - {x: -31.5, y: -66}
+        - {x: -12.5, y: -66}
+        - {x: 31.5, y: -57}
+        - {x: 31.5, y: -7}
+        - {x: 4.5, y: 66}
+    - name: Player Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3214
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 66.5}
+        - {x: -31.5, y: -5.5}
+        - {x: -30.5, y: -6.5}
+        - {x: -26.5, y: -6.5}
+        - {x: -23.5, y: -4.5}
+        - {x: -24.5, y: -5.5}
+        - {x: -25.5, y: -7.5}
+        - {x: -31.5, y: -20.5}
+        - {x: -31.5, y: -66.5}
+        - {x: 31.5, y: -66.5}
+        - {x: 31.5, y: -13.5}
+        - {x: 16.5, y: 46.5}
+        - {x: -3.5, y: 66.5}
+    - name: Player Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 3214
+        width: 62
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 66}
+        - {x: -31, y: 66}
+        - {x: -31, y: -66}
+        - {x: -10, y: -66}
+        - {x: 24, y: -49}
+        - {x: 31, y: -42}
+        - {x: 31, y: -28}
+    - name: Player Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3213
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 66.5}
+        - {x: -31.5, y: 66.5}
+        - {x: -31.5, y: -49.5}
+        - {x: -30.5, y: -66.5}
+        - {x: -2.5, y: -66.5}
+        - {x: 31.5, y: -45.5}
+        - {x: 31.5, y: -21.5}
+        - {x: 4.5, y: 41.5}
+    - name: Player Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 3213
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 66.5}
+        - {x: -31.5, y: -66.5}
+        - {x: -1.5, y: -66.5}
+        - {x: 3.5, y: -64.5}
+        - {x: 31.5, y: -44.5}
+        - {x: 31.5, y: 35.5}
+        - {x: 5.5, y: 66.5}
+    - name: Player Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 3213
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 66.5}
+        - {x: -31.5, y: -6.5}
+        - {x: -25.5, y: -7.5}
+        - {x: -22.5, y: -2.5}
+        - {x: -22.5, y: -0.5}
+        - {x: -22.5, y: -3.5}
+        - {x: -24.5, y: -7.5}
+        - {x: -28.5, y: -66.5}
+        - {x: -3.5, y: -66.5}
+        - {x: 31.5, y: -50.5}
+        - {x: 31.5, y: -9.5}
+        - {x: -4.5, y: 66.5}
+    - name: Player Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67}
+        - {x: -31.5, y: -67}
+        - {x: 5.5, y: -67}
+        - {x: 31.5, y: -42}
+        - {x: 31.5, y: -19}
+        - {x: -4.5, y: 67}
+    - name: Player Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67}
+        - {x: -31.5, y: -67}
+        - {x: 14.5, y: -67}
+        - {x: 31.5, y: -58}
+        - {x: 31.5, y: -9}
+        - {x: -7.5, y: 67}
+    - name: Player Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 3212
+        width: 64
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 67}
+        - {x: -32, y: 67}
+        - {x: -32, y: -33}
+        - {x: -25, y: -67}
+        - {x: 2, y: -67}
+        - {x: 32, y: -42}
+        - {x: 32, y: -12}
+        - {x: 2, y: 47}
+    - name: Player Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 3212
+        width: 64
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 67}
+        - {x: -32, y: 67}
+        - {x: -32, y: -9}
+        - {x: -26, y: -9}
+        - {x: -23, y: -4}
+        - {x: -23, y: -2}
+        - {x: -24, y: -8}
+        - {x: -22, y: -36}
+        - {x: -31, y: -67}
+        - {x: 20, y: -67}
+        - {x: 32, y: -62}
+        - {x: 32, y: -23}
+        - {x: 30, y: -19}
+    - name: Player Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67}
+        - {x: -31.5, y: -60}
+        - {x: -30.5, y: -67}
+        - {x: -2.5, y: -67}
+        - {x: 31.5, y: -38}
+        - {x: 31.5, y: -13}
+        - {x: -7.5, y: 67}
+    - name: Player Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: -67}
+        - {x: -2.5, y: -67}
+        - {x: 31.5, y: -48}
+        - {x: 31.5, y: 14}
+        - {x: -3.5, y: 67}
+        - {x: -31.5, y: 67}
+        - {x: -31.5, y: -59}
+    - name: Player Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 45}
+        - {x: -11.5, y: 67}
+        - {x: -31.5, y: 67}
+        - {x: -31.5, y: -22}
+        - {x: -26.5, y: -67}
+        - {x: 1.5, y: -67}
+        - {x: 31.5, y: -35}
+        - {x: 31.5, y: -20}
+        - {x: 26.5, y: -18}
+    - name: Player Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 3212
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 67}
+        - {x: -31.5, y: -59}
+        - {x: -30.5, y: -67}
+        - {x: 3.5, y: -67}
+        - {x: 31.5, y: -35}
+        - {x: 31.5, y: 37}
+        - {x: 5.5, y: 67}
+    - name: Player Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3066
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 67}
+        - {x: -31, y: -6}
+        - {x: -23, y: -67}
+        - {x: 2, y: -67}
+        - {x: 31, y: -53}
+        - {x: 31, y: 19}
+        - {x: 15, y: 50}
+        - {x: -6, y: 67}
+    - name: Player Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3066
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 45}
+        - {x: -15.5, y: 67}
+        - {x: -30.5, y: 67}
+        - {x: -30.5, y: 4}
+        - {x: -23.5, y: -67}
+        - {x: -3.5, y: -67}
+        - {x: 30.5, y: -44}
+        - {x: 30.5, y: -14}
+    - name: Player Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 3066
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 67}
+        - {x: -30.5, y: -67}
+        - {x: 13.5, y: -67}
+        - {x: 30.5, y: -57}
+        - {x: 30.5, y: 12}
+        - {x: -0.5, y: 67}
+    - name: Player Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3066
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 67}
+        - {x: -30.5, y: -47}
+        - {x: -28.5, y: -67}
+        - {x: 1.5, y: -67}
+        - {x: 30.5, y: -47}
+        - {x: 30.5, y: 12}
+        - {x: 8.5, y: 67}
+    - name: Player Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3066
+        width: 60
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -67.5}
+        - {x: 30, y: 16.5}
+        - {x: -8, y: 67.5}
+        - {x: -30, y: 67.5}
+        - {x: -30, y: -67.5}
+    - name: Player Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 3066
+        width: 59
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.5, y: 67.5}
+        - {x: -29.5, y: -17.5}
+        - {x: -21.5, y: -67.5}
+        - {x: 18.5, y: -67.5}
+        - {x: 29.5, y: -45.5}
+        - {x: 29.5, y: 25.5}
+        - {x: 8.5, y: 67.5}
+    - name: Player Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 3067
+        width: 58
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 67}
+        - {x: -29, y: 67}
+        - {x: -29, y: -9}
+        - {x: -21, y: -67}
+        - {x: -4, y: -67}
+        - {x: 29, y: -38}
+        - {x: 29, y: 31}
+        - {x: 17, y: 49}
+    - name: Player Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 3067
+        width: 58
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 67}
+        - {x: -29, y: -20}
+        - {x: -20, y: -67}
+        - {x: -1, y: -67}
+        - {x: 29, y: -37}
+        - {x: 29, y: 14}
+        - {x: -10, y: 67}
+    - name: Player Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 3067
+        width: 56
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 67}
+        - {x: -28, y: 67}
+        - {x: -28, y: -67}
+        - {x: 28, y: -67}
+        - {x: 28, y: 27}
+        - {x: -1, y: 64}
+    - name: Player Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 3067
+        width: 56
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 67}
+        - {x: -28, y: -63}
+        - {x: -27, y: -67}
+        - {x: 0, y: -67}
+        - {x: 28, y: -35}
+        - {x: 28, y: -1}
+        - {x: -6, y: 67}
+    - name: Player Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 3067
+        width: 55
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 67}
+        - {x: -27.5, y: 67}
+        - {x: -27.5, y: -67}
+        - {x: -0.5, y: -67}
+        - {x: 27.5, y: -34}
+        - {x: 27.5, y: -13}
+        - {x: 5.5, y: 44}
+    - name: Player Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 3067
+        width: 54
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 67}
+        - {x: -27, y: -67}
+        - {x: 11, y: -67}
+        - {x: 27, y: -39}
+        - {x: 27, y: 16}
+        - {x: 2, y: 67}
+    - name: Player Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 3067
+        width: 52
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 67.5}
+        - {x: -26, y: -39.5}
+        - {x: -20, y: -67.5}
+        - {x: 2, y: -67.5}
+        - {x: 26, y: -33.5}
+        - {x: 26, y: 1.5}
+        - {x: -7, y: 67.5}
+    - name: Player Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2921
+        width: 52
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 67.5}
+        - {x: -26, y: 67.5}
+        - {x: -26, y: -37.5}
+        - {x: -18, y: -67.5}
+        - {x: 0, y: -67.5}
+        - {x: -1, y: -47.5}
+        - {x: 26, y: -32.5}
+        - {x: 26, y: 4.5}
+    - name: Player Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2921
+        width: 51
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 67.5}
+        - {x: -25.5, y: -29.5}
+        - {x: -17.5, y: -65.5}
+        - {x: -15.5, y: -67.5}
+        - {x: 2.5, y: -67.5}
+        - {x: 25.5, y: -37.5}
+        - {x: 25.5, y: 16.5}
+        - {x: -7.5, y: 67.5}
+    - name: Player Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2921
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 64.5}
+        - {x: -9.5, y: 67.5}
+        - {x: -24.5, y: 67.5}
+        - {x: -24.5, y: -44.5}
+        - {x: -15.5, y: -67.5}
+        - {x: 2.5, y: -67.5}
+        - {x: 15.5, y: -60.5}
+        - {x: 24.5, y: -35.5}
+        - {x: 24.5, y: 14.5}
+    - name: Player Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2921
+        width: 47
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 67.5}
+        - {x: -23.5, y: -45.5}
+        - {x: -14.5, y: -65.5}
+        - {x: -13.5, y: -67.5}
+        - {x: 23.5, y: -67.5}
+        - {x: 23.5, y: 38.5}
+        - {x: -2.5, y: 67.5}
+    - name: Player Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2921
+        width: 46
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 67.5}
+        - {x: -23, y: -45.5}
+        - {x: -14, y: -67.5}
+        - {x: 9, y: -67.5}
+        - {x: 23, y: -40.5}
+        - {x: 23, y: 15.5}
+        - {x: -3, y: 67.5}
+    - name: Player Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2921
+        width: 44
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 68}
+        - {x: -22, y: -57}
+        - {x: -10, y: -68}
+        - {x: 19, y: -68}
+        - {x: 22, y: -63}
+        - {x: 22, y: 11}
+        - {x: -2, y: 68}
+    - name: Player Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2921
+        width: 45
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 68}
+        - {x: -22.5, y: -47}
+        - {x: -6.5, y: -68}
+        - {x: 10.5, y: -68}
+        - {x: 22.5, y: -56}
+        - {x: 22.5, y: 14}
+        - {x: 4.5, y: 68}
+    - name: Player Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 2921
+        width: 44
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 68.5}
+        - {x: -21, y: 67.5}
+        - {x: -22, y: 35.5}
+        - {x: -18, y: 22.5}
+        - {x: -22, y: 12.5}
+        - {x: -22, y: -44.5}
+        - {x: -13, y: -68.5}
+        - {x: 22, y: -68.5}
+        - {x: 22, y: 68.5}
+    - name: Player Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2921
+        width: 44
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 68.5}
+        - {x: -22, y: -37.5}
+        - {x: -2, y: -68.5}
+        - {x: 21, y: -68.5}
+        - {x: 22, y: -66.5}
+        - {x: 22, y: 27.5}
+        - {x: 7, y: 68.5}
+    - name: Player Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2921
+        width: 43
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 68.5}
+        - {x: -21.5, y: 68.5}
+        - {x: -21.5, y: -63.5}
+        - {x: -20.5, y: -68.5}
+        - {x: 17.5, y: -68.5}
+        - {x: 21.5, y: -59.5}
+        - {x: 21.5, y: 19.5}
+        - {x: 10.5, y: 66.5}
+    - name: Player Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2920
+        width: 42
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 69.5}
+        - {x: -16, y: 69.5}
+        - {x: -21, y: 48.5}
+        - {x: -21, y: -52.5}
+        - {x: -3, y: -69.5}
+        - {x: 20, y: -69.5}
+        - {x: 21, y: -67.5}
+        - {x: 21, y: 40.5}
+        - {x: 15, y: 68.5}
+    - name: Player Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 2920
+        width: 41
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.5, y: 69.5}
+        - {x: -16.5, y: 52.5}
+        - {x: -20.5, y: 30.5}
+        - {x: -20.5, y: -36.5}
+        - {x: 3.5, y: -69.5}
+        - {x: 20.5, y: -69.5}
+        - {x: 20.5, y: 43.5}
+        - {x: 13.5, y: 69.5}
+    - name: Player Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 2920
+        width: 43
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 70}
+        - {x: -21.5, y: 4}
+        - {x: -21.5, y: -25}
+        - {x: 6.5, y: -70}
+        - {x: 18.5, y: -70}
+        - {x: 21.5, y: -67}
+        - {x: 21.5, y: 51}
+        - {x: 12.5, y: 70}
+    - name: Player Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2774
+        width: 45
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 51}
+        - {x: 11.5, y: 70}
+        - {x: -10.5, y: 70}
+        - {x: -22.5, y: 28}
+        - {x: -22.5, y: -27}
+        - {x: 1.5, y: -70}
+        - {x: 22.5, y: -70}
+        - {x: 22.5, y: -23}
+        - {x: 21.5, y: -8}
+        - {x: 18.5, y: 7}
+        - {x: 19.5, y: 37}
+    - name: Player Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2774
+        width: 46
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 70}
+        - {x: -23, y: 47}
+        - {x: -23, y: -38}
+        - {x: 5, y: -70}
+        - {x: 23, y: -70}
+        - {x: 23, y: 36}
+        - {x: 19, y: 70}
+    - name: Player Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2774
+        width: 48
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 70.5}
+        - {x: -24, y: 19.5}
+        - {x: -24, y: -27.5}
+        - {x: 10, y: -70.5}
+        - {x: 24, y: -70.5}
+        - {x: 24, y: 35.5}
+        - {x: 15, y: 70.5}
+    - name: Player Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2774
+        width: 49
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 42.5}
+        - {x: -24.5, y: 16.5}
+        - {x: -24.5, y: -21.5}
+        - {x: 9.5, y: -70.5}
+        - {x: 24.5, y: -70.5}
+        - {x: 24.5, y: 0.5}
+        - {x: 18.5, y: 66.5}
+        - {x: 13.5, y: 70.5}
+        - {x: -4.5, y: 70.5}
+        - {x: -8.5, y: 69.5}
+    - name: Player Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2774
+        width: 50
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 70.5}
+        - {x: -25, y: 67.5}
+        - {x: -25, y: -49.5}
+        - {x: -21, y: -64.5}
+        - {x: -5, y: -70.5}
+        - {x: 25, y: -70.5}
+        - {x: 25, y: -27.5}
+        - {x: 14, y: 70.5}
+    - name: Player Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2774
+        width: 51
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 70.5}
+        - {x: -9.5, y: 70.5}
+        - {x: -25.5, y: 26.5}
+        - {x: -25.5, y: 3.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -25.5, y: -2.5}
+        - {x: -25.5, y: -33.5}
+        - {x: -0.5, y: -70.5}
+        - {x: 25.5, y: -70.5}
+        - {x: 25.5, y: 46.5}
+        - {x: 17.5, y: 68.5}
+    - name: Player Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2774
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: -34.5}
+        - {x: -3, y: -70.5}
+        - {x: 26, y: -70.5}
+        - {x: 26, y: -10.5}
+        - {x: 18, y: 70.5}
+        - {x: -11, y: 70.5}
+        - {x: -26, y: 38.5}
+    - name: Player Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 2774
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 70.5}
+        - {x: -26, y: 33.5}
+        - {x: -26, y: -21.5}
+        - {x: -15, y: -49.5}
+        - {x: 1, y: -45.5}
+        - {x: 5, y: -40.5}
+        - {x: 5, y: -37.5}
+        - {x: -1, y: -27.5}
+        - {x: -4, y: -11.5}
+        - {x: 12, y: -56.5}
+        - {x: 14, y: -70.5}
+        - {x: 21, y: -70.5}
+        - {x: 26, y: -66.5}
+        - {x: 26, y: -1.5}
+        - {x: 15, y: 70.5}
+    - name: Player Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2774
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 70.5}
+        - {x: -12, y: 70.5}
+        - {x: -24, y: 43.5}
+        - {x: -26, y: 26.5}
+        - {x: -26, y: -21.5}
+        - {x: -8, y: -51.5}
+        - {x: 4, y: -41.5}
+        - {x: 4, y: -36.5}
+        - {x: 13, y: -70.5}
+        - {x: 21, y: -70.5}
+        - {x: 26, y: -66.5}
+        - {x: 26, y: -43.5}
+        - {x: 20, y: 67.5}
+    - name: Player Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 2774
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 70.5}
+        - {x: -26.5, y: 38.5}
+        - {x: -26.5, y: -31.5}
+        - {x: -16.5, y: -51.5}
+        - {x: -10.5, y: -49.5}
+        - {x: 3.5, y: -44.5}
+        - {x: -1.5, y: -28.5}
+        - {x: 11.5, y: -70.5}
+        - {x: 26.5, y: -70.5}
+        - {x: 26.5, y: -1.5}
+        - {x: 17.5, y: 70.5}
+    - name: Player Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 2774
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 70.5}
+        - {x: -16.5, y: 70.5}
+        - {x: -26.5, y: 43.5}
+        - {x: -26.5, y: -21.5}
+        - {x: -14.5, y: -51.5}
+        - {x: 1.5, y: -44.5}
+        - {x: 0.5, y: -41.5}
+        - {x: -4.5, y: -31.5}
+        - {x: 12.5, y: -60.5}
+        - {x: 13.5, y: -70.5}
+        - {x: 22.5, y: -70.5}
+        - {x: 26.5, y: -68.5}
+        - {x: 26.5, y: -39.5}
+        - {x: 16.5, y: 65.5}
+    - name: Player Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 2774
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 70.5}
+        - {x: -26.5, y: -67.5}
+        - {x: -20.5, y: -70.5}
+        - {x: 26.5, y: -70.5}
+        - {x: 26.5, y: 70.5}
+    - name: Player Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2774
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 70.5}
+        - {x: -10.5, y: 68.5}
+        - {x: -17.5, y: 41.5}
+        - {x: -26.5, y: 16.5}
+        - {x: -26.5, y: -64.5}
+        - {x: -15.5, y: -70.5}
+        - {x: 23.5, y: -70.5}
+        - {x: 26.5, y: -67.5}
+        - {x: 26.5, y: 9.5}
+        - {x: 13.5, y: 70.5}
+    - name: Player Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2628
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 70.5}
+        - {x: -26.5, y: 31.5}
+        - {x: -26.5, y: -35.5}
+        - {x: -19.5, y: -54.5}
+        - {x: -4.5, y: -48.5}
+        - {x: -4.5, y: -44.5}
+        - {x: 11.5, y: -70.5}
+        - {x: 26.5, y: -70.5}
+        - {x: 26.5, y: -26.5}
+        - {x: 24.5, y: -2.5}
+        - {x: 14.5, y: 64.5}
+        - {x: 11.5, y: 70.5}
+    - name: Player Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2628
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 70}
+        - {x: -26.5, y: 28}
+        - {x: -26.5, y: -47}
+        - {x: -25.5, y: -53}
+        - {x: -8.5, y: -52}
+        - {x: -3.5, y: -50}
+        - {x: 11.5, y: -70}
+        - {x: 21.5, y: -70}
+        - {x: 26.5, y: -67}
+        - {x: 26.5, y: 14}
+        - {x: 12.5, y: 70}
+    - name: Player Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2628
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 70}
+        - {x: -11.5, y: 66}
+        - {x: -26.5, y: 20}
+        - {x: -26.5, y: -48}
+        - {x: -24.5, y: -58}
+        - {x: -9.5, y: -53}
+        - {x: -6.5, y: -50}
+        - {x: 8.5, y: -70}
+        - {x: 26.5, y: -70}
+        - {x: 26.5, y: 50}
+        - {x: 17.5, y: 70}
+    - name: Player Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 2628
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 70}
+        - {x: -26.5, y: 3}
+        - {x: -26.5, y: -53}
+        - {x: -13.5, y: -56}
+        - {x: -9.5, y: -52}
+        - {x: -9.5, y: -46}
+        - {x: -13.5, y: -24}
+        - {x: 13.5, y: -70}
+        - {x: 26.5, y: -70}
+        - {x: 26.5, y: 51}
+        - {x: 14.5, y: 70}
+    - name: Player Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2628
+        width: 52
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 69.5}
+        - {x: -25, y: 34.5}
+        - {x: -26, y: 15.5}
+        - {x: -26, y: -58.5}
+        - {x: -11, y: -64.5}
+        - {x: -4, y: -69.5}
+        - {x: 26, y: -69.5}
+        - {x: 26, y: 10.5}
+        - {x: 17, y: 69.5}
+    - name: Player Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2628
+        width: 53
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 69.5}
+        - {x: -26.5, y: 30.5}
+        - {x: -26.5, y: -57.5}
+        - {x: -14.5, y: -55.5}
+        - {x: -12.5, y: -54.5}
+        - {x: -13.5, y: -36.5}
+        - {x: 9.5, y: -69.5}
+        - {x: 26.5, y: -69.5}
+        - {x: 26.5, y: 48.5}
+        - {x: 13.5, y: 69.5}
+    - name: Player Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2628
+        width: 55
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 69.5}
+        - {x: -27.5, y: 14.5}
+        - {x: -27.5, y: -56.5}
+        - {x: 5.5, y: -69.5}
+        - {x: 27.5, y: -69.5}
+        - {x: 27.5, y: 30.5}
+        - {x: 23.5, y: 69.5}
+    - name: Player Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2628
+        width: 56
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 69}
+        - {x: -16, y: 66}
+        - {x: -28, y: -26}
+        - {x: -28, y: -60}
+        - {x: -16, y: -58}
+        - {x: -12, y: -56}
+        - {x: 11, y: -69}
+        - {x: 28, y: -69}
+        - {x: 28, y: 52}
+        - {x: 15, y: 69}
+    - name: Player Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2628
+        width: 57
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.5, y: -49}
+        - {x: 28.5, y: 22}
+        - {x: 16.5, y: 68}
+        - {x: 12.5, y: 69}
+        - {x: -15.5, y: 69}
+        - {x: -20.5, y: 68}
+        - {x: -28.5, y: 4}
+        - {x: -28.5, y: -63}
+        - {x: -15.5, y: -59}
+        - {x: -13.5, y: -58}
+        - {x: 13.5, y: -69}
+        - {x: 26.5, y: -69}
+        - {x: 28.5, y: -68}
+        - {x: 28.5, y: -58}
+        - {x: 27.5, y: -55}
+    - name: Player Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 2628
+        width: 57
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 68.5}
+        - {x: -7.5, y: 62.5}
+        - {x: -12.5, y: 39.5}
+        - {x: -28.5, y: -31.5}
+        - {x: -28.5, y: -58.5}
+        - {x: -16.5, y: -59.5}
+        - {x: -13.5, y: -58.5}
+        - {x: 7.5, y: -68.5}
+        - {x: 28.5, y: -68.5}
+        - {x: 28.5, y: 53.5}
+        - {x: 26.5, y: 68.5}
+    - name: Player Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2628
+        width: 58
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -67.5}
+        - {x: -21, y: -68.5}
+        - {x: 29, y: -68.5}
+        - {x: 29, y: 42.5}
+        - {x: 27, y: 68.5}
+        - {x: -10, y: 68.5}
+        - {x: -29, y: -9.5}
+    - name: Player Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2628
+        width: 59
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 68.5}
+        - {x: -7.5, y: 66.5}
+        - {x: -29.5, y: -45.5}
+        - {x: -29.5, y: -61.5}
+        - {x: -20.5, y: -63.5}
+        - {x: -13.5, y: -60.5}
+        - {x: 9.5, y: -68.5}
+        - {x: 29.5, y: -68.5}
+        - {x: 29.5, y: 43.5}
+        - {x: 19.5, y: 68.5}
+    - name: Player Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 2628
+        width: 59
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 68}
+        - {x: -7.5, y: 67}
+        - {x: -11.5, y: 39}
+        - {x: -29.5, y: -35}
+        - {x: -29.5, y: -60}
+        - {x: -17.5, y: -62}
+        - {x: -14.5, y: -59}
+        - {x: -10.5, y: -37}
+        - {x: 12.5, y: -68}
+        - {x: 29.5, y: -68}
+        - {x: 29.5, y: 40}
+        - {x: 14.5, y: 68}
+    - name: Player Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2482
+        width: 59
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 68}
+        - {x: -11.5, y: 64}
+        - {x: -29.5, y: -30}
+        - {x: -29.5, y: -65}
+        - {x: -17.5, y: -63}
+        - {x: -14.5, y: -58}
+        - {x: 8.5, y: -68}
+        - {x: 29.5, y: -68}
+        - {x: 29.5, y: 42}
+        - {x: 19.5, y: 68}
+    - name: Player Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 2482
+        width: 60
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 68}
+        - {x: -7, y: 62}
+        - {x: -11, y: 39}
+        - {x: -30, y: -46}
+        - {x: -30, y: -64}
+        - {x: -18, y: -63}
+        - {x: -15, y: -58}
+        - {x: 8, y: -68}
+        - {x: 30, y: -68}
+        - {x: 30, y: 37}
+        - {x: 22, y: 68}
+    - name: Player Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2482
+        width: 60
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 67.5}
+        - {x: -17, y: 37.5}
+        - {x: -28, y: -8.5}
+        - {x: -30, y: -24.5}
+        - {x: -30, y: -67.5}
+        - {x: 30, y: -67.5}
+        - {x: 30, y: 36.5}
+        - {x: 21, y: 67.5}
+    - name: Player Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2483
+        width: 60
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 67}
+        - {x: -15, y: 59}
+        - {x: -30, y: 13}
+        - {x: -30, y: -67}
+        - {x: 30, y: -67}
+        - {x: 30, y: 37}
+        - {x: 17, y: 67}
+    - name: Player Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2483
+        width: 59
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 67}
+        - {x: -29.5, y: -52}
+        - {x: -29.5, y: -64}
+        - {x: -16.5, y: -66}
+        - {x: -11.5, y: -67}
+        - {x: 29.5, y: -67}
+        - {x: 29.5, y: 38}
+        - {x: 15.5, y: 67}
+    - name: Player Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2483
+        width: 58
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 66.5}
+        - {x: -11, y: 28.5}
+        - {x: -29, y: -54.5}
+        - {x: -29, y: -66.5}
+        - {x: 29, y: -66.5}
+        - {x: 29, y: 59.5}
+        - {x: 17, y: 66.5}
+    - name: Player Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2484
+        width: 57
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 66}
+        - {x: -28.5, y: -42}
+        - {x: -28.5, y: -66}
+        - {x: 28.5, y: -66}
+        - {x: 28.5, y: 33}
+        - {x: 10.5, y: 66}
+    - name: Player Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 2485
+        width: 57
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 65}
+        - {x: -23.5, y: 35}
+        - {x: -28.5, y: -38}
+        - {x: -28.5, y: -65}
+        - {x: 28.5, y: -65}
+        - {x: 28.5, y: 37}
+        - {x: 10.5, y: 65}
+    - name: Player Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2484
+        width: 55
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 65.5}
+        - {x: -27.5, y: 13.5}
+        - {x: -27.5, y: -65.5}
+        - {x: 27.5, y: -65.5}
+        - {x: 27.5, y: 65.5}
+    - name: Player Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2484
+        width: 54
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 34}
+        - {x: 17, y: 65}
+        - {x: -19, y: 65}
+        - {x: -23, y: 61}
+        - {x: -27, y: -26}
+        - {x: -27, y: -65}
+        - {x: -13, y: -65}
+        - {x: -11, y: -53}
+        - {x: 7, y: -65}
+        - {x: 27, y: -65}
+    - name: Player Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 2483
+        width: 53
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 65.5}
+        - {x: -26.5, y: 25.5}
+        - {x: -26.5, y: -65.5}
+        - {x: 26.5, y: -65.5}
+        - {x: 26.5, y: 40.5}
+        - {x: 8.5, y: 65.5}
+    - name: Player Sprite Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 2483
+        width: 51
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 65}
+        - {x: -25.5, y: 60}
+        - {x: -25.5, y: -65}
+        - {x: 25.5, y: -65}
+        - {x: 25.5, y: 15}
+        - {x: 15.5, y: 65}
+    - name: Player Sprite Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 2483
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 65}
+        - {x: -25, y: 65}
+        - {x: -25, y: -65}
+        - {x: 25, y: -65}
+        - {x: 25, y: -1}
+        - {x: 14, y: 41}
+    - name: Player Sprite Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2337
+        width: 48
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -5.5}
+        - {x: 17, y: 27.5}
+        - {x: 0, y: 56.5}
+        - {x: -5, y: 64.5}
+        - {x: -24, y: 64.5}
+        - {x: -24, y: -64.5}
+        - {x: -6, y: -64.5}
+        - {x: 13, y: -60.5}
+        - {x: 24, y: -53.5}
+        - {x: 24, y: -12.5}
+    - name: Player Sprite Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2336
+        width: 47
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -53}
+        - {x: 23.5, y: 20}
+        - {x: 10.5, y: 65}
+        - {x: -23.5, y: 65}
+        - {x: -23.5, y: -65}
+        - {x: -7.5, y: -65}
+        - {x: 14.5, y: -59}
+        - {x: 22.5, y: -54}
+    - name: Player Sprite Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2336
+        width: 48
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 64.5}
+        - {x: -24, y: -64.5}
+        - {x: 24, y: -64.5}
+        - {x: 24, y: 31.5}
+        - {x: -2, y: 64.5}
+    - name: Player Sprite Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2336
+        width: 49
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: -53.5}
+        - {x: 24.5, y: -52.5}
+        - {x: 24.5, y: -4.5}
+        - {x: 11.5, y: 43.5}
+        - {x: -6.5, y: 64.5}
+        - {x: -24.5, y: 64.5}
+        - {x: -24.5, y: -64.5}
+        - {x: -2.5, y: -64.5}
+        - {x: -3.5, y: -47.5}
+        - {x: 16.5, y: -53.5}
+    - name: Player Sprite Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2336
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: -64}
+        - {x: 25.5, y: -64}
+        - {x: 25.5, y: 17}
+        - {x: -2.5, y: 64}
+        - {x: -23.5, y: 64}
+        - {x: -25.5, y: 63}
+    - name: Player Sprite Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2336
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 53}
+        - {x: -6.5, y: 64}
+        - {x: -25.5, y: 64}
+        - {x: -25.5, y: -41}
+        - {x: -20.5, y: -64}
+        - {x: 1.5, y: -64}
+        - {x: 20.5, y: -51}
+        - {x: 25.5, y: -43}
+        - {x: 25.5, y: 5}
+    - name: Player Sprite Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2336
+        width: 52
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 64}
+        - {x: -26, y: 64}
+        - {x: -26, y: -64}
+        - {x: 5, y: -64}
+        - {x: 8, y: -62}
+        - {x: 26, y: -52}
+        - {x: 26, y: -3}
+        - {x: 11, y: 42}
+    - name: Player Sprite Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2336
+        width: 52
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 64}
+        - {x: -26, y: 64}
+        - {x: -26, y: -64}
+        - {x: 17, y: -64}
+        - {x: 26, y: -52}
+        - {x: 26, y: 13}
+        - {x: 24, y: 27}
+    - name: Player Sprite Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2336
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -22}
+        - {x: 9.5, y: 46}
+        - {x: -7.5, y: 64}
+        - {x: -25.5, y: 64}
+        - {x: -26.5, y: 63}
+        - {x: -26.5, y: -26}
+        - {x: -16.5, y: -64}
+        - {x: 2.5, y: -64}
+        - {x: 1.5, y: -50}
+        - {x: 19.5, y: -47}
+        - {x: 26.5, y: -45}
+    - name: Player Sprite Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 2336
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -42}
+        - {x: 26.5, y: 36}
+        - {x: 5.5, y: 64}
+        - {x: -26.5, y: 64}
+        - {x: -26.5, y: -23}
+        - {x: -16.5, y: -64}
+        - {x: 5.5, y: -64}
+        - {x: 3.5, y: -53}
+        - {x: 20.5, y: -46}
+        - {x: 24.5, y: -44}
+    - name: Player Sprite Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2336
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 51}
+        - {x: -2.5, y: 64}
+        - {x: -26.5, y: 64}
+        - {x: -26.5, y: -34}
+        - {x: -15.5, y: -64}
+        - {x: 3.5, y: -64}
+        - {x: 2.5, y: -50}
+        - {x: 25.5, y: -48}
+        - {x: 26.5, y: -47}
+    - name: Player Sprite Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 2336
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 64}
+        - {x: -26.5, y: -40}
+        - {x: -12.5, y: -64}
+        - {x: 17.5, y: -64}
+        - {x: 26.5, y: -50}
+        - {x: 26.5, y: 10}
+        - {x: -2.5, y: 64}
+    - name: Player Sprite Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2336
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 64}
+        - {x: -26.5, y: -7}
+        - {x: -25.5, y: -8}
+        - {x: -24.5, y: -64}
+        - {x: 26.5, y: -64}
+        - {x: 26.5, y: 27}
+        - {x: 22.5, y: 44}
+        - {x: -4.5, y: 64}
+    - name: Player Sprite Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2190
+        width: 52
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 64.5}
+        - {x: -26, y: 64.5}
+        - {x: -26, y: -21.5}
+        - {x: -15, y: -64.5}
+        - {x: 4, y: -64.5}
+        - {x: 26, y: -44.5}
+        - {x: 26, y: -19.5}
+        - {x: 15, y: 48.5}
+    - name: Player Sprite Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2190
+        width: 50
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 64.5}
+        - {x: -25, y: -36.5}
+        - {x: -21, y: -64.5}
+        - {x: 10, y: -64.5}
+        - {x: 25, y: -39.5}
+        - {x: 25, y: 9.5}
+        - {x: -1, y: 64.5}
+    - name: Player Sprite Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2190
+        width: 50
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 64.5}
+        - {x: -25, y: -27.5}
+        - {x: -14, y: -63.5}
+        - {x: -13, y: -64.5}
+        - {x: 3, y: -64.5}
+        - {x: 25, y: -50.5}
+        - {x: 25, y: -3.5}
+        - {x: -2, y: 64.5}
+    - name: Player Sprite Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2190
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 65}
+        - {x: -25, y: -65}
+        - {x: 25, y: -65}
+        - {x: 25, y: 12}
+        - {x: -2, y: 64}
+        - {x: -3, y: 65}
+    - name: Player Sprite Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 2190
+        width: 49
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 65}
+        - {x: -24.5, y: -47}
+        - {x: -21.5, y: -65}
+        - {x: 24.5, y: -65}
+        - {x: 24.5, y: 65}
+    - name: Player Sprite Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 2190
+        width: 49
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: -16}
+        - {x: 6.5, y: -16}
+        - {x: 10.5, y: -14}
+        - {x: 9.5, y: 7}
+        - {x: 4.5, y: 40}
+        - {x: 0.5, y: 43}
+        - {x: -2.5, y: 64}
+        - {x: -7.5, y: 65}
+        - {x: -24.5, y: 65}
+        - {x: -24.5, y: -61}
+        - {x: -23.5, y: -65}
+        - {x: 1.5, y: -65}
+        - {x: 1.5, y: -58}
+        - {x: 24.5, y: -34}
+        - {x: 24.5, y: -18}
+    - name: Player Sprite Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2190
+        width: 48
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 63.5}
+        - {x: -2, y: 65.5}
+        - {x: -24, y: 65.5}
+        - {x: -24, y: -65.5}
+        - {x: 1, y: -65.5}
+        - {x: 2, y: -58.5}
+        - {x: 24, y: -43.5}
+        - {x: 24, y: -11.5}
+    - name: Player Sprite Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2190
+        width: 49
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -15.5}
+        - {x: 5.5, y: 41.5}
+        - {x: -6.5, y: 65.5}
+        - {x: -24.5, y: 65.5}
+        - {x: -24.5, y: -30.5}
+        - {x: -15.5, y: -65.5}
+        - {x: 0.5, y: -65.5}
+        - {x: -0.5, y: -52.5}
+        - {x: 24.5, y: -34.5}
+        - {x: 24.5, y: -17.5}
+    - name: Player Sprite Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2190
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -16}
+        - {x: 23.5, y: -15}
+        - {x: 21.5, y: -15}
+        - {x: -0.5, y: 55}
+        - {x: -6.5, y: 66}
+        - {x: -24.5, y: 66}
+        - {x: -24.5, y: -39}
+        - {x: -20.5, y: -66}
+        - {x: 0.5, y: -66}
+        - {x: -0.5, y: -52}
+        - {x: -4.5, y: -33}
+        - {x: 24.5, y: -34}
+    - name: Player Sprite Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 2190
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 66}
+        - {x: -24.5, y: 66}
+        - {x: -24.5, y: -29}
+        - {x: -17.5, y: -66}
+        - {x: -0.5, y: -66}
+        - {x: -1.5, y: -52}
+        - {x: 24.5, y: -33}
+        - {x: 24.5, y: -6}
+    - name: Player Sprite Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 2190
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -15}
+        - {x: 23.5, y: -14}
+        - {x: 18.5, y: -14}
+        - {x: 17.5, y: -15}
+        - {x: -2.5, y: -15}
+        - {x: 4.5, y: -15}
+        - {x: 7.5, y: -12}
+        - {x: 14.5, y: 5}
+        - {x: 3.5, y: 66}
+        - {x: -24.5, y: 66}
+        - {x: -24.5, y: -37}
+        - {x: -17.5, y: -66}
+        - {x: -0.5, y: -66}
+        - {x: -0.5, y: -58}
+        - {x: -1.5, y: -51}
+        - {x: 24.5, y: -31}
+    - name: Player Sprite Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2190
+        width: 49
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: 66.5}
+        - {x: -24.5, y: 66.5}
+        - {x: -24.5, y: -27.5}
+        - {x: -18.5, y: -66.5}
+        - {x: 9.5, y: -66.5}
+        - {x: 24.5, y: -34.5}
+        - {x: 24.5, y: 12.5}
+        - {x: 1.5, y: 64.5}
+    - name: Player Sprite Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2190
+        width: 50
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: -9.5}
+        - {x: 17, y: -12.5}
+        - {x: 17, y: -14.5}
+        - {x: -2, y: -14.5}
+        - {x: 5, y: -14.5}
+        - {x: 9, y: -13.5}
+        - {x: 6, y: 41.5}
+        - {x: -1, y: 64.5}
+        - {x: -6, y: 66.5}
+        - {x: -25, y: 66.5}
+        - {x: -25, y: -24.5}
+        - {x: -18, y: -66.5}
+        - {x: 1, y: -66.5}
+        - {x: 17, y: -48.5}
+        - {x: 25, y: -32.5}
+    - name: Player Sprite Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2044
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 67}
+        - {x: -25, y: -45}
+        - {x: -19, y: -67}
+        - {x: 2, y: -67}
+        - {x: 25, y: -45}
+        - {x: 25, y: -2}
+        - {x: 3, y: 67}
+    - name: Player Sprite Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 2044
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -12}
+        - {x: 1, y: 67}
+        - {x: -25, y: 67}
+        - {x: -25, y: -23}
+        - {x: -16, y: -66}
+        - {x: -15, y: -67}
+        - {x: 0, y: -67}
+        - {x: 0, y: -50}
+        - {x: 25, y: -32}
+        - {x: 25, y: -13}
+    - name: Player Sprite Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2044
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -67}
+        - {x: 25, y: -62}
+        - {x: 25, y: 22}
+        - {x: -1, y: 67}
+        - {x: -25, y: 67}
+        - {x: -25, y: -67}
+    - name: Player Sprite Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 2044
+        width: 50
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 67.5}
+        - {x: -25, y: -67.5}
+        - {x: 5, y: -67.5}
+        - {x: 25, y: -58.5}
+        - {x: 25, y: 23.5}
+        - {x: 3, y: 67.5}
+    - name: Player Sprite Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 2044
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: -67.5}
+        - {x: 24.5, y: -63.5}
+        - {x: 24.5, y: 30.5}
+        - {x: 4.5, y: 67.5}
+        - {x: -24.5, y: 67.5}
+        - {x: -24.5, y: -67.5}
+    - name: Player Sprite Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 2045
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 67.5}
+        - {x: -20.5, y: 67.5}
+        - {x: -23.5, y: 61.5}
+        - {x: -24.5, y: 58.5}
+        - {x: -24.5, y: -38.5}
+        - {x: -14.5, y: -67.5}
+        - {x: 6.5, y: -67.5}
+        - {x: 24.5, y: -52.5}
+        - {x: 24.5, y: 49.5}
+        - {x: 0.5, y: 66.5}
+    - name: Player Sprite Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2045
+        width: 48
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 67.5}
+        - {x: -23, y: 61.5}
+        - {x: -24, y: 57.5}
+        - {x: -24, y: -37.5}
+        - {x: -15, y: -67.5}
+        - {x: 5, y: -67.5}
+        - {x: 24, y: -42.5}
+        - {x: 24, y: -13.5}
+        - {x: 3, y: 67.5}
+    - name: Player Sprite Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2045
+        width: 48
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 68}
+        - {x: -24, y: -37}
+        - {x: -12, y: -68}
+        - {x: 7, y: -68}
+        - {x: 24, y: -49}
+        - {x: 24, y: 15}
+        - {x: 13, y: 68}
+    - name: Player Sprite Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2045
+        width: 46
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 68.5}
+        - {x: -23, y: -68.5}
+        - {x: 23, y: -68.5}
+        - {x: 23, y: 28.5}
+        - {x: 2, y: 68.5}
+    - name: Player Sprite Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 2045
+        width: 45
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: -69}
+        - {x: 15.5, y: -69}
+        - {x: 22.5, y: -65}
+        - {x: 22.5, y: 28}
+        - {x: 5.5, y: 69}
+        - {x: -17.5, y: 69}
+        - {x: -22.5, y: 58}
+    - name: Player Sprite Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 2045
+        width: 43
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: -16.5}
+        - {x: 5.5, y: 66.5}
+        - {x: 0.5, y: 69.5}
+        - {x: -21.5, y: 69.5}
+        - {x: -21.5, y: -37.5}
+        - {x: -14.5, y: -69.5}
+        - {x: 8.5, y: -69.5}
+        - {x: 9.5, y: -68.5}
+        - {x: 9.5, y: -63.5}
+        - {x: 21.5, y: -43.5}
+    - name: Player Sprite Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 2045
+        width: 42
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 69.5}
+        - {x: -21, y: 64.5}
+        - {x: -21, y: -37.5}
+        - {x: -15, y: -69.5}
+        - {x: 16, y: -69.5}
+        - {x: 21, y: -50.5}
+        - {x: 21, y: -8.5}
+        - {x: 6, y: 69.5}
+    - name: Player Sprite Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 2045
+        width: 42
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 70}
+        - {x: -21, y: 65}
+        - {x: -21, y: -42}
+        - {x: -15, y: -70}
+        - {x: 17, y: -70}
+        - {x: 21, y: -59}
+        - {x: 21, y: -18}
+        - {x: 6, y: 70}
+    - name: Player Sprite Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1899
+        width: 41
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 70.5}
+        - {x: -20.5, y: 69.5}
+        - {x: -20.5, y: -56.5}
+        - {x: -16.5, y: -70.5}
+        - {x: 20.5, y: -70.5}
+        - {x: 20.5, y: 50.5}
+        - {x: 8.5, y: 70.5}
+    - name: Player Sprite Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1899
+        width: 40
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 71}
+        - {x: -20, y: -54}
+        - {x: -17, y: -71}
+        - {x: 20, y: -71}
+        - {x: 20, y: 71}
+    - name: Player Sprite Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1898
+        width: 39
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: -36}
+        - {x: 2.5, y: -72}
+        - {x: 19.5, y: -72}
+        - {x: 19.5, y: 38}
+        - {x: 16.5, y: 72}
+        - {x: -8.5, y: 72}
+        - {x: -19.5, y: 69}
+    - name: Player Sprite Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1898
+        width: 40
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 72}
+        - {x: -20, y: 50}
+        - {x: -20, y: -32}
+        - {x: 3, y: -72}
+        - {x: 20, y: -72}
+        - {x: 20, y: 57}
+        - {x: 12, y: 72}
+    - name: Player Sprite Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1898
+        width: 41
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 72.5}
+        - {x: -20.5, y: 47.5}
+        - {x: -20.5, y: -33.5}
+        - {x: 5.5, y: -72.5}
+        - {x: 20.5, y: -72.5}
+        - {x: 20.5, y: -10.5}
+        - {x: 15.5, y: 72.5}
+    - name: Player Sprite Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1899
+        width: 43
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 42}
+        - {x: -21.5, y: 24}
+        - {x: -21.5, y: -25}
+        - {x: 2.5, y: -72}
+        - {x: 21.5, y: -72}
+        - {x: 21.5, y: -7}
+        - {x: 17.5, y: 69}
+        - {x: 9.5, y: 72}
+        - {x: -9.5, y: 72}
+        - {x: -13.5, y: 63}
+    - name: Player Sprite Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1898
+        width: 45
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 72.5}
+        - {x: -19.5, y: 72.5}
+        - {x: -22.5, y: 57.5}
+        - {x: -22.5, y: -38.5}
+        - {x: 8.5, y: -72.5}
+        - {x: 22.5, y: -72.5}
+        - {x: 22.5, y: -28.5}
+        - {x: 15.5, y: 62.5}
+    - name: Player Sprite Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1898
+        width: 47
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 73}
+        - {x: -23.5, y: 64}
+        - {x: -23.5, y: -45}
+        - {x: 0.5, y: -73}
+        - {x: 23.5, y: -73}
+        - {x: 23.5, y: 73}
+    - name: Player Sprite Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1898
+        width: 47
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 73}
+        - {x: -7.5, y: 73}
+        - {x: -12.5, y: 72}
+        - {x: -23.5, y: 31}
+        - {x: -23.5, y: -26}
+        - {x: 4.5, y: -73}
+        - {x: 21.5, y: -73}
+        - {x: 23.5, y: -71}
+        - {x: 23.5, y: 33}
+        - {x: 21.5, y: 65}
+    - name: Player Sprite Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1898
+        width: 48
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 73}
+        - {x: -24, y: 47}
+        - {x: -24, y: -43}
+        - {x: -15, y: -55}
+        - {x: 6, y: -73}
+        - {x: 18, y: -73}
+        - {x: 24, y: -70}
+        - {x: 24, y: -28}
+        - {x: 13, y: 73}
+    - name: Player Sprite Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1898
+        width: 50
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 73}
+        - {x: -6, y: 73}
+        - {x: -13, y: 67}
+        - {x: -20, y: 37}
+        - {x: -25, y: 19}
+        - {x: -25, y: -27}
+        - {x: -14, y: -52}
+        - {x: -9, y: -54}
+        - {x: 2, y: -48}
+        - {x: 2, y: -44}
+        - {x: -1, y: -40}
+        - {x: -3, y: -34}
+        - {x: -2, y: -37}
+        - {x: 1, y: -42}
+        - {x: 12, y: -66}
+        - {x: 11, y: -73}
+        - {x: 22, y: -73}
+        - {x: 25, y: -70}
+        - {x: 25, y: -14}
+        - {x: 15, y: 71}
+    - name: Player Sprite Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1898
+        width: 50
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 72.5}
+        - {x: -25, y: 46.5}
+        - {x: -25, y: -36.5}
+        - {x: -18, y: -58.5}
+        - {x: -6, y: -51.5}
+        - {x: 0, y: -48.5}
+        - {x: -4, y: -35.5}
+        - {x: -9, y: -23.5}
+        - {x: 1, y: -42.5}
+        - {x: 11, y: -72.5}
+        - {x: 20, y: -72.5}
+        - {x: 25, y: -70.5}
+        - {x: 25, y: -15.5}
+        - {x: 19, y: 72.5}
+    - name: Player Sprite Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1899
+        width: 51
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 71.5}
+        - {x: -12.5, y: 69.5}
+        - {x: -25.5, y: 23.5}
+        - {x: -25.5, y: -37.5}
+        - {x: -23.5, y: -54.5}
+        - {x: -19.5, y: -57.5}
+        - {x: -4.5, y: -51.5}
+        - {x: -4.5, y: -46.5}
+        - {x: 12.5, y: -71.5}
+        - {x: 23.5, y: -71.5}
+        - {x: 25.5, y: -70.5}
+        - {x: 25.5, y: -3.5}
+        - {x: 16.5, y: 71.5}
+    - name: Player Sprite Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1752
+        width: 53
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 71.5}
+        - {x: -17.5, y: 71.5}
+        - {x: -26.5, y: 61.5}
+        - {x: -26.5, y: -69.5}
+        - {x: -16.5, y: -71.5}
+        - {x: 26.5, y: -71.5}
+        - {x: 26.5, y: -18.5}
+        - {x: 10.5, y: 70.5}
+    - name: Player Sprite Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1752
+        width: 56
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 14.5}
+        - {x: -28, y: 0.5}
+        - {x: -24, y: -0.5}
+        - {x: -20, y: 2.5}
+        - {x: -28, y: -13.5}
+        - {x: -28, y: -70.5}
+        - {x: 28, y: -70.5}
+        - {x: 28, y: 60.5}
+        - {x: 11, y: 70.5}
+        - {x: -11, y: 70.5}
+        - {x: -24, y: 35.5}
+    - name: Player Sprite Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1752
+        width: 61
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 70}
+        - {x: -30.5, y: 13}
+        - {x: -30.5, y: -57}
+        - {x: -15.5, y: -61}
+        - {x: -3.5, y: -70}
+        - {x: 30.5, y: -70}
+        - {x: 30.5, y: -54}
+        - {x: 13.5, y: 70}
+    - name: Player Sprite Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1752
+        width: 64
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 69}
+        - {x: -29, y: 4}
+        - {x: -25, y: 0}
+        - {x: -22, y: -1}
+        - {x: -13, y: 7}
+        - {x: -18, y: 3}
+        - {x: -27, y: -18}
+        - {x: -32, y: -45}
+        - {x: -32, y: -57}
+        - {x: -26, y: -59}
+        - {x: -19, y: -60}
+        - {x: -14, y: -48}
+        - {x: 17, y: -69}
+        - {x: 30, y: -69}
+        - {x: 32, y: -68}
+        - {x: 32, y: 43}
+        - {x: 14, y: 69}
+    - name: Player Sprite Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1753
+        width: 67
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 68}
+        - {x: -33.5, y: 21}
+        - {x: -33.5, y: -64}
+        - {x: -20.5, y: -60}
+        - {x: -18.5, y: -55}
+        - {x: 13.5, y: -68}
+        - {x: 33.5, y: -68}
+        - {x: 33.5, y: -25}
+        - {x: 21.5, y: 41}
+        - {x: 11.5, y: 68}
+    - name: Player Sprite Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1752
+        width: 69
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 0.5}
+        - {x: -21.5, y: -1.5}
+        - {x: -12.5, y: 6.5}
+        - {x: -15.5, y: 3.5}
+        - {x: -16.5, y: 0.5}
+        - {x: -34.5, y: -46.5}
+        - {x: -34.5, y: -63.5}
+        - {x: -30.5, y: -68.5}
+        - {x: 34.5, y: -68.5}
+        - {x: 34.5, y: 30.5}
+        - {x: 17.5, y: 66.5}
+        - {x: 11.5, y: 68.5}
+        - {x: -6.5, y: 68.5}
+        - {x: -8.5, y: 64.5}
+    - name: Player Sprite Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1752
+        width: 69
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 67}
+        - {x: 15.5, y: 68}
+        - {x: -14.5, y: 68}
+        - {x: -34.5, y: 24}
+        - {x: -34.5, y: -57}
+        - {x: -29.5, y: -60}
+        - {x: -22.5, y: -60}
+        - {x: -19.5, y: -56}
+        - {x: 7.5, y: -68}
+        - {x: 31.5, y: -68}
+        - {x: 34.5, y: -67}
+        - {x: 34.5, y: -57}
+        - {x: 32.5, y: -52}
+    - name: Player Sprite Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1756
+        width: 55
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: -49}
+        - {x: -22.5, y: -49}
+        - {x: -13.5, y: -44}
+        - {x: -16.5, y: -69}
+        - {x: -0.5, y: -69}
+        - {x: 27.5, y: -15}
+        - {x: 27.5, y: 69}
+        - {x: -27.5, y: 69}
+    - name: Player Sprite Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1756
+        width: 55
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 69}
+        - {x: -27.5, y: 66}
+        - {x: -27.5, y: -18}
+        - {x: -6.5, y: -69}
+        - {x: 17.5, y: -69}
+        - {x: 27.5, y: -59}
+        - {x: 27.5, y: 69}
+    - name: Player Sprite Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1617
+        width: 63
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 66}
+        - {x: -14.5, y: 44}
+        - {x: -31.5, y: -6}
+        - {x: -31.5, y: -50}
+        - {x: -15.5, y: -59}
+        - {x: 0.5, y: -66}
+        - {x: 31.5, y: -66}
+        - {x: 31.5, y: 66}
+    - name: Player Sprite Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1618
+        width: 63
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 65.5}
+        - {x: -31.5, y: 2.5}
+        - {x: -31.5, y: -64.5}
+        - {x: -28.5, y: -65.5}
+        - {x: 31.5, y: -65.5}
+        - {x: 31.5, y: 65.5}
+    - name: Player Sprite Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1618
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27, y: 66}
+        - {x: -4, y: 66}
+        - {x: -32, y: 1}
+        - {x: -32, y: -57}
+        - {x: -20, y: -60}
+        - {x: -16, y: -58}
+        - {x: 12, y: -35}
+        - {x: 16, y: -66}
+        - {x: 32, y: -66}
+        - {x: 32, y: 57}
+        - {x: 30, y: 64}
+    - name: Player Sprite Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1619
+        width: 64
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 65.5}
+        - {x: -13, y: 40.5}
+        - {x: -32, y: -42.5}
+        - {x: -32, y: -58.5}
+        - {x: -21, y: -61.5}
+        - {x: -19, y: -59.5}
+        - {x: -19, y: -56.5}
+        - {x: 7, y: -39.5}
+        - {x: 17, y: -65.5}
+        - {x: 32, y: -65.5}
+        - {x: 32, y: 65.5}
+    - name: Player Sprite Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1620
+        width: 65
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 8}
+        - {x: 12.5, y: 6}
+        - {x: 21.5, y: -3}
+        - {x: 23.5, y: -8}
+        - {x: 32.5, y: -5}
+        - {x: 32.5, y: 2}
+        - {x: 20.5, y: 60}
+        - {x: 15.5, y: 65}
+        - {x: -1.5, y: 65}
+        - {x: -24.5, y: 40}
+        - {x: -32.5, y: 1}
+        - {x: -32.5, y: -64}
+        - {x: -21.5, y: -65}
+        - {x: 32.5, y: -65}
+        - {x: 32.5, y: -29}
+        - {x: 18.5, y: -1}
+        - {x: 14.5, y: 4}
+        - {x: 12.5, y: 6}
+    - name: Player Sprite Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1621
+        width: 66
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: -64.5}
+        - {x: 33, y: -55.5}
+        - {x: 28, y: -28.5}
+        - {x: 17, y: -1.5}
+        - {x: 14, y: 3.5}
+        - {x: 12, y: 5.5}
+        - {x: 18, y: 0.5}
+        - {x: 23, y: -7.5}
+        - {x: 33, y: -6.5}
+        - {x: 33, y: 3.5}
+        - {x: 19, y: 64.5}
+        - {x: -3, y: 64.5}
+        - {x: -32, y: 45.5}
+        - {x: -33, y: 37.5}
+        - {x: -33, y: -62.5}
+        - {x: -30, y: -64.5}
+        - {x: -20, y: -64.5}
+        - {x: -19, y: -63.5}
+        - {x: 4, y: -41.5}
+        - {x: 17, y: -64.5}
+    - name: Player Sprite Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1620
+        width: 67
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 65}
+        - {x: -28.5, y: 60}
+        - {x: -33.5, y: -15}
+        - {x: -33.5, y: -65}
+        - {x: 33.5, y: -65}
+        - {x: 33.5, y: -3}
+        - {x: 17.5, y: 65}
+    - name: Player Sprite Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1619
+        width: 68
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34, y: -61.5}
+        - {x: 34, y: -51.5}
+        - {x: 25, y: -21.5}
+        - {x: 23, y: -4.5}
+        - {x: 22, y: -6.5}
+        - {x: 27, y: -3.5}
+        - {x: 34, y: -2.5}
+        - {x: 13, y: 65.5}
+        - {x: -8, y: 65.5}
+        - {x: -15, y: 37.5}
+        - {x: -34, y: -48.5}
+        - {x: -34, y: -65.5}
+        - {x: -19, y: -65.5}
+        - {x: 0, y: -40.5}
+        - {x: 19, y: -65.5}
+        - {x: 25, y: -65.5}
+    - name: Player Sprite Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1617
+        width: 68
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 66.5}
+        - {x: -34, y: 22.5}
+        - {x: -34, y: -66.5}
+        - {x: 34, y: -66.5}
+        - {x: 34, y: 56.5}
+        - {x: 21, y: 66.5}
+    - name: Player Sprite Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1616
+        width: 68
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -63}
+        - {x: 34, y: -61}
+        - {x: 34, y: -46}
+        - {x: 29, y: -23}
+        - {x: 18, y: 0}
+        - {x: 15, y: 2}
+        - {x: 23, y: -1}
+        - {x: 28, y: -2}
+        - {x: 34, y: 5}
+        - {x: 34, y: 9}
+        - {x: 9, y: 67}
+        - {x: -12, y: 67}
+        - {x: -24, y: 40}
+        - {x: -34, y: -44}
+        - {x: -34, y: -67}
+        - {x: -20, y: -67}
+        - {x: -20, y: -65}
+        - {x: -5, y: -33}
+        - {x: 19, y: -60}
+    - name: Player Sprite Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1616
+        width: 69
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 67}
+        - {x: -34.5, y: -34}
+        - {x: -34.5, y: -67}
+        - {x: 34.5, y: -67}
+        - {x: 34.5, y: 35}
+        - {x: 11.5, y: 67}
+    - name: Player Sprite Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1615
+        width: 69
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: -67.5}
+        - {x: 34.5, y: 36.5}
+        - {x: 19.5, y: 67.5}
+        - {x: -14.5, y: 67.5}
+        - {x: -34.5, y: 50.5}
+        - {x: -34.5, y: -66.5}
+        - {x: -33.5, y: -67.5}
+        - {x: -17.5, y: -67.5}
+        - {x: -5.5, y: -37.5}
+        - {x: 13.5, y: -58.5}
+        - {x: 23.5, y: -67.5}
+    - name: Player Sprite Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1615
+        width: 69
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 68}
+        - {x: -18.5, y: 65}
+        - {x: -34.5, y: -46}
+        - {x: -34.5, y: -68}
+        - {x: 34.5, y: -68}
+        - {x: 34.5, y: 42}
+        - {x: 9.5, y: 68}
+    - name: Player Sprite Sheet_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1468
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 67}
+        - {x: -31, y: 12}
+        - {x: -31, y: -59}
+        - {x: -20, y: -67}
+        - {x: 24, y: -67}
+        - {x: 31, y: 15}
+        - {x: 31, y: 67}
+    - name: Player Sprite Sheet_166
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1468
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 67}
+        - {x: -31.5, y: 2}
+        - {x: -31.5, y: -36}
+        - {x: -29.5, y: -39}
+        - {x: -5.5, y: -67}
+        - {x: 31.5, y: -67}
+        - {x: 31.5, y: 67}
+    - name: Player Sprite Sheet_167
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1468
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 67}
+        - {x: -31.5, y: 6}
+        - {x: -31.5, y: -34}
+        - {x: -27.5, y: -39}
+        - {x: -23.5, y: -37}
+        - {x: 3.5, y: -67}
+        - {x: 28.5, y: -67}
+        - {x: 31.5, y: -40}
+        - {x: 31.5, y: 67}
+    - name: Player Sprite Sheet_168
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1468
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.5, y: 67}
+        - {x: -31.5, y: -14}
+        - {x: -31.5, y: -36}
+        - {x: -1.5, y: -67}
+        - {x: 31.5, y: -67}
+        - {x: 31.5, y: 67}
+    - name: Player Sprite Sheet_169
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1468
+        width: 64
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: -4}
+        - {x: 27, y: -7}
+        - {x: 32, y: -19}
+        - {x: 32, y: 67}
+        - {x: 1, y: 67}
+        - {x: -32, y: 14}
+        - {x: -32, y: -41}
+        - {x: -31, y: -43}
+        - {x: -1, y: -67}
+        - {x: 27, y: -67}
+        - {x: 24, y: -5}
+        - {x: 23, y: -4}
+        - {x: 23, y: -2}
+    - name: Player Sprite Sheet_170
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1468
+        width: 64
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 67}
+        - {x: -2, y: 46}
+        - {x: -32, y: -10}
+        - {x: -32, y: -38}
+        - {x: -26, y: -40}
+        - {x: -25, y: -40}
+        - {x: 1, y: -67}
+        - {x: 26, y: -67}
+        - {x: 32, y: -19}
+        - {x: 32, y: 67}
+    - name: Player Sprite Sheet_171
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1468
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: -19}
+        - {x: -31.5, y: -37}
+        - {x: -27.5, y: -41}
+        - {x: -23.5, y: -42}
+        - {x: 1.5, y: -67}
+        - {x: 26.5, y: -67}
+        - {x: 31.5, y: -43}
+        - {x: 31.5, y: 67}
+        - {x: 6.5, y: 67}
+        - {x: -15.5, y: 51}
+    - name: Player Sprite Sheet_172
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1468
+        width: 63
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: -3}
+        - {x: 25.5, y: -7}
+        - {x: 31.5, y: -6}
+        - {x: 31.5, y: 67}
+        - {x: 5.5, y: 67}
+        - {x: -4.5, y: 62}
+        - {x: -31.5, y: -22}
+        - {x: -31.5, y: -45}
+        - {x: -25.5, y: -64}
+        - {x: -4.5, y: -67}
+        - {x: 31.5, y: -67}
+        - {x: 31.5, y: -29}
+        - {x: 24.5, y: -6}
+        - {x: 22.5, y: -3}
+        - {x: 22.5, y: -1}
+    - name: Player Sprite Sheet_173
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1469
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 66.5}
+        - {x: -31.5, y: -22.5}
+        - {x: -31.5, y: -58.5}
+        - {x: 3.5, y: -66.5}
+        - {x: 31.5, y: -66.5}
+        - {x: 31.5, y: 66.5}
+    - name: Player Sprite Sheet_174
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1469
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 66.5}
+        - {x: -18.5, y: 51.5}
+        - {x: -31.5, y: 1.5}
+        - {x: -31.5, y: -46.5}
+        - {x: 8.5, y: -66.5}
+        - {x: 31.5, y: -66.5}
+        - {x: 31.5, y: 66.5}
+    - name: Player Sprite Sheet_175
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1469
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 66.5}
+        - {x: -31.5, y: -23.5}
+        - {x: -31.5, y: -45.5}
+        - {x: -26.5, y: -50.5}
+        - {x: 9.5, y: -66.5}
+        - {x: 31.5, y: -66.5}
+        - {x: 31.5, y: 66.5}
+    - name: Player Sprite Sheet_176
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1470
+        width: 62
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 66}
+        - {x: -31, y: 15}
+        - {x: -31, y: -59}
+        - {x: -26, y: -63}
+        - {x: -11, y: -66}
+        - {x: 31, y: -66}
+        - {x: 31, y: 66}
+    - name: Player Sprite Sheet_177
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1470
+        width: 63
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: -2.5}
+        - {x: 21.5, y: -0.5}
+        - {x: 23.5, y: -4.5}
+        - {x: 26.5, y: -6.5}
+        - {x: 31.5, y: -6.5}
+        - {x: 31.5, y: 32.5}
+        - {x: 30.5, y: 60.5}
+        - {x: 27.5, y: 66.5}
+        - {x: 11.5, y: 66.5}
+        - {x: 7.5, y: 65.5}
+        - {x: -5.5, y: 42.5}
+        - {x: -14.5, y: -9.5}
+        - {x: -9.5, y: -15.5}
+        - {x: -31.5, y: -35.5}
+        - {x: -31.5, y: -44.5}
+        - {x: -24.5, y: -53.5}
+        - {x: 9.5, y: -66.5}
+        - {x: 31.5, y: -66.5}
+        - {x: 31.5, y: -25.5}
+        - {x: 24.5, y: -5.5}
+    - name: Player Sprite Sheet_178
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1323
+        width: 52
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 67.5}
+        - {x: -26, y: 26.5}
+        - {x: -26, y: -60.5}
+        - {x: -22, y: -67.5}
+        - {x: 21, y: -67.5}
+        - {x: 26, y: -54.5}
+        - {x: 26, y: 67.5}
+    - name: Player Sprite Sheet_179
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1323
+        width: 54
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 67}
+        - {x: -4, y: 43}
+        - {x: -27, y: -15}
+        - {x: -27, y: -37}
+        - {x: 0, y: -67}
+        - {x: 27, y: -67}
+        - {x: 27, y: 67}
+    - name: Player Sprite Sheet_180
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1323
+        width: 55
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 67}
+        - {x: -20.5, y: 49}
+        - {x: -27.5, y: -1}
+        - {x: -27.5, y: -53}
+        - {x: 1.5, y: -67}
+        - {x: 27.5, y: -67}
+        - {x: 27.5, y: 67}
+    - name: Player Sprite Sheet_181
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1323
+        width: 56
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 67}
+        - {x: -28, y: 12}
+        - {x: -28, y: -37}
+        - {x: 2, y: -67}
+        - {x: 21, y: -67}
+        - {x: 27, y: -5}
+        - {x: 28, y: 6}
+        - {x: 28, y: 67}
+    - name: Player Sprite Sheet_182
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1323
+        width: 56
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 67}
+        - {x: -16, y: 46}
+        - {x: -28, y: -7}
+        - {x: -28, y: -47}
+        - {x: 2, y: -67}
+        - {x: 21, y: -67}
+        - {x: 28, y: -10}
+        - {x: 28, y: 66}
+        - {x: 27, y: 67}
+    - name: Player Sprite Sheet_183
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1323
+        width: 58
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 67}
+        - {x: -29, y: 17}
+        - {x: -29, y: -38}
+        - {x: 2, y: -67}
+        - {x: 22, y: -67}
+        - {x: 29, y: -19}
+        - {x: 29, y: 67}
+    - name: Player Sprite Sheet_184
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1323
+        width: 58
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 67}
+        - {x: -22, y: 4}
+        - {x: -29, y: -15}
+        - {x: -29, y: -46}
+        - {x: 3, y: -67}
+        - {x: 22, y: -67}
+        - {x: 29, y: -39}
+        - {x: 29, y: 67}
+    - name: Player Sprite Sheet_185
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1322
+        width: 59
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.5, y: 67.5}
+        - {x: -29.5, y: 30.5}
+        - {x: -29.5, y: -55.5}
+        - {x: -21.5, y: -67.5}
+        - {x: 21.5, y: -67.5}
+        - {x: 26.5, y: -9.5}
+        - {x: 29.5, y: 24.5}
+        - {x: 29.5, y: 67.5}
+    - name: Player Sprite Sheet_186
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1322
+        width: 60
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 67.5}
+        - {x: -30, y: 18.5}
+        - {x: -30, y: -57.5}
+        - {x: -24, y: -67.5}
+        - {x: 22, y: -67.5}
+        - {x: 30, y: 30.5}
+        - {x: 30, y: 66.5}
+        - {x: 28, y: 67.5}
+    - name: Player Sprite Sheet_187
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1322
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 67}
+        - {x: -30.5, y: 17}
+        - {x: -30.5, y: -51}
+        - {x: 0.5, y: -67}
+        - {x: 25.5, y: -67}
+        - {x: 30.5, y: -24}
+        - {x: 30.5, y: 67}
+    - name: Player Sprite Sheet_188
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1322
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 67}
+        - {x: -30.5, y: 10}
+        - {x: -30.5, y: -35}
+        - {x: -29.5, y: -35}
+        - {x: -23.5, y: -32}
+        - {x: 4.5, y: -66}
+        - {x: 5.5, y: -67}
+        - {x: 27.5, y: -67}
+        - {x: 30.5, y: -45}
+        - {x: 30.5, y: 67}
+    - name: Player Sprite Sheet_189
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1322
+        width: 61
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 67}
+        - {x: -20.5, y: 49}
+        - {x: -30.5, y: 36}
+        - {x: -30.5, y: -63}
+        - {x: -27.5, y: -67}
+        - {x: 23.5, y: -67}
+        - {x: 30.5, y: -38}
+        - {x: 30.5, y: 67}
+    - name: Player Sprite Sheet_190
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1322
+        width: 62
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: -45}
+        - {x: 1, y: -67}
+        - {x: 23, y: -67}
+        - {x: 31, y: -22}
+        - {x: 31, y: 67}
+        - {x: 3, y: 67}
+        - {x: -31, y: 35}
+    - name: Player Sprite Sheet_191
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1176
+        width: 43
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 70}
+        - {x: -21.5, y: 47}
+        - {x: -21.5, y: -70}
+        - {x: -6.5, y: -70}
+        - {x: 21.5, y: -30}
+        - {x: 21.5, y: 13}
+        - {x: 11.5, y: 70}
+    - name: Player Sprite Sheet_192
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1176
+        width: 41
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 69.5}
+        - {x: -20.5, y: 41.5}
+        - {x: -20.5, y: -69.5}
+        - {x: -2.5, y: -69.5}
+        - {x: 20.5, y: -37.5}
+        - {x: 20.5, y: 30.5}
+        - {x: 12.5, y: 69.5}
+    - name: Player Sprite Sheet_193
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1176
+        width: 42
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 69.5}
+        - {x: -21, y: -69.5}
+        - {x: -2, y: -69.5}
+        - {x: 21, y: -30.5}
+        - {x: 21, y: 24.5}
+        - {x: 13, y: 69.5}
+    - name: Player Sprite Sheet_194
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1177
+        width: 43
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 68.5}
+        - {x: -8.5, y: 65.5}
+        - {x: -15.5, y: 44.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -21.5, y: -56.5}
+        - {x: -18.5, y: -66.5}
+        - {x: -14.5, y: -68.5}
+        - {x: 0.5, y: -68.5}
+        - {x: 21.5, y: -30.5}
+        - {x: 21.5, y: 12.5}
+        - {x: 15.5, y: 68.5}
+    - name: Player Sprite Sheet_195
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1177
+        width: 44
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 68.5}
+        - {x: -22, y: 61.5}
+        - {x: -22, y: -68.5}
+        - {x: 14, y: -68.5}
+        - {x: 22, y: -42.5}
+        - {x: 22, y: 52.5}
+        - {x: 17, y: 68.5}
+    - name: Player Sprite Sheet_196
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1177
+        width: 44
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 68.5}
+        - {x: -6, y: 68.5}
+        - {x: -22, y: 17.5}
+        - {x: -22, y: -36.5}
+        - {x: -18, y: -38.5}
+        - {x: -12, y: -66.5}
+        - {x: -10, y: -68.5}
+        - {x: 12, y: -68.5}
+        - {x: 22, y: -41.5}
+        - {x: 22, y: 63.5}
+        - {x: 21, y: 67.5}
+    - name: Player Sprite Sheet_197
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1177
+        width: 45
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1.5, y: 68}
+        - {x: -14.5, y: 45}
+        - {x: -22.5, y: -12}
+        - {x: -22.5, y: -41}
+        - {x: -9.5, y: -68}
+        - {x: 8.5, y: -68}
+        - {x: 22.5, y: -41}
+        - {x: 22.5, y: 61}
+        - {x: 20.5, y: 68}
+    - name: Player Sprite Sheet_198
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1177
+        width: 44
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 68}
+        - {x: -11, y: 39}
+        - {x: -22, y: -6}
+        - {x: -22, y: -52}
+        - {x: -8, y: -68}
+        - {x: 12, y: -68}
+        - {x: 22, y: -38}
+        - {x: 22, y: 68}
+    - name: Player Sprite Sheet_199
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1177
+        width: 46
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 67.5}
+        - {x: -23, y: 7.5}
+        - {x: -23, y: -41.5}
+        - {x: -8, y: -67.5}
+        - {x: 12, y: -67.5}
+        - {x: 23, y: -34.5}
+        - {x: 23, y: 67.5}
+    - name: Player Sprite Sheet_200
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1177
+        width: 47
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 67.5}
+        - {x: -13.5, y: 38.5}
+        - {x: -23.5, y: 5.5}
+        - {x: -23.5, y: -63.5}
+        - {x: -11.5, y: -67.5}
+        - {x: 23.5, y: -67.5}
+        - {x: 23.5, y: 67.5}
+    - name: Player Sprite Sheet_201
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1177
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -22.5}
+        - {x: 24.5, y: 67.5}
+        - {x: 2.5, y: 67.5}
+        - {x: -14.5, y: 43.5}
+        - {x: -24.5, y: -12.5}
+        - {x: -24.5, y: -41.5}
+        - {x: -1.5, y: -67.5}
+        - {x: 15.5, y: -67.5}
+        - {x: 15.5, y: -66.5}
+        - {x: 12.5, y: -62.5}
+        - {x: 23.5, y: -25.5}
+    - name: Player Sprite Sheet_202
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1177
+        width: 51
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 67.5}
+        - {x: -25.5, y: 20.5}
+        - {x: -25.5, y: -37.5}
+        - {x: -1.5, y: -67.5}
+        - {x: 18.5, y: -67.5}
+        - {x: 25.5, y: -25.5}
+        - {x: 25.5, y: 65.5}
+        - {x: 23.5, y: 67.5}
+    - name: Player Sprite Sheet_203
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1177
+        width: 52
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 67.5}
+        - {x: 5, y: 60.5}
+        - {x: -3, y: 43.5}
+        - {x: -10, y: -12.5}
+        - {x: -6, y: -14.5}
+        - {x: -2, y: -15.5}
+        - {x: -25, y: -16.5}
+        - {x: -26, y: -17.5}
+        - {x: -26, y: -37.5}
+        - {x: -1, y: -67.5}
+        - {x: 20, y: -67.5}
+        - {x: 26, y: -21.5}
+        - {x: 26, y: 66.5}
+        - {x: 25, y: 67.5}
+    - name: Player Sprite Sheet_204
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1030
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 70.5}
+        - {x: -26.5, y: -70.5}
+        - {x: 5.5, y: -70.5}
+        - {x: 26.5, y: -44.5}
+        - {x: 26.5, y: 42.5}
+        - {x: 15.5, y: 70.5}
+    - name: Player Sprite Sheet_205
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1030
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 70.5}
+        - {x: -26.5, y: 64.5}
+        - {x: -26.5, y: -70.5}
+        - {x: -5.5, y: -70.5}
+        - {x: 16.5, y: -51.5}
+        - {x: 26.5, y: -32.5}
+        - {x: 26.5, y: 25.5}
+        - {x: 16.5, y: 70.5}
+    - name: Player Sprite Sheet_206
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1030
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 48.5}
+        - {x: 17.5, y: 70.5}
+        - {x: -22.5, y: 70.5}
+        - {x: -26.5, y: 31.5}
+        - {x: -26.5, y: -70.5}
+        - {x: -14.5, y: -70.5}
+        - {x: -13.5, y: -69.5}
+        - {x: 16.5, y: -53.5}
+        - {x: 26.5, y: -42.5}
+    - name: Player Sprite Sheet_207
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1030
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 70.5}
+        - {x: -26.5, y: 70.5}
+        - {x: -26.5, y: -70.5}
+        - {x: -10.5, y: -70.5}
+        - {x: 11.5, y: -54.5}
+        - {x: 26.5, y: -29.5}
+        - {x: 26.5, y: 13.5}
+    - name: Player Sprite Sheet_208
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1030
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: -35.5}
+        - {x: 26, y: 43.5}
+        - {x: 18, y: 70.5}
+        - {x: -21, y: 70.5}
+        - {x: -26, y: 14.5}
+        - {x: -26, y: -66.5}
+        - {x: -21, y: -70.5}
+        - {x: -13, y: -70.5}
+        - {x: -1, y: -24.5}
+        - {x: -4, y: -41.5}
+        - {x: 9, y: -54.5}
+    - name: Player Sprite Sheet_209
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1030
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -41.5}
+        - {x: 4, y: -48.5}
+        - {x: 10, y: -49.5}
+        - {x: 26, y: -33.5}
+        - {x: 26, y: 33.5}
+        - {x: 15, y: 70.5}
+        - {x: -18, y: 70.5}
+        - {x: -22, y: 67.5}
+        - {x: -26, y: -29.5}
+        - {x: -26, y: -67.5}
+        - {x: -21, y: -70.5}
+        - {x: -13, y: -70.5}
+        - {x: -6, y: -38.5}
+        - {x: -1, y: -29.5}
+        - {x: -5, y: -37.5}
+    - name: Player Sprite Sheet_210
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1030
+        width: 52
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 70.5}
+        - {x: -18, y: 62.5}
+        - {x: -26, y: -23.5}
+        - {x: -26, y: -70.5}
+        - {x: 3, y: -70.5}
+        - {x: 26, y: -30.5}
+        - {x: 26, y: 46.5}
+        - {x: 6, y: 70.5}
+    - name: Player Sprite Sheet_211
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1030
+        width: 51
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: -70.5}
+        - {x: -12.5, y: -70.5}
+        - {x: 25.5, y: -38.5}
+        - {x: 25.5, y: 37.5}
+        - {x: 13.5, y: 70.5}
+        - {x: -22.5, y: 70.5}
+        - {x: -25.5, y: 29.5}
+    - name: Player Sprite Sheet_212
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1030
+        width: 50
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 70.5}
+        - {x: -25, y: -49.5}
+        - {x: -25, y: -66.5}
+        - {x: -19, y: -70.5}
+        - {x: -10, y: -70.5}
+        - {x: 25, y: -20.5}
+        - {x: 25, y: 21.5}
+        - {x: 7, y: 70.5}
+    - name: Player Sprite Sheet_213
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1030
+        width: 49
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 70.5}
+        - {x: -17.5, y: 70.5}
+        - {x: -24.5, y: 26.5}
+        - {x: -24.5, y: -68.5}
+        - {x: -22.5, y: -70.5}
+        - {x: -4.5, y: -70.5}
+        - {x: 24.5, y: -25.5}
+        - {x: 24.5, y: 17.5}
+        - {x: 15.5, y: 65.5}
+    - name: Player Sprite Sheet_214
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1030
+        width: 48
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 70.5}
+        - {x: -24, y: 40.5}
+        - {x: -24, y: -70.5}
+        - {x: 0, y: -70.5}
+        - {x: 24, y: -50.5}
+        - {x: 24, y: 48.5}
+        - {x: 19, y: 70.5}
+    - name: Player Sprite Sheet_215
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1030
+        width: 46
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 70}
+        - {x: -23, y: 43}
+        - {x: -23, y: -70}
+        - {x: -8, y: -70}
+        - {x: 23, y: -28}
+        - {x: 23, y: 31}
+        - {x: 17, y: 70}
+    - name: Player Sprite Sheet_216
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1030
+        width: 45
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 70}
+        - {x: -19.5, y: 68}
+        - {x: -22.5, y: 18}
+        - {x: -22.5, y: -70}
+        - {x: 2.5, y: -70}
+        - {x: 22.5, y: -21}
+        - {x: 22.5, y: 36}
+        - {x: 9.5, y: 70}
+    - name: Player Sprite Sheet_217
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 884
+        width: 59
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.5, y: -48}
+        - {x: 20.5, y: -17}
+        - {x: 10.5, y: 5}
+        - {x: 8.5, y: 6}
+        - {x: 12.5, y: 30}
+        - {x: 10.5, y: 68}
+        - {x: -13.5, y: 68}
+        - {x: -29.5, y: 20}
+        - {x: -29.5, y: -68}
+        - {x: -14.5, y: -68}
+        - {x: -14.5, y: -66}
+        - {x: 15.5, y: -66}
+        - {x: 29.5, y: -64}
+    - name: Player Sprite Sheet_218
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 884
+        width: 59
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 10.5}
+        - {x: 5.5, y: 65.5}
+        - {x: 3.5, y: 68.5}
+        - {x: -12.5, y: 68.5}
+        - {x: -15.5, y: 67.5}
+        - {x: -29.5, y: 41.5}
+        - {x: -29.5, y: -68.5}
+        - {x: -14.5, y: -68.5}
+        - {x: -14.5, y: -66.5}
+        - {x: 29.5, y: -65.5}
+        - {x: 29.5, y: -31.5}
+    - name: Player Sprite Sheet_219
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 884
+        width: 58
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 68.5}
+        - {x: -29, y: -68.5}
+        - {x: 29, y: -68.5}
+        - {x: 29, y: 38.5}
+        - {x: 28, y: 43.5}
+        - {x: 7, y: 68.5}
+    - name: Player Sprite Sheet_220
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 884
+        width: 57
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 68.5}
+        - {x: -28.5, y: 48.5}
+        - {x: -28.5, y: -68.5}
+        - {x: 13.5, y: -68.5}
+        - {x: 28.5, y: -62.5}
+        - {x: 28.5, y: 2.5}
+        - {x: 10.5, y: 68.5}
+    - name: Player Sprite Sheet_221
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 884
+        width: 57
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 69}
+        - {x: -28.5, y: 56}
+        - {x: -28.5, y: -69}
+        - {x: -5.5, y: -69}
+        - {x: 28.5, y: -59}
+        - {x: 28.5, y: 4}
+        - {x: 14.5, y: 69}
+    - name: Player Sprite Sheet_222
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 884
+        width: 56
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 69}
+        - {x: -28, y: -69}
+        - {x: 5, y: -69}
+        - {x: 28, y: -65}
+        - {x: 28, y: -16}
+        - {x: 12, y: 69}
+    - name: Player Sprite Sheet_223
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 884
+        width: 55
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.5, y: 22.5}
+        - {x: -27.5, y: -69.5}
+        - {x: 27.5, y: -69.5}
+        - {x: 27.5, y: 14.5}
+        - {x: 8.5, y: 66.5}
+        - {x: 6.5, y: 69.5}
+        - {x: -10.5, y: 69.5}
+        - {x: -17.5, y: 66.5}
+    - name: Player Sprite Sheet_224
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 884
+        width: 53
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 69.5}
+        - {x: -10.5, y: 69.5}
+        - {x: -12.5, y: 64.5}
+        - {x: -26.5, y: 35.5}
+        - {x: -26.5, y: -69.5}
+        - {x: 2.5, y: -69.5}
+        - {x: 26.5, y: -55.5}
+        - {x: 26.5, y: 0.5}
+        - {x: 9.5, y: 68.5}
+    - name: Player Sprite Sheet_225
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 884
+        width: 52
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 69.5}
+        - {x: -24, y: 69.5}
+        - {x: -26, y: 48.5}
+        - {x: -26, y: -69.5}
+        - {x: -7, y: -69.5}
+        - {x: 26, y: -57.5}
+        - {x: 26, y: 11.5}
+        - {x: 11, y: 68.5}
+    - name: Player Sprite Sheet_226
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 884
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -70}
+        - {x: 11.5, y: -70}
+        - {x: 26.5, y: -65}
+        - {x: 26.5, y: 44}
+        - {x: 23.5, y: 70}
+        - {x: -20.5, y: 70}
+        - {x: -26.5, y: 47}
+    - name: Player Sprite Sheet_227
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 884
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 70}
+        - {x: -26.5, y: 25}
+        - {x: -26.5, y: -68}
+        - {x: -22.5, y: -70}
+        - {x: 10.5, y: -70}
+        - {x: 26.5, y: -67}
+        - {x: 26.5, y: 54}
+        - {x: 23.5, y: 70}
+    - name: Player Sprite Sheet_228
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 884
+        width: 53
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 42}
+        - {x: 7.5, y: 70}
+        - {x: -15.5, y: 70}
+        - {x: -26.5, y: 28}
+        - {x: -26.5, y: -67}
+        - {x: -21.5, y: -70}
+        - {x: -7.5, y: -70}
+        - {x: 22.5, y: -60}
+        - {x: 26.5, y: -40}
+        - {x: 26.5, y: 0}
+    - name: Player Sprite Sheet_229
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 884
+        width: 53
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 61.5}
+        - {x: 5.5, y: 70.5}
+        - {x: -26.5, y: 70.5}
+        - {x: -26.5, y: -70.5}
+        - {x: -11.5, y: -70.5}
+        - {x: 20.5, y: -55.5}
+        - {x: 26.5, y: -23.5}
+        - {x: 26.5, y: 7.5}
+    - name: Player Sprite Sheet_230
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 739
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 65}
+        - {x: -25, y: 41}
+        - {x: -25, y: -55}
+        - {x: -19, y: -59}
+        - {x: -14, y: -60}
+        - {x: -12, y: -58}
+        - {x: 7, y: -65}
+        - {x: 25, y: -65}
+        - {x: 25, y: 59}
+        - {x: 20, y: 65}
+    - name: Player Sprite Sheet_231
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 739
+        width: 51
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 65}
+        - {x: -8.5, y: 62}
+        - {x: -25.5, y: 12}
+        - {x: -25.5, y: -57}
+        - {x: -17.5, y: -61}
+        - {x: -13.5, y: -61}
+        - {x: -12.5, y: -58}
+        - {x: 9.5, y: -65}
+        - {x: 25.5, y: -65}
+        - {x: 25.5, y: 33}
+        - {x: 22.5, y: 65}
+    - name: Player Sprite Sheet_232
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 739
+        width: 53
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 65.5}
+        - {x: -26.5, y: 20.5}
+        - {x: -26.5, y: -65.5}
+        - {x: 26.5, y: -65.5}
+        - {x: 26.5, y: -4.5}
+        - {x: 17.5, y: 65.5}
+    - name: Player Sprite Sheet_233
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 740
+        width: 54
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: -64}
+        - {x: -25, y: -65}
+        - {x: 27, y: -65}
+        - {x: 27, y: -23}
+        - {x: 19, y: 62}
+        - {x: 13, y: 65}
+        - {x: -13, y: 65}
+        - {x: -27, y: 49}
+    - name: Player Sprite Sheet_234
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 740
+        width: 55
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 65.5}
+        - {x: -7.5, y: 65.5}
+        - {x: -27.5, y: 36.5}
+        - {x: -27.5, y: -65.5}
+        - {x: 27.5, y: -65.5}
+        - {x: 27.5, y: -49.5}
+        - {x: 19.5, y: 63.5}
+    - name: Player Sprite Sheet_235
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 741
+        width: 57
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 1}
+        - {x: 13.5, y: 34}
+        - {x: 14.5, y: 64}
+        - {x: 9.5, y: 65}
+        - {x: -25.5, y: 65}
+        - {x: -28.5, y: 45}
+        - {x: -28.5, y: -65}
+        - {x: 28.5, y: -65}
+        - {x: 28.5, y: -48}
+        - {x: 13.5, y: 0}
+    - name: Player Sprite Sheet_236
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 740
+        width: 57
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 66}
+        - {x: -28.5, y: -66}
+        - {x: 28.5, y: -66}
+        - {x: 28.5, y: 42}
+        - {x: 14.5, y: 66}
+    - name: Player Sprite Sheet_237
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 739
+        width: 58
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 66.5}
+        - {x: -15, y: 66.5}
+        - {x: -29, y: 25.5}
+        - {x: -29, y: -66.5}
+        - {x: 26, y: -66.5}
+        - {x: 29, y: -65.5}
+        - {x: 29, y: -42.5}
+    - name: Player Sprite Sheet_238
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 739
+        width: 59
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 29.5, y: -31}
+        - {x: 13.5, y: 67}
+        - {x: -12.5, y: 67}
+        - {x: -29.5, y: 28}
+        - {x: -29.5, y: -67}
+        - {x: -14.5, y: -67}
+        - {x: -14.5, y: -66}
+        - {x: 14.5, y: -67}
+        - {x: 29.5, y: -67}
+    - name: Player Sprite Sheet_239
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 739
+        width: 60
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -48}
+        - {x: 11, y: 64}
+        - {x: 7, y: 67}
+        - {x: -20, y: 67}
+        - {x: -30, y: 35}
+        - {x: -30, y: -67}
+        - {x: -15, y: -67}
+        - {x: -15, y: -66}
+        - {x: 18, y: -65}
+        - {x: 30, y: -63}
+    - name: Player Sprite Sheet_240
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 738
+        width: 60
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 67.5}
+        - {x: -13, y: 67.5}
+        - {x: -15, y: 64.5}
+        - {x: -30, y: 22.5}
+        - {x: -30, y: -67.5}
+        - {x: 6, y: -67.5}
+        - {x: 29, y: -65.5}
+        - {x: 30, y: -63.5}
+        - {x: 30, y: -43.5}
+    - name: Player Sprite Sheet_241
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 738
+        width: 60
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 40}
+        - {x: 5, y: 68}
+        - {x: -16, y: 68}
+        - {x: -30, y: 38}
+        - {x: -30, y: -68}
+        - {x: -14, y: -68}
+        - {x: -16, y: -63}
+        - {x: 30, y: -67}
+        - {x: 30, y: -34}
+    - name: Player Sprite Sheet_242
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 738
+        width: 59
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 68}
+        - {x: -29.5, y: 33}
+        - {x: -29.5, y: -68}
+        - {x: 1.5, y: -68}
+        - {x: 29.5, y: -61}
+        - {x: 29.5, y: -51}
+        - {x: 7.5, y: 68}
+    - name: Player Sprite Sheet_243
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 592
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 64}
+        - {x: -19.5, y: 46}
+        - {x: -26.5, y: 16}
+        - {x: -26.5, y: -44}
+        - {x: -4.5, y: -64}
+        - {x: 19.5, y: -64}
+        - {x: 26.5, y: -45}
+        - {x: 26.5, y: 64}
+    - name: Player Sprite Sheet_244
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 592
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 64}
+        - {x: -26.5, y: 58}
+        - {x: -26.5, y: -64}
+        - {x: 26.5, y: -64}
+        - {x: 26.5, y: 64}
+    - name: Player Sprite Sheet_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 592
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 64}
+        - {x: 5.5, y: 63}
+        - {x: -8.5, y: 41}
+        - {x: -26.5, y: -13}
+        - {x: -26.5, y: -59}
+        - {x: -12.5, y: -64}
+        - {x: 15.5, y: -64}
+        - {x: 26.5, y: -27}
+        - {x: 26.5, y: 62}
+        - {x: 25.5, y: 64}
+    - name: Player Sprite Sheet_246
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 592
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 64}
+        - {x: -10.5, y: 38}
+        - {x: -24.5, y: -5}
+        - {x: -26.5, y: -13}
+        - {x: -26.5, y: -39}
+        - {x: -19.5, y: -56}
+        - {x: -3.5, y: -64}
+        - {x: 18.5, y: -64}
+        - {x: 26.5, y: -31}
+        - {x: 26.5, y: 63}
+        - {x: 24.5, y: 64}
+    - name: Player Sprite Sheet_247
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 592
+        width: 53
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 64}
+        - {x: -26.5, y: 8}
+        - {x: -26.5, y: -44}
+        - {x: -25.5, y: -45}
+        - {x: -21.5, y: -48}
+        - {x: -3.5, y: -64}
+        - {x: 16.5, y: -64}
+        - {x: 26.5, y: -30}
+        - {x: 26.5, y: 63}
+        - {x: 25.5, y: 64}
+    - name: Player Sprite Sheet_248
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 592
+        width: 52
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 64}
+        - {x: -7, y: 63}
+        - {x: -26, y: 21}
+        - {x: -26, y: -53}
+        - {x: -14, y: -64}
+        - {x: 16, y: -64}
+        - {x: 26, y: -31}
+        - {x: 26, y: 64}
+    - name: Player Sprite Sheet_249
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 592
+        width: 52
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 64}
+        - {x: -12, y: 43}
+        - {x: -26, y: 7}
+        - {x: -26, y: -42}
+        - {x: -22, y: -49}
+        - {x: -19, y: -51}
+        - {x: -2, y: -64}
+        - {x: 19, y: -64}
+        - {x: 26, y: -44}
+        - {x: 26, y: 64}
+    - name: Player Sprite Sheet_250
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 592
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 64}
+        - {x: -18.5, y: 42}
+        - {x: -25.5, y: 26}
+        - {x: -25.5, y: -64}
+        - {x: 20.5, y: -64}
+        - {x: 25.5, y: -30}
+        - {x: 25.5, y: 63}
+        - {x: 24.5, y: 64}
+    - name: Player Sprite Sheet_251
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 592
+        width: 51
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 64}
+        - {x: -25.5, y: 11}
+        - {x: -25.5, y: -49}
+        - {x: -18.5, y: -55}
+        - {x: 1.5, y: -64}
+        - {x: 25.5, y: -64}
+        - {x: 25.5, y: 64}
+    - name: Player Sprite Sheet_252
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 592
+        width: 49
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 64.5}
+        - {x: -16.5, y: 57.5}
+        - {x: -24.5, y: 31.5}
+        - {x: -24.5, y: -64.5}
+        - {x: 24.5, y: -64.5}
+        - {x: 24.5, y: 64.5}
+    - name: Player Sprite Sheet_253
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 592
+        width: 48
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: -64.5}
+        - {x: 24, y: -64.5}
+        - {x: 24, y: 64.5}
+        - {x: 5, y: 64.5}
+        - {x: -24, y: 38.5}
+    - name: Player Sprite Sheet_254
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 592
+        width: 47
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 65}
+        - {x: -23.5, y: 36}
+        - {x: -23.5, y: -65}
+        - {x: 23.5, y: -65}
+        - {x: 23.5, y: 65}
+    - name: Player Sprite Sheet_255
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 593
+        width: 48
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 64.5}
+        - {x: -24, y: 3.5}
+        - {x: -24, y: -53.5}
+        - {x: -12, y: -62.5}
+        - {x: 0, y: -64.5}
+        - {x: 24, y: -64.5}
+        - {x: 24, y: 62.5}
+        - {x: 22, y: 64.5}
+    - name: Player Sprite Sheet_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 446
+        width: 50
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 66.5}
+        - {x: -25, y: 12.5}
+        - {x: -25, y: -50.5}
+        - {x: -3, y: -66.5}
+        - {x: 20, y: -66.5}
+        - {x: 25, y: -36.5}
+        - {x: 25, y: 66.5}
+    - name: Player Sprite Sheet_257
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 446
+        width: 49
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 66.5}
+        - {x: -1.5, y: 63.5}
+        - {x: -5.5, y: 40.5}
+        - {x: -9.5, y: -13.5}
+        - {x: -5.5, y: -14.5}
+        - {x: -2.5, y: -14.5}
+        - {x: -15.5, y: -14.5}
+        - {x: -22.5, y: -13.5}
+        - {x: -24.5, y: -15.5}
+        - {x: -24.5, y: -30.5}
+        - {x: -13.5, y: -30.5}
+        - {x: -0.5, y: -66.5}
+        - {x: 19.5, y: -66.5}
+        - {x: 24.5, y: -41.5}
+        - {x: 24.5, y: 61.5}
+        - {x: 23.5, y: 66.5}
+    - name: Player Sprite Sheet_258
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 446
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 66}
+        - {x: -5.5, y: 41}
+        - {x: -9.5, y: -13}
+        - {x: -4.5, y: -15}
+        - {x: -3.5, y: -15}
+        - {x: -17.5, y: -15}
+        - {x: -18.5, y: -14}
+        - {x: -23.5, y: -14}
+        - {x: -24.5, y: -15}
+        - {x: -24.5, y: -35}
+        - {x: -0.5, y: -66}
+        - {x: 19.5, y: -66}
+        - {x: 24.5, y: -43}
+        - {x: 24.5, y: 66}
+    - name: Player Sprite Sheet_259
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 446
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 66}
+        - {x: -8.5, y: 41}
+        - {x: -9.5, y: -14}
+        - {x: -5.5, y: -15}
+        - {x: -3.5, y: -15}
+        - {x: -24.5, y: -15}
+        - {x: -24.5, y: -60}
+        - {x: -22.5, y: -66}
+        - {x: 19.5, y: -66}
+        - {x: 24.5, y: -37}
+        - {x: 24.5, y: 66}
+    - name: Player Sprite Sheet_260
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 446
+        width: 49
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 66}
+        - {x: -5.5, y: 38}
+        - {x: -9.5, y: -14}
+        - {x: -5.5, y: -16}
+        - {x: -4.5, y: -16}
+        - {x: -20.5, y: -16}
+        - {x: -21.5, y: -15}
+        - {x: -23.5, y: -15}
+        - {x: -24.5, y: -16}
+        - {x: -24.5, y: -37}
+        - {x: -0.5, y: -66}
+        - {x: 17.5, y: -66}
+        - {x: 24.5, y: -21}
+        - {x: 24.5, y: 66}
+    - name: Player Sprite Sheet_261
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 446
+        width: 49
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 65.5}
+        - {x: -5.5, y: 37.5}
+        - {x: -10.5, y: -14.5}
+        - {x: -6.5, y: -15.5}
+        - {x: -4.5, y: -15.5}
+        - {x: -22.5, y: -15.5}
+        - {x: -24.5, y: -17.5}
+        - {x: -24.5, y: -37.5}
+        - {x: -0.5, y: -65.5}
+        - {x: 18.5, y: -65.5}
+        - {x: 24.5, y: -21.5}
+        - {x: 24.5, y: 65.5}
+    - name: Player Sprite Sheet_262
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 446
+        width: 48
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 65.5}
+        - {x: -10, y: 42.5}
+        - {x: -10, y: -14.5}
+        - {x: -7, y: -15.5}
+        - {x: -4, y: -15.5}
+        - {x: -24, y: -17.5}
+        - {x: -24, y: -38.5}
+        - {x: -3, y: -65.5}
+        - {x: 24, y: -65.5}
+        - {x: 24, y: 65.5}
+    - name: Player Sprite Sheet_263
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 446
+        width: 49
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.5, y: 65}
+        - {x: -7.5, y: 41}
+        - {x: -10.5, y: -14}
+        - {x: -6.5, y: -16}
+        - {x: -5.5, y: -16}
+        - {x: -24.5, y: -18}
+        - {x: -24.5, y: -40}
+        - {x: -1.5, y: -65}
+        - {x: 14.5, y: -65}
+        - {x: 15.5, y: -64}
+        - {x: 24.5, y: -11}
+        - {x: 24.5, y: 65}
+    - name: Player Sprite Sheet_264
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 446
+        width: 49
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 65}
+        - {x: -24.5, y: 29}
+        - {x: -24.5, y: -65}
+        - {x: 19.5, y: -65}
+        - {x: 22.5, y: -59}
+        - {x: 24.5, y: -46}
+        - {x: 24.5, y: 65}
+    - name: Player Sprite Sheet_265
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 446
+        width: 50
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 65}
+        - {x: 4, y: 64}
+        - {x: -10, y: 42}
+        - {x: -14, y: -16}
+        - {x: -24, y: -20}
+        - {x: -25, y: -21}
+        - {x: -25, y: -36}
+        - {x: -24, y: -37}
+        - {x: -23, y: -37}
+        - {x: -3, y: -65}
+        - {x: 17, y: -65}
+        - {x: 25, y: -28}
+        - {x: 25, y: 65}
+    - name: Player Sprite Sheet_266
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 446
+        width: 50
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 64.5}
+        - {x: -25, y: -6.5}
+        - {x: -25, y: -52.5}
+        - {x: -14, y: -64.5}
+        - {x: 16, y: -64.5}
+        - {x: 25, y: -46.5}
+        - {x: 25, y: 64.5}
+    - name: Player Sprite Sheet_267
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 446
+        width: 50
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 43.5}
+        - {x: -16, y: -16.5}
+        - {x: -25, y: -21.5}
+        - {x: -25, y: -38.5}
+        - {x: -21, y: -39.5}
+        - {x: -3, y: -64.5}
+        - {x: 25, y: -64.5}
+        - {x: 25, y: 64.5}
+        - {x: 6, y: 64.5}
+    - name: Player Sprite Sheet_268
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 446
+        width: 52
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -1.5}
+        - {x: -14, y: -14.5}
+        - {x: -10, y: -16.5}
+        - {x: -8, y: -16.5}
+        - {x: -26, y: -24.5}
+        - {x: -26, y: -37.5}
+        - {x: -25, y: -40.5}
+        - {x: -21, y: -41.5}
+        - {x: -5, y: -64.5}
+        - {x: 20, y: -64.5}
+        - {x: 26, y: -34.5}
+        - {x: 26, y: 64.5}
+        - {x: 8, y: 64.5}
+        - {x: -13, y: 44.5}
+    - name: Player Sprite Sheet_269
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 301
+        width: 42
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 70}
+        - {x: -21, y: 34}
+        - {x: -21, y: -57}
+        - {x: -15, y: -70}
+        - {x: 20, y: -70}
+        - {x: 21, y: -57}
+        - {x: 21, y: 70}
+    - name: Player Sprite Sheet_270
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 301
+        width: 42
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 69.5}
+        - {x: -5, y: 69.5}
+        - {x: -21, y: -13.5}
+        - {x: -21, y: -37.5}
+        - {x: -16, y: -39.5}
+        - {x: -13, y: -64.5}
+        - {x: -11, y: -69.5}
+        - {x: 6, y: -69.5}
+        - {x: 21, y: -32.5}
+        - {x: 21, y: 51.5}
+        - {x: 16, y: 67.5}
+    - name: Player Sprite Sheet_271
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 301
+        width: 43
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 69.5}
+        - {x: -3.5, y: 68.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -21.5, y: -60.5}
+        - {x: -17.5, y: -69.5}
+        - {x: 9.5, y: -69.5}
+        - {x: 21.5, y: -33.5}
+        - {x: 21.5, y: 59.5}
+        - {x: 19.5, y: 69.5}
+    - name: Player Sprite Sheet_272
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 301
+        width: 45
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: 69}
+        - {x: -3.5, y: 69}
+        - {x: -22.5, y: 10}
+        - {x: -22.5, y: -36}
+        - {x: -20.5, y: -36}
+        - {x: -8.5, y: -68}
+        - {x: -7.5, y: -69}
+        - {x: 10.5, y: -69}
+        - {x: 17.5, y: -66}
+        - {x: 22.5, y: -35}
+        - {x: 22.5, y: 67}
+    - name: Player Sprite Sheet_273
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 301
+        width: 46
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 68.5}
+        - {x: -3, y: 68.5}
+        - {x: -23, y: -14.5}
+        - {x: -23, y: -48.5}
+        - {x: -8, y: -68.5}
+        - {x: 12, y: -68.5}
+        - {x: 23, y: -22.5}
+        - {x: 23, y: 49.5}
+        - {x: 21, y: 61.5}
+    - name: Player Sprite Sheet_274
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 301
+        width: 48
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: 68}
+        - {x: 0, y: 68}
+        - {x: -3, y: 64}
+        - {x: -24, y: -11}
+        - {x: -24, y: -48}
+        - {x: -6, y: -68}
+        - {x: 14, y: -68}
+        - {x: 24, y: -20}
+        - {x: 24, y: 67}
+    - name: Player Sprite Sheet_275
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 301
+        width: 48
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 67.5}
+        - {x: -13, y: 42.5}
+        - {x: -24, y: -13.5}
+        - {x: -24, y: -42.5}
+        - {x: -5, y: -67.5}
+        - {x: 17, y: -67.5}
+        - {x: 24, y: -49.5}
+        - {x: 24, y: 67.5}
+    - name: Player Sprite Sheet_276
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 301
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 67.5}
+        - {x: 0.5, y: 66.5}
+        - {x: -3.5, y: 40.5}
+        - {x: -9.5, y: -11.5}
+        - {x: -3.5, y: -14.5}
+        - {x: -2.5, y: -14.5}
+        - {x: -22.5, y: -15.5}
+        - {x: -24.5, y: -16.5}
+        - {x: -24.5, y: -36.5}
+        - {x: -2.5, y: -67.5}
+        - {x: 17.5, y: -67.5}
+        - {x: 24.5, y: -33.5}
+        - {x: 24.5, y: 67.5}
+    - name: Player Sprite Sheet_277
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 300
+        width: 49
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.5, y: 67.5}
+        - {x: -24.5, y: -10.5}
+        - {x: -24.5, y: -35.5}
+        - {x: -4.5, y: -67.5}
+        - {x: 24.5, y: -67.5}
+        - {x: 24.5, y: 67.5}
+    - name: Player Sprite Sheet_278
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 300
+        width: 50
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 67.5}
+        - {x: -25, y: 21.5}
+        - {x: -25, y: -58.5}
+        - {x: -9, y: -67.5}
+        - {x: 19, y: -67.5}
+        - {x: 25, y: -41.5}
+        - {x: 25, y: 67.5}
+    - name: Player Sprite Sheet_279
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 300
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 67}
+        - {x: -9, y: 42}
+        - {x: -9, y: -10}
+        - {x: -4, y: -14}
+        - {x: -3, y: -14}
+        - {x: -17, y: -14}
+        - {x: -23, y: -13}
+        - {x: -25, y: -14}
+        - {x: -25, y: -34}
+        - {x: -3, y: -67}
+        - {x: 18, y: -67}
+        - {x: 25, y: -24}
+        - {x: 25, y: 67}
+    - name: Player Sprite Sheet_280
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 300
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 67}
+        - {x: -25, y: 32}
+        - {x: -25, y: -67}
+        - {x: 20, y: -67}
+        - {x: 25, y: -30}
+        - {x: 25, y: 61}
+        - {x: 23, y: 67}
+    - name: Player Sprite Sheet_281
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 300
+        width: 50
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 67}
+        - {x: -25, y: 7}
+        - {x: -25, y: -30}
+        - {x: -21, y: -29}
+        - {x: 0, y: -67}
+        - {x: 25, y: -67}
+        - {x: 25, y: 67}
+    - name: Player Sprite Sheet_282
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 155
+        width: 51
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 71.5}
+        - {x: -25.5, y: -45.5}
+        - {x: -25.5, y: -71.5}
+        - {x: 10.5, y: -71.5}
+        - {x: 25.5, y: -67.5}
+        - {x: 25.5, y: 51.5}
+        - {x: 23.5, y: 71.5}
+    - name: Player Sprite Sheet_283
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 154
+        width: 50
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 72.5}
+        - {x: -25, y: 27.5}
+        - {x: -25, y: -72.5}
+        - {x: 3, y: -72.5}
+        - {x: 25, y: -42.5}
+        - {x: 25, y: 25.5}
+        - {x: 10, y: 72.5}
+    - name: Player Sprite Sheet_284
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 154
+        width: 50
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: -34}
+        - {x: 5, y: -15}
+        - {x: 5, y: -28}
+        - {x: 1, y: -40}
+        - {x: -2, y: -44}
+        - {x: -2, y: -48}
+        - {x: 25, y: -70}
+        - {x: 25, y: 73}
+        - {x: -13, y: 73}
+        - {x: -25, y: 3}
+        - {x: -25, y: -73}
+        - {x: -11, y: -73}
+        - {x: -3, y: -47}
+        - {x: -1, y: -41}
+        - {x: 2, y: -37}
+    - name: Player Sprite Sheet_285
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 154
+        width: 48
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 73}
+        - {x: -24, y: 44}
+        - {x: -24, y: -73}
+        - {x: 10, y: -73}
+        - {x: 24, y: -71}
+        - {x: 24, y: 73}
+    - name: Player Sprite Sheet_286
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 154
+        width: 47
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 73}
+        - {x: -23.5, y: 26}
+        - {x: -23.5, y: -73}
+        - {x: -6.5, y: -73}
+        - {x: 23.5, y: -44}
+        - {x: 23.5, y: 51}
+        - {x: 16.5, y: 73}
+    - name: Player Sprite Sheet_287
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 154
+        width: 47
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22.5, y: 43}
+        - {x: 8.5, y: 73}
+        - {x: -22.5, y: 73}
+        - {x: -23.5, y: 58}
+        - {x: -23.5, y: -70}
+        - {x: -17.5, y: -73}
+        - {x: -9.5, y: -73}
+        - {x: -9.5, y: -70}
+        - {x: 23.5, y: -28}
+        - {x: 23.5, y: 36}
+    - name: Player Sprite Sheet_288
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 154
+        width: 45
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 72.5}
+        - {x: -22.5, y: 55.5}
+        - {x: -22.5, y: -72.5}
+        - {x: -5.5, y: -72.5}
+        - {x: 22.5, y: -29.5}
+        - {x: 22.5, y: 26.5}
+        - {x: 14.5, y: 72.5}
+    - name: Player Sprite Sheet_289
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 155
+        width: 43
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.5, y: 72}
+        - {x: -11.5, y: 72}
+        - {x: -19.5, y: 70}
+        - {x: -21.5, y: -24}
+        - {x: -21.5, y: -71}
+        - {x: -19.5, y: -72}
+        - {x: -8.5, y: -72}
+        - {x: 21.5, y: -25}
+        - {x: 21.5, y: 15}
+        - {x: 15.5, y: 64}
+    - name: Player Sprite Sheet_290
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 154
+        width: 41
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 72.5}
+        - {x: -16.5, y: 68.5}
+        - {x: -20.5, y: -17.5}
+        - {x: -20.5, y: -72.5}
+        - {x: 12.5, y: -72.5}
+        - {x: 20.5, y: -50.5}
+        - {x: 20.5, y: 72.5}
+    - name: Player Sprite Sheet_291
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 154
+        width: 40
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 43}
+        - {x: 12, y: 71}
+        - {x: 10, y: 72}
+        - {x: -11, y: 72}
+        - {x: -20, y: 48}
+        - {x: -20, y: -71}
+        - {x: -17, y: -72}
+        - {x: -6, y: -72}
+        - {x: -6, y: -69}
+        - {x: 20, y: -25}
+        - {x: 20, y: 19}
+    - name: Player Sprite Sheet_292
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 154
+        width: 39
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 72}
+        - {x: -19.5, y: 49}
+        - {x: -19.5, y: -71}
+        - {x: -18.5, y: -72}
+        - {x: -0.5, y: -72}
+        - {x: 19.5, y: -44}
+        - {x: 19.5, y: 72}
+    - name: Player Sprite Sheet_293
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 155
+        width: 40
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 71}
+        - {x: -20, y: 41}
+        - {x: -20, y: -65}
+        - {x: -18, y: -70}
+        - {x: -15, y: -71}
+        - {x: 1, y: -71}
+        - {x: 20, y: -44}
+        - {x: 20, y: 67}
+        - {x: 19, y: 71}
+    - name: Player Sprite Sheet_294
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 155
+        width: 41
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 70.5}
+        - {x: -20.5, y: -70.5}
+        - {x: 2.5, y: -70.5}
+        - {x: 20.5, y: -37.5}
+        - {x: 20.5, y: 56.5}
+        - {x: 17.5, y: 70.5}
+    - name: Player Sprite Sheet_295
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 8
+        width: 69
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: -68}
+        - {x: 19.5, y: -68}
+        - {x: 34.5, y: -67}
+        - {x: 34.5, y: 5}
+        - {x: 20.5, y: 68}
+        - {x: -18.5, y: 68}
+        - {x: -34.5, y: -2}
+    - name: Player Sprite Sheet_296
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 8
+        width: 69
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 68.5}
+        - {x: -34.5, y: -45.5}
+        - {x: -34.5, y: -68.5}
+        - {x: 34.5, y: -68.5}
+        - {x: 34.5, y: 16.5}
+        - {x: 23.5, y: 68.5}
+    - name: Player Sprite Sheet_297
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 9
+        width: 67
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 68}
+        - {x: -11.5, y: 68}
+        - {x: -24.5, y: 41}
+        - {x: -33.5, y: -17}
+        - {x: -33.5, y: -68}
+        - {x: 33.5, y: -68}
+        - {x: 33.5, y: 0}
+        - {x: 31.5, y: 6}
+    - name: Player Sprite Sheet_298
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 8
+        width: 64
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 4}
+        - {x: 20, y: 0}
+        - {x: 25, y: 0}
+        - {x: 32, y: 2}
+        - {x: 32, y: 5}
+        - {x: 19, y: 41}
+        - {x: 10, y: 64}
+        - {x: 7, y: 69}
+        - {x: -15, y: 69}
+        - {x: -32, y: -50}
+        - {x: -32, y: -69}
+        - {x: 14, y: -69}
+        - {x: 32, y: -59}
+        - {x: 32, y: -22}
+        - {x: 17, y: 2}
+    - name: Player Sprite Sheet_299
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 8
+        width: 61
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 70}
+        - {x: -20.5, y: 70}
+        - {x: -22.5, y: 69}
+        - {x: -30.5, y: 21}
+        - {x: -30.5, y: -70}
+        - {x: -5.5, y: -70}
+        - {x: 30.5, y: -61}
+        - {x: 30.5, y: 34}
+        - {x: 12.5, y: 68}
+    - name: Player Sprite Sheet_300
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 8
+        width: 56
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 34.5}
+        - {x: 14, y: 70.5}
+        - {x: -15, y: 70.5}
+        - {x: -28, y: -48.5}
+        - {x: -28, y: -70.5}
+        - {x: -12, y: -70.5}
+        - {x: 0, y: -35.5}
+        - {x: 13, y: -58.5}
+        - {x: 28, y: -57.5}
+    - name: Player Sprite Sheet_301
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 8
+        width: 53
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 71.5}
+        - {x: -26.5, y: 8.5}
+        - {x: -26.5, y: -71.5}
+        - {x: 12.5, y: -71.5}
+        - {x: 26.5, y: -62.5}
+        - {x: 26.5, y: 49.5}
+        - {x: 12.5, y: 71.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -27,7 +27,7 @@ public class PlayerShootScript : MonoBehaviour {
 
     //Variables to flip the character
     private bool m_FacingRight;
-    private SpriteRenderer m_PlayerSprite;
+    private Animator m_PlayerAnimator;
 
 
 	// Use this for initialization
@@ -44,7 +44,7 @@ public class PlayerShootScript : MonoBehaviour {
     void InitializeVariables()
     {
         m_HandTransform = transform.FindChild("Hand");
-        m_PlayerSprite = GetComponent<SpriteRenderer>();
+        m_PlayerAnimator = GetComponent<Animator>();
         m_HandForce = 5f;
         m_FacingRight = true;
     }
@@ -102,7 +102,6 @@ public class PlayerShootScript : MonoBehaviour {
     void FlipCharacter()
     {
         m_FacingRight = !m_FacingRight;
-        m_PlayerSprite.flipX = m_FacingRight;
         m_HandTransform.localPosition = new Vector3(-m_HandTransform.localPosition.x, m_HandTransform.localPosition.y, m_HandTransform.localPosition.z);
         
     }

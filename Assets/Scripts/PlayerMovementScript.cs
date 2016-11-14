@@ -58,6 +58,7 @@ public class PlayerMovementScript : MonoBehaviour
 
 
         m_IsJumping = false;
+        m_IsFalling = false;
         m_IsOnGround = false;
         m_IsFacingRight = true;
         m_IsCrouching = false;
@@ -124,10 +125,13 @@ public class PlayerMovementScript : MonoBehaviour
     {
         m_IsOnGround = m_PlayerFeetScript.GetOnGround();
 
-        if (m_IsOnGround && m_IsJumping)
+        //Check if the player has stopped jumping/falling
+        if (m_IsOnGround && m_IsJumping || m_IsOnGround && m_IsFalling)
         {
             m_IsJumping = false;
+            m_IsFalling = false;
         }
+
     }
 
     void CheckFacing()
@@ -145,6 +149,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     }
 
+
+    //FlipPlayerAnimation and ChangeAnimation may be moved to PlayerAnimationScript
     void FlipPlayerAnimation()
     {
         if (((m_IsFacingRight && m_IsWalking < 0) || (!m_IsFacingRight && m_IsWalking > 0)))
@@ -154,19 +160,17 @@ public class PlayerMovementScript : MonoBehaviour
         else
         {
             m_PlayerAnimator.SetFloat("Speed", m_PlayerAnimator.GetFloat("Speed") * 1f);
-        }        
+        }
+
+        m_PlayerAnimator.SetBool("Face", m_IsFacingRight);
     }
 
     void ChangeAnimation()
     {
-        if (m_IsJumping)
-        {
-            m_PlayerAnimator.SetBool("Jump", true);
-        }
-        else
-        {
-            m_PlayerAnimator.SetBool("Jump", false);
-        }
+        m_PlayerAnimator.SetBool("Fall", m_IsFalling);
+        m_PlayerAnimator.SetBool("Jump", m_IsJumping);
+        m_PlayerAnimator.SetBool("Crouch", m_IsCrouching);
+
         if (m_IsWalking != 0)
         {
             m_PlayerAnimator.SetBool("Walk", true);
@@ -176,14 +180,9 @@ public class PlayerMovementScript : MonoBehaviour
             m_PlayerAnimator.SetBool("Walk", false);
         }
 
-        if (m_IsCrouching)
-        {
-            m_PlayerAnimator.SetBool("Crouch", true);
-        }
-        else
-        {
-            m_PlayerAnimator.SetBool("Crouch", false);
-        }
+
+       
+
     }
 
     void SetHorizontalVelocity()
@@ -206,6 +205,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
+        //Check if the player has begun jumping
         if (m_HasJump && m_IsOnGround)
         {
             if (m_IsRunning && m_IsWalking !=0)
@@ -222,7 +222,13 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
             m_IsJumping = true;
+        }
 
+
+        //Check if the player has begun falling
+        if (!m_IsOnGround && !m_IsJumping)
+        {
+            m_IsFalling = true;
         }
     }
 
