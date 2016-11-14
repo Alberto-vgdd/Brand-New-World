@@ -6,11 +6,13 @@ public class CanvasControllerScript: MonoBehaviour {
     private GameObject m_Canvas;
     private GameObject m_ContextMenu;
     private RectTransform m_ContextMenuTransform;
+    private PlayerShootScript playerShoot;
     private bool m_PauseGame;
     private float centerX, centerY;
     private float clickX, clickY;
     public bool prueba;
     public float seleccion;
+    public Rigidbody2D[] balls = new Rigidbody2D[8];
  
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
@@ -81,14 +83,14 @@ public class CanvasControllerScript: MonoBehaviour {
             if (clickX > centerX) //1st
                 quadrant = 1;
             else //3rd
-                quadrant = 4;
+                quadrant = 3;
         }
 
         centerToClick = new Vector2(clickX - centerX, clickY - centerY);
         centerToClickLength = centerToClick.magnitude;
         angle = Mathf.Rad2Deg * Mathf.Acos(centerLineLength / centerToClickLength);
 
-        switch (quadrant) //we add the angle corresponding to the adittion of the quadrants before
+        switch (quadrant) //we add the angle corresponding to the quadrant
         {
             case 1:
                 break;
@@ -103,7 +105,25 @@ public class CanvasControllerScript: MonoBehaviour {
                 break;
         }
         
-        seleccion = angle;
+        
+        //depending on the angle we determine which option was selected
+        if (angle > 20 && angle <= 60)
+            playerShoot.m_BulletPrefab = balls[0];
+
+        else if (angle > 60 && angle <= 100)
+            playerShoot.m_BulletPrefab = balls[1];
+
+        else if (angle > 100 && angle <= 140)
+            playerShoot.m_BulletPrefab = balls[2];
+
+       /* else if (angle > 140 && angle <= 200)
+            playerBall = balls[3];*/
+
+        else
+            playerShoot.m_BulletPrefab = balls[0];
+
+           
+
     }
 
 
@@ -120,6 +140,8 @@ public class CanvasControllerScript: MonoBehaviour {
         centerX = Screen.width / 2f;
         centerY = Screen.height / 2f;
         m_ContextMenuTransform.position = new Vector3(centerX, centerY, 0);
+
+        playerShoot = GameObject.Find("Player").GetComponent<PlayerShootScript>();
     }
 
     public void HideContextMenu()
