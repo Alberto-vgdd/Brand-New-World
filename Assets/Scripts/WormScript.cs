@@ -114,7 +114,7 @@ public class WormScript : MonoBehaviour
 
         if (m_IsFalling)
         {
-            if (collision.gameObject.layer == LayerMask.NameToLayer("Scenario"))
+            if (collision.transform.CompareTag("Platform"))
             {
                 m_PlatformCenter = collision.transform.position;
                 m_PlatformLength = collision.collider.bounds.extents.x;
