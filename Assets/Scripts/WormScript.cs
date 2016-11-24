@@ -50,11 +50,14 @@ public class WormScript : MonoBehaviour
         //Set sprite's size to the collider.
         ChangeColliderSize();
 
-        //Worm's Main Function.
-        WormAI();
+        if (GlobalDataScript.INPUT_ENABLED)
+        { 
+            //Worm's Main Function.
+            WormAI();
 
-        //Move the worm
-        m_WormRigidbody.velocity = new Vector2(m_WormSpeed*Time.fixedDeltaTime,  m_WormRigidbody.velocity.y);
+            //Move the worm
+            m_WormRigidbody.velocity = new Vector2(m_WormSpeed*Time.fixedDeltaTime,  m_WormRigidbody.velocity.y);
+        }
     }
 
     void ChangeMovementDirection()

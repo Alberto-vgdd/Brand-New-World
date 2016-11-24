@@ -55,7 +55,7 @@ public class PlayerShootScript : MonoBehaviour {
     void Update()
     {
         //The player won't shoot if the game is paused or  the context menu is in the screen. The crosshair won't be updated either.
-        if (!GlobalDataScript.PAUSE_MENU && !GlobalDataScript.CONTEXT_MENU)
+        if (!GlobalDataScript.PAUSE_MENU && !GlobalDataScript.CONTEXT_MENU && GlobalDataScript.INPUT_ENABLED)
         {
             UpdateCrosshairPosition();
 

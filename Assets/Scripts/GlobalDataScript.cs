@@ -21,6 +21,7 @@ public class GlobalDataScript : MonoBehaviour {
     public static bool CONTEXT_MENU;
     public static bool PAUSE_MENU;
     public static bool CROUCHING;
+    public static bool INPUT_ENABLED = true;
 
 
 

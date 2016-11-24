@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CanvasControllerScript: MonoBehaviour {
 
@@ -13,7 +14,11 @@ public class CanvasControllerScript: MonoBehaviour {
     public bool prueba;
     public float seleccion;
     public Rigidbody2D[] balls = new Rigidbody2D[8];
- 
+
+
+    //3===D
+    public Sprite[] m_MessageSprites;
+    private Image m_Message;
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
     //A fix could be don't let the player pause the game with context menu enabled.
@@ -31,31 +36,34 @@ public class CanvasControllerScript: MonoBehaviour {
 
     void Update()
     {
-        if (!GlobalDataScript.PAUSE_MENU)
+        if (GlobalDataScript.INPUT_ENABLED)
         {
-            //Check if the Context Menu Should be Displayed
-            if (Input.GetButtonDown("BallsMenu") == true)
-                ShowContextMenu();
-
-            else if (Input.GetButtonUp("BallsMenu"))
-                HideContextMenu();
-        }
-
-        if (Input.GetButtonDown("Pause"))
-        {
-
             if (!GlobalDataScript.PAUSE_MENU)
-                PauseGame();
+            {
+                //Check if the Context Menu Should be Displayed
+                if (Input.GetButtonDown("BallsMenu") == true)
+                    ShowContextMenu();
 
-            else if (GlobalDataScript.PAUSE_MENU)
-                ResumeGame();
-        }
+                else if (Input.GetButtonUp("BallsMenu"))
+                    HideContextMenu();
+            }
 
-        if (Input.GetButtonUp("BallsMenu"))
-        {
-            clickX = Input.mousePosition.x;
-            clickY = Input.mousePosition.y;
-            determineSelection();
+            if (Input.GetButtonDown("Pause"))
+            {
+
+                if (!GlobalDataScript.PAUSE_MENU)
+                    PauseGame();
+
+                else if (GlobalDataScript.PAUSE_MENU)
+                    ResumeGame();
+            }
+
+            if (Input.GetButtonUp("BallsMenu"))
+            {
+                clickX = Input.mousePosition.x;
+                clickY = Input.mousePosition.y;
+                determineSelection();
+            }
         }
     }
 
@@ -142,6 +150,10 @@ public class CanvasControllerScript: MonoBehaviour {
         m_ContextMenuTransform.position = new Vector3(centerX, centerY, 0);
 
         playerShoot = GameObject.Find("Player").GetComponent<PlayerShootScript>();
+
+
+        //3===D
+        m_Message = transform.FindChild("Canvas").Find("Message").GetComponent<Image>();
     }
 
     public void HideContextMenu()
@@ -216,5 +228,20 @@ public class CanvasControllerScript: MonoBehaviour {
     {
         //aqui se alamcenara el fragmento recogido para mostrarlo en la crono-linea
         prueba = !prueba;
+    }
+
+
+    //3===D
+    public void ShowMessage(int messageNumber)
+    {
+        GlobalDataScript.INPUT_ENABLED = false;
+
+        
+        //Show "messageNumber" message, then wait 5 seconds/ Left click
+        m_Message.overrideSprite = m_MessageSprites[messageNumber];
+
+
+        GlobalDataScript.INPUT_ENABLED = true;
+
     }
 }

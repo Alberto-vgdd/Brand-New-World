@@ -45,12 +45,12 @@ public class PlayerMovementScript : MonoBehaviour
 
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         InitializeVariables();
 
     }
-	
+
     void InitializeVariables()
     {
         m_PlayerRigidbody = GetComponent<Rigidbody2D>();
@@ -65,6 +65,8 @@ public class PlayerMovementScript : MonoBehaviour
         m_IsOnGround = false;
         m_IsFacingRight = true;
         m_IsCrouching = false;
+        m_HasCrouch = false;
+        m_CrouchBlocked = false;
         m_IsWalking = 0f;
 
         m_WalkSpeedValue = 1f;
@@ -79,57 +81,65 @@ public class PlayerMovementScript : MonoBehaviour
     }
 
     // Update is called once per frame. Read any input here.
-    void Update ()
+    void Update()
     {
         //The player won't be able to move while the game is in slowmotion/paused.
         if (!GlobalDataScript.CONTEXT_MENU && !GlobalDataScript.PAUSE_MENU)
         {
-            //Walking
-            m_IsWalking = Input.GetAxis("MovementAxisX");
+            if (GlobalDataScript.INPUT_ENABLED)
+            {
+                //Walking
+                m_IsWalking = Input.GetAxis("MovementAxisX");
+                //Running
+                if (Input.GetButton("Run") == true) { m_IsRunning = true; } else { m_IsRunning = false; }
 
-            //Running
-            if (Input.GetButton("Run") == true) { m_IsRunning = true; } else { m_IsRunning = false; }
+                //Jumping. 
+                if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_HasJump = true; } else { m_HasJump = false; }
 
-            //Jumping. 
-            if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_HasJump = true;} else { m_HasJump = false; }
-
-            //Crouching
-            if (Input.GetButton("Crouch") == true) { m_HasCrouch = true; } else { m_HasCrouch = false; }
+                //Crouching
+                if (Input.GetButton("Crouch") == true) { m_HasCrouch = true; } else { m_HasCrouch = false; }
+            }
+           else
+            {
+                m_IsWalking = 0;
+                m_IsRunning = false;
+                m_HasJump = false;
+                m_HasCrouch = false;
+            }
         }
     }
 
     //FixedUpdate is called every frame in Time.fixedDeltaTime, physics related stuff here.
-    void FixedUpdate() 
+    void FixedUpdate()
     {
-        //This function updates m_IsOnGround, to enable  jumping or not.
-        CheckOnGround();
+            //This function updates m_IsOnGround, to enable  jumping or not.
+            CheckOnGround();
 
-        //This funciton updates where the player should be looking at  based on  mouse position.
-        CheckFacing();
+            //This funciton updates where the player should be looking at  based on  mouse position.
+            CheckFacing();
 
-        //This function determinates if player has to crouch.
-        CheckCrouching();
+            //This function determinates if player has to crouch.
+            CheckCrouching();
 
-        //Change Player Animations.
-        ChangeAnimation();
+            //Change Player Animations.
+            ChangeAnimation();
 
-        //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
-        FlipPlayerAnimation();
+            //Check if player has to move forward or backward (it depends on the mouse position), then change animation speed
+            FlipPlayerAnimation();
 
-        //Horizontal Speed
-        Move();
+            //Horizontal Speed
+            Move();
 
-        //Vertical Speed
-        Jump();
+            //Vertical Speed
+            Jump();
 
-        //This prevents Player doesn't slide on ground platforms.
-        AvoidSliding();
-    }
+            //This prevents Player doesn't slide on ground platforms.
+            AvoidSliding();
+        }
 
     //Check if the player has to crouch
     void CheckCrouching()
     {
-        m_CrouchBlocked = m_PlayerColliderScript.GetCrouchBlocked();
         if  (!m_HasCrouch)
         {
             //This code auto-crouches the player
@@ -279,6 +289,14 @@ public class PlayerMovementScript : MonoBehaviour
     }
 
 
+    public void LockCrouch()
+    {
+        m_CrouchBlocked = true;
+    }
+    public void UnlockCrouch()
+    {
+        m_CrouchBlocked = false;
+    }
 
 
 

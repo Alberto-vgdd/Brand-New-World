@@ -10,8 +10,6 @@ public class PlayerCollisions : MonoBehaviour
 
     private float m_BoxColliderSizeMultiplier;
 
-    private bool m_CrouchBlocked;
-
     void Start()
     {
         m_PlayerRigidbody = gameObject.GetComponent<Rigidbody2D>();
@@ -21,9 +19,6 @@ public class PlayerCollisions : MonoBehaviour
 
         //This variable ceates a smaller collider box.
         m_BoxColliderSizeMultiplier = 0.75f;
-
-        //Variable  that determinates if player can stand up or has to crouch.
-        m_CrouchBlocked = false;
 
 }
 
@@ -41,11 +36,6 @@ void FixedUpdate()
         //Time to place the feet collider  according to  player's collider
         m_PlayerFeetCollider.offset= m_PlayerBoxCollider.offset - new Vector2(0f, m_PlayerBoxCollider.bounds.extents.y * 1f / transform.localScale.y);
         m_PlayerFeetCollider.size = new Vector2(m_PlayerBoxCollider.size.x, m_PlayerFeetCollider.size.y);
-    }
-
-    public bool GetCrouchBlocked()
-    {
-        return m_CrouchBlocked;
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -87,25 +77,6 @@ void FixedUpdate()
                 return;
             }
         }
-
-        //If player is in a crouch-restricted area
-        if (col.tag.Equals("CrouchBlocker"))
-        {
-            Debug.Log("Collision!");
-            m_CrouchBlocked = true;
-        }
     }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        //If player leaves a crouch-restricted area
-        if (col.tag.Equals("CrouchBlocker"))
-        {
-            m_CrouchBlocked = false;
-        }
-
-    }
-
-
-   
 }
