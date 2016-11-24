@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e5146698e6288a8479748382a5ddd6c3
-timeCreated: 1479913524
+timeCreated: 1479983106
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,7 +58,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
+        y: 25
         width: 90
         height: 6
       alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 17
         width: 90
         height: 6
       alignment: 0
@@ -81,10 +81,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 8
-        width: 62
+        width: 104
         height: 6
-      alignment: 9
-      pivot: {x: 0.50410026, y: 0.48769924}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Title Menu Buttons Sprites_3
@@ -92,7 +92,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 62
+        width: 104
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

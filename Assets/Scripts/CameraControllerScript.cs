@@ -11,7 +11,7 @@ public class CameraControllerScript : MonoBehaviour
     private float m_ScreenEdgeOffset = 0.5f;
 
     //The minimum amount of zoom.
-    private float m_MinSize =1f;
+    private float m_MinSize =0.6f;
 
     //Camera target/s
    /* [HideInInspector]*/ public Transform[] m_Targets;

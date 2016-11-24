@@ -1,10 +1,56 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerCollisions : MonoBehaviour {
+public class PlayerCollisions : MonoBehaviour
+{
+    private SpriteRenderer m_PlayerSpriteRenderer;
+    private Rigidbody2D m_PlayerRigidbody;
+    private BoxCollider2D m_PlayerBoxCollider;
+    private BoxCollider2D m_PlayerFeetCollider;
+
+    private float m_BoxColliderSizeMultiplier;
+
+    private bool m_CrouchBlocked;
+
+    void Start()
+    {
+        m_PlayerRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        m_PlayerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        m_PlayerBoxCollider = gameObject.GetComponent<BoxCollider2D>();
+        m_PlayerFeetCollider = transform.FindChild("Feet").GetComponent<BoxCollider2D>();
+
+        //This variable ceates a smaller collider box.
+        m_BoxColliderSizeMultiplier = 0.75f;
+
+        //Variable  that determinates if player can stand up or has to crouch.
+        m_CrouchBlocked = false;
+
+}
+
+void FixedUpdate()
+    {
+        //Set sprite's size to the collider. Also place
+        ChangePlayerColliderSize();
+    }
+
+    void ChangePlayerColliderSize()
+    {
+        //Set sprite's size as collider's size. You have to multiply the inversed local scale, otherwise the local scale will be applied again in the collider.
+        m_PlayerBoxCollider.size = new Vector2(m_PlayerSpriteRenderer.bounds.size.x * 1f / transform.localScale.x * m_BoxColliderSizeMultiplier, m_PlayerSpriteRenderer.bounds.size.y * 1f / transform.localScale.y);
+
+        //Time to place the feet collider  according to  player's collider
+        m_PlayerFeetCollider.offset= m_PlayerBoxCollider.offset - new Vector2(0f, m_PlayerBoxCollider.bounds.extents.y * 1f / transform.localScale.y);
+        m_PlayerFeetCollider.size = new Vector2(m_PlayerBoxCollider.size.x, m_PlayerFeetCollider.size.y);
+    }
+
+    public bool GetCrouchBlocked()
+    {
+        return m_CrouchBlocked;
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        
         int aux;
         GameObject gaObj = col.gameObject;
 
@@ -37,10 +83,29 @@ public class PlayerCollisions : MonoBehaviour {
                     case GlobalDataScript.POWER_4:
                         break;
                 }
-
                 Destroy(gaObj);
                 return;
             }
         }
+
+        //If player is in a crouch-restricted area
+        if (col.tag.Equals("CrouchBlocker"))
+        {
+            Debug.Log("Collision!");
+            m_CrouchBlocked = true;
+        }
     }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        //If player leaves a crouch-restricted area
+        if (col.tag.Equals("CrouchBlocker"))
+        {
+            m_CrouchBlocked = false;
+        }
+
+    }
+
+
+   
 }

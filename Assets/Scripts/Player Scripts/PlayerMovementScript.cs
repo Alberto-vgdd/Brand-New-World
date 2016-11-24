@@ -12,6 +12,7 @@ public class PlayerMovementScript : MonoBehaviour
     private Animator m_PlayerAnimator;
     private FeetControllerScript m_PlayerFeetScript;
     private PlayerShootScript m_PlayerShootScript;
+    private PlayerCollisions m_PlayerColliderScript;
 
     //These values change how fast/high  does the player run/jump
     public float m_WalkSpeedValue;
@@ -38,7 +39,8 @@ public class PlayerMovementScript : MonoBehaviour
     private bool m_IsRunning;
     private float m_IsWalking; // 3 different states ---> -1, 0, 1
     private bool m_IsCrouching;
-
+    private bool m_HasCrouch;
+    private bool m_CrouchBlocked;
 
 
 
@@ -55,6 +57,7 @@ public class PlayerMovementScript : MonoBehaviour
         m_PlayerAnimator = GetComponent<Animator>();
         m_PlayerFeetScript = transform.FindChild("Feet").GetComponent<FeetControllerScript>();
         m_PlayerShootScript = transform.GetComponent<PlayerShootScript>();
+        m_PlayerColliderScript = transform.GetComponent<PlayerCollisions>();
 
 
         m_IsJumping = false;
@@ -91,18 +94,21 @@ public class PlayerMovementScript : MonoBehaviour
             if (Input.GetButton("Jump") == true && m_IsOnGround == true) { m_HasJump = true;} else { m_HasJump = false; }
 
             //Crouching
-            if (Input.GetButton("Crouch") == true) { m_IsCrouching = true; } else { m_IsCrouching = false; }
+            if (Input.GetButton("Crouch") == true) { m_HasCrouch = true; } else { m_HasCrouch = false; }
         }
     }
 
     //FixedUpdate is called every frame in Time.fixedDeltaTime, physics related stuff here.
     void FixedUpdate() 
     {
-        //This function updates m_IsOnGround, to enable or not jumping.
+        //This function updates m_IsOnGround, to enable  jumping or not.
         CheckOnGround();
 
         //This funciton updates where the player should be looking at  based on  mouse position.
         CheckFacing();
+
+        //This function determinates if player has to crouch.
+        CheckCrouching();
 
         //Change Player Animations.
         ChangeAnimation();
@@ -120,6 +126,33 @@ public class PlayerMovementScript : MonoBehaviour
         AvoidSliding();
     }
 
+    //Check if the player has to crouch
+    void CheckCrouching()
+    {
+        m_CrouchBlocked = m_PlayerColliderScript.GetCrouchBlocked();
+        if  (!m_HasCrouch)
+        {
+            //This code auto-crouches the player
+            if (m_CrouchBlocked)
+            {
+                m_IsCrouching = true;
+            }
+            else
+            {
+                m_IsCrouching = false;
+            }
+
+            //This code doesn't auto-crouch the player
+            //if (!m_CrouchBlocked)
+            //{
+            //    m_IsCrouching = false;
+            //}
+        }
+        else
+        {
+            m_IsCrouching = true;
+        }
+    }
 
     void CheckOnGround()
     {
@@ -189,7 +222,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         m_HorizontalVelocity = m_WalkSpeedValue; 
 
-        if (m_IsCrouching)
+        if (m_IsCrouching && m_IsOnGround)
         {
             m_HorizontalVelocity -= m_CrouchSpeedModifier;
         }
@@ -205,8 +238,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
-        //Check if the player has begun jumping
-        if (m_HasJump && m_IsOnGround)
+        //Check if the player has begun jumping, and if it's jump isn't denied by anystate
+        if (m_HasJump && m_IsOnGround && !m_CrouchBlocked)
         {
             if (m_IsRunning && m_IsWalking !=0)
             {

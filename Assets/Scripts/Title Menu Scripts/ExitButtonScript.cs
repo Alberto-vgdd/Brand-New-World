@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ControlsButtonScript : MonoBehaviour
+public class ExitButtonScript : MonoBehaviour
 {
     private Button m_ControlsButton;
     public Sprite[] m_ButtonSprites;
@@ -25,6 +25,6 @@ public class ControlsButtonScript : MonoBehaviour
 
     public void OpenControlsMenu()
     {
-        SceneManager.LoadScene("L01");
+        Application.Quit();
     }
 }
