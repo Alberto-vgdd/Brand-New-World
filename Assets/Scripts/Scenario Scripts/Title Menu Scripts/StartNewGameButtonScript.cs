@@ -25,7 +25,7 @@ public class StartNewGameButtonScript : MonoBehaviour
 
     public void StartNewGame()
     {
-        SceneManager.LoadScene("L01");
+        SceneManager.LoadScene("S01");
     }
    
 }

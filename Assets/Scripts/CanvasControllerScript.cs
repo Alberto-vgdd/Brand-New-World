@@ -17,7 +17,6 @@ public class CanvasControllerScript: MonoBehaviour {
 
 
     //3===D
-    public Sprite[] m_MessageSprites;
     private Image m_Message;
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
@@ -232,16 +231,32 @@ public class CanvasControllerScript: MonoBehaviour {
 
 
     //3===D
-    public void ShowMessage(int messageNumber)
+    public void SendMessage(Sprite NewImage, int TimeOnScreen)
+    {
+        //Update the image that is going to be shown.
+        m_Message.overrideSprite = NewImage;
+
+        //Pause the game, and then display the tutorial text
+        //IMPORTANT, TIME.FIXEDDELTATIME HAS TO  BE CHANGED TO 0.02 
+        ShowMessage();
+
+        //Wait for 7 seconds, and then resume the game.
+        Invoke("HideMessage", TimeOnScreen);
+    }
+
+
+    //3===D
+    void ShowMessage()
     {
         GlobalDataScript.INPUT_ENABLED = false;
-
-        
-        //Show "messageNumber" message, then wait 5 seconds/ Left click
-        m_Message.overrideSprite = m_MessageSprites[messageNumber];
-
-
-        GlobalDataScript.INPUT_ENABLED = true;
-
+        m_Message.gameObject.SetActive(true);
     }
+
+    //3===D
+    void HideMessage()
+    {
+        m_Message.gameObject.SetActive(false);
+        GlobalDataScript.INPUT_ENABLED = true;
+    }
+
 }
