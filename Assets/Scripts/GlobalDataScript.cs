@@ -21,6 +21,7 @@ public class GlobalDataScript : MonoBehaviour {
     public static bool CONTEXT_MENU;
     public static bool PAUSE_MENU;
     public static bool CROUCHING;
+    public static bool CRONOLINE = false;
 
 
 
@@ -28,9 +29,9 @@ public class GlobalDataScript : MonoBehaviour {
     private static bool tags_set = true;
     private static int fragmentTags = 1;
 
-    private static int minimumDate;
-    private static int maximumDate;
-    private static bool datesSet;
+    private static int minimumDate = 0;
+    private static int maximumDate = 1600;
+    private static bool datesSet = true;
 
 
 

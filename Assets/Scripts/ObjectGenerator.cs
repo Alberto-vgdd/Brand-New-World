@@ -144,8 +144,8 @@ public class ObjectGenerator : MonoBehaviour
                     obj.SetPower(GlobalDataScript.NO_POWER);
 
                 //setting the objects fragment and date
-                obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
-                    [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment
+                /*obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
+                    [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment*/
 
                 obj.SetDate(Random.Range(aux[0], aux[1]));
 

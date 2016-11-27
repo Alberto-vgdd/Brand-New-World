@@ -1,17 +1,45 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System;
 
 public class CanvasControllerScript: MonoBehaviour {
 
+    private const float TEMPLATE_WIDTH = 140;
+    private const float TEMPLATE_HEIGHT = 178.5f;
+    private const float OCUPPIED = 0;
+    private const float NOT_OCCUPIED = -1;
+    private const int MAXIMMUM_FRAGMENTS = 20;  //number of objects that can be picked up
+
+    //CANVAS ELEMENTS
     private GameObject m_Canvas;
     private GameObject m_ContextMenu;
-    private RectTransform m_ContextMenuTransform;
+    public RectTransform m_ContextMenuTransform, a;
+    private GameObject pauseMenu;
+    private GameObject cronoLine;
+    private GameObject cronoLineFragments;
+
+    //CRONO LINE template
+    private RectTransform CLtemplateUP, CLTemplateDOWN;
+    private Text templateDateUP, templateDateDOWN;
+    private Text templateFragmentUP, templateFragmentDOWN;
+
     private PlayerShootScript playerShoot;
     private bool m_PauseGame;
     private float centerX, centerY;
     private float clickX, clickY;
+
+    //CRONO LINE AND ITS ELEMENTS MEASURES
+    private float cronoLineLength, cronoLineHeight;
+    private float templateWidth, templateHeight;
+    private float[,] templatesSet = new float[MAXIMMUM_FRAGMENTS, 3];   //[position of the fragment, up occuped, down occuped]
+
+    //LIST THAT STORES EVERY FRAGMENTS X POSITION AND IF THE UPPER AND LOWER SPACES HAVE BEEN OCUPIED
+
+
+
     public bool prueba;
-    public float seleccion;
+    public float f1, f2, f3;
     public Rigidbody2D[] balls = new Rigidbody2D[8];
  
 
@@ -20,25 +48,25 @@ public class CanvasControllerScript: MonoBehaviour {
 
 
 
-    void Start ()
+    public void Start ()
     {
-        InitializeVariables();
-        PlaceRectTransform();
-        HideContextMenu();
+        initializeVariables();
+        placeRectTransform();
+        hideContextMenu();
     }
 
 
 
-    void Update()
+    public void Update()
     {
         if (!GlobalDataScript.PAUSE_MENU)
         {
             //Check if the Context Menu Should be Displayed
             if (Input.GetButtonDown("BallsMenu") == true)
-                ShowContextMenu();
+                showContextMenu();
 
             else if (Input.GetButtonUp("BallsMenu"))
-                HideContextMenu();
+                hideContextMenu();
         }
 
         if (Input.GetButtonDown("Pause"))
@@ -49,6 +77,9 @@ public class CanvasControllerScript: MonoBehaviour {
 
             else if (GlobalDataScript.PAUSE_MENU)
                 ResumeGame();
+
+            else if (GlobalDataScript.CRONOLINE)
+                hideCronoLine();
         }
 
         if (Input.GetButtonUp("BallsMenu"))
@@ -128,13 +159,37 @@ public class CanvasControllerScript: MonoBehaviour {
 
 
 
-    void  InitializeVariables()
+    private void  initializeVariables()
     {
-        seleccion = 0;
         m_Canvas = GameObject.Find("Canvas");
         m_ContextMenu = GameObject.Find("ContextMenu");
+        pauseMenu = GameObject.Find("PauseMenu");
+        cronoLine = GameObject.Find("CronoLine");
+        CLtemplateUP = GameObject.Find("CLtemplateUP").GetComponent<RectTransform>();
+        CLTemplateDOWN = GameObject.Find("CLtemplateDOWN").GetComponent<RectTransform>();
+        templateDateUP = GameObject.Find("CLtemplateUP_date").GetComponent<Text>();
+        templateFragmentUP = GameObject.Find("CLtemplateUP_fragment").GetComponent<Text>();
+        cronoLineFragments = GameObject.Find("CLfragments");
+        cronoLineLength = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.width;
+        cronoLineHeight = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.height;
+
+
+        CLtemplateUP.gameObject.SetActive(false);
+        CLTemplateDOWN.gameObject.SetActive(false);
+
+        //initializing templates array
+        for (int i = 0; i < MAXIMMUM_FRAGMENTS; i++)
+        {
+            templatesSet[i, 0] = templatesSet[i, 1] = templatesSet[i, 2] = -1f;
+        }
+
+
         m_ContextMenuTransform = m_ContextMenu.GetComponent<RectTransform>();
         m_PauseGame = false;
+        pauseMenu.SetActive(false);
+        cronoLine.SetActive(false);
+
+ 
 
         //Center Context Menu.
         centerX = Screen.width / 2f;
@@ -144,7 +199,7 @@ public class CanvasControllerScript: MonoBehaviour {
         playerShoot = GameObject.Find("Player").GetComponent<PlayerShootScript>();
     }
 
-    public void HideContextMenu()
+    private void hideContextMenu()
     {
         m_ContextMenu.SetActive(false);
         GlobalDataScript.CONTEXT_MENU = false;
@@ -156,7 +211,7 @@ public class CanvasControllerScript: MonoBehaviour {
     }
 
 
-    public void ShowContextMenu()
+    private void showContextMenu()
     {
        m_ContextMenu.SetActive(true);
        GlobalDataScript.CONTEXT_MENU = true;
@@ -165,23 +220,30 @@ public class CanvasControllerScript: MonoBehaviour {
         Time.timeScale = GlobalDataScript.SLOW_TIME_SPEED;
         Time.fixedDeltaTime = GlobalDataScript.SLOW_FIXED_DELTA_TIME;
     }
-    
-    void PauseGame()
+
+    private void hideCronoLine()
+    {
+        cronoLine.SetActive(false);
+    }
+
+    public void PauseGame()
     {
         GlobalDataScript.PAUSE_MENU = true;
         Time.timeScale = GlobalDataScript.PAUSED_TIME_SPEED;
         Time.fixedDeltaTime = GlobalDataScript.PAUSED_FIXED_DELTA_TIME;
+        pauseMenu.SetActive(true);
     }
 
-    void ResumeGame()
+    public void ResumeGame()
     {
         GlobalDataScript.PAUSE_MENU = false;
+        pauseMenu.SetActive(false);
 
         if (GlobalDataScript.CONTEXT_MENU)
         {
             if (!Input.GetButton("BallsMenu"))
             {
-                HideContextMenu();
+                hideContextMenu();
                 Time.timeScale = GlobalDataScript.NORMAL_TIME_SPEED;
                 Time.fixedDeltaTime = GlobalDataScript.NORMAL_FIXED_DELTA_TIME;
             }
@@ -204,7 +266,7 @@ public class CanvasControllerScript: MonoBehaviour {
         }
     }
 
-    void PlaceRectTransform()
+    private void placeRectTransform()
     {
         for (int i = 1; i <= 8; i++)
         {
@@ -214,7 +276,117 @@ public class CanvasControllerScript: MonoBehaviour {
 
     public void NewFragment(string fragment, int date)
     {
-        //aqui se alamcenara el fragmento recogido para mostrarlo en la crono-linea
-        prueba = !prueba;
+        bool upOccupied, downOccupied, ok; //to see if there is free space and to exit the functions bucle when the work has been done correctly
+        float position = 0;
+
+
+        upOccupied = downOccupied = ok = false;
+       
+
+        while (!ok)  //we check until we find a free position
+        {
+            position = (cronoLineLength / (GlobalDataScript.GetDates()[1] - GlobalDataScript.GetDates()[0]) * date) - (TEMPLATE_WIDTH / 2f); //we obtain the corresponding x position of the fragment's left border
+
+            while (position < 0 + TEMPLATE_WIDTH / 2 + 10)
+                position++;
+
+            while (position > cronoLineLength - TEMPLATE_WIDTH / 2 - 10)
+                position--;
+
+            f3 = position;
+            for (int i = 0; i < MAXIMMUM_FRAGMENTS; i++)
+            {
+                if (templatesSet[i,0] == -1)
+                    continue;
+
+                if ((templatesSet[i, 0] + TEMPLATE_WIDTH > position - 10) && (templatesSet[i, 0] < position + TEMPLATE_WIDTH + 10)) //the position is occupied
+                {
+                    f1 = templatesSet[i, 0] + TEMPLATE_WIDTH;
+                    f2 = position + TEMPLATE_WIDTH + 10;
+                    
+                    if (templatesSet[i, 1] == OCUPPIED) //which position is not available?
+                        upOccupied = true;
+                    if (templatesSet[i, 2] == OCUPPIED)
+                        downOccupied = true;
+                }
+            }
+
+                //if both are occupied, we need to set the date again 
+            if (upOccupied && downOccupied)
+            {
+                date = UnityEngine.Random.Range(GlobalDataScript.GetDates()[0] + 10, GlobalDataScript.GetDates()[1] - 9);
+                upOccupied = downOccupied = false;
+                break;
+            }
+            else
+                ok = true;
+
+        }
+
+
+        //we update the array with the new element
+        for (int i = 0; i < MAXIMMUM_FRAGMENTS; i++)
+        {
+            if (templatesSet[i, 0] == -1)
+            {
+                prueba = true;
+                templatesSet[i, 0] = position;
+
+                //up is occupied always (the fragment lays there or there was another there before), but down will only be occupied if up was occupied by another fragment
+                templatesSet[i, 1] = OCUPPIED;
+                if(upOccupied)
+                    templatesSet[i, 2] = OCUPPIED;
+                else
+                    templatesSet[i, 2] = NOT_OCCUPIED;
+            }
+                
+        }
+        GameObject aux;
+
+        templateDateUP.text = Convert.ToString(date);
+        templateFragmentUP.text = fragment;
+
+        aux = GameObject.Instantiate(CLtemplateUP.gameObject);
+        
+        aux.transform.SetParent(cronoLineFragments.transform);
+        aux.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+
+
+
+        if (upOccupied)
+        {
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -cronoLineHeight + TEMPLATE_HEIGHT / 2 + 20);
+        }
+        else
+        {
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -20 - TEMPLATE_HEIGHT / 2);
+        }
+
+        aux.SetActive(true);
+    }
+
+
+
+
+
+
+//MENU BUTTON'S FUNCTIONS
+
+    public void OnResumeButton()
+    {
+        ResumeGame();
+    }
+
+    public void OnCronoLineButton()
+    {
+        pauseMenu.SetActive(false);
+        cronoLine.SetActive(true);
+        GlobalDataScript.CRONOLINE = true;
+    }
+
+    public void OnExitButton()
+    {
+        //optional save code
+        Application.Quit();
     }
 }
