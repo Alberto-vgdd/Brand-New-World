@@ -1,10 +1,145 @@
 TEXTO DE PRUEBA//PROHIBIDÍSIMO USAR '-' EXCEPTO EN LA LINEA 'ETIQUETA'
 
+
+//GUERRA NUCLEAR
+
 ETIQUETA-1
-Objeto insignia del Consejo Mayor, organo responsable del control del mundo durante la edade dorada y próspera. Se dice que lo único comparable a la sabiduría de sus miembros era la fealdad de sus almas.
+Este es uno de los pocos restos que aun se conservan de aquellos que consiguieron llegar al subsuelo.
+
+ETIQUETA-1
+Rivalidades entre dos grandes naciones desataron el caos en todo el planeta, constantes guerras y finalmente el apoteosis.
+
+ETIQUETA-1
+Había muy pocas posibilidades, pero ocurrió. Las dos bombas mas potentes jamás creadas en el planeta colisionaron entre si en el aire.
+
+ETIQUETA-1
+Debido a la gran explosión los cuerpos de muchos animales eran radiactivos, además algunos objetos cobraron vida.
+
+ETIQUETA-1
+Es imposible vivir en la superficie, ya nadie lo hace, o al menos no se sabe nada de la existencia de estos.
+
+ETIQUETA-1
+Ha pasado ya mucho tiempo y el ecosistema de la superficie empieza a recuperarse, aún así la mayoría de seres no soportan el ambiente.
+
+ETIQUETA-1
+En nuestro grupo teníamos un refugio bajo tierra, no fue lo suficiente seguro, asi que tuvimos que bajar aún más y vivir durante un tiempo en las cuevas.
+
+ETIQUETA-1
+Todo iba bien aquí abajo hasta que unos gusanos radioactivos empezaron a sembrar el caos. Muchos entonces fueron a la superficie y murieron por la radiación.
+
+
+
+//INVASIÓN ALIENIGENA
 
 ETIQUETA-2
-El incidente que desató la guerra fue tan solo la gota que colmó el vaso. Aquellos llamados los "ofendidos" llevan esto como símbolo de su furia.
+Tras mucho tiempo el planeta estaba en paz, sus habitantes vivían unos con otros sin conflictos y parecía que podría perdurar durante mucho tiempo.
 
-ETIQUETA-1-2
-Los pocos que quedaron forjaron este objeto como mensaje a generaciones venideras para evitar los errores del pasado. Voces arcaicas parecen oirse cuando uno se lo acerca. Tristemente, nunca serán escuchadas.
+ETIQUETA-2
+La paz se vio interrumpida, pero no por nosotros si no por seres del espacio. Seres grandes, delgados, violentos y violetas.
+
+ETIQUETA-2
+Intentamos hacer un tratado de paz, les ofrecimos todo cuanto teníamos pero no fue suficiente para ellos.
+
+ETIQUETA-2
+Ellos solo querían la conquista de nuestro hogar, destruir nuestra cultura y pasado.
+
+ETIQUETA-2
+Nos usaron de sujetos de pruebas, experimentaron con nosotros, con nuestras capacidades cerebrales intentando que dominaramos los elementos.
+
+ETIQUETA-2
+Solo una persona lo consiguió pero lo ocultó, a escondidas utilizando sus nuevas capacidades eliminó a una gran mayoría.
+
+ETIQUETA-2
+Arrepentido por sus crímenes, bajó al subsuelo y concentró todo su poder en pequeñas bolas. Las escondió en lo más profundo de las cuevas.
+
+ETIQUETA-2
+La voz se corrió y los pocos aliens que quedaban con vida bajaron al subsuelo intentando encontrar lo que más preciaban: los elementos del planeta.
+
+
+
+//GUERRA DE CLASES SOCIALES
+
+ETIQUETA-3
+A lo largo de nuestra historia los habitantes de este planeta estabamos divididos en dos categorías.
+
+ETIQUETA-3
+Todos viviamos en la superficie, unos con grandes lujos y tecnologías y otros de forma rudimentaria, como mi familia.
+
+ETIQUETA-3
+El planeta sufrió un gran problema de sobrepoblación, no cabíamos todos en el mismo lugar.
+
+ETIQUETA-3
+La clase alta nos echó a punta de pistola, en su caso un potente rayo que fulminaba en cenizas a quien tocaba.
+
+ETIQUETA-3
+Dejamos la superficie para enterrarnos en lo que parecia ser nuestra tumba, nuestra perdición.
+
+ETIQUETA-3
+Construimos monumentos, altares y otras construcciones pidiendo a algún dios que nos ayudara a volver a la superficie, o al menos a tener una vida digna.
+
+ETIQUETA-3
+Sin recursos, sobrevivimos duramente varias generaciones. Las cuevas eran nuestro nuevo hogar, nuestra nueva casa.
+
+ETIQUETA-3
+Un día tras decenas de años salimos de las cuevas, volvimos a la superficie y ya no había nadie. Qué pasó con todos es un misterio.
+
+
+
+//VISITA DE LOS DIOSES
+
+ETIQUETA-4
+Nuestra especie nunca creyó en ningún Dios ni ser celestial todopoderoso.
+
+ETIQUETA-4
+Esto cambió cuando recibimos la visita de dos dioses, eran malvados, macabros y solo tenían la intención de saciar su necesidad de diversión.
+
+ETIQUETA-4
+Mataron a muchos de nuestros hijos, a muchos de nuestros ancianos y no tuvieron piedad.
+
+ETIQUETA-4
+Los dioses al igual que muchos seres de esta galaxia son inconformistas, se cansaron de nosotros y empezaron a dañar a nuestro planeta.
+
+ETIQUETA-4
+El planeta intentaba defenderse con constantes terremotos, maremotos y huracanes que intentaban expulsarles.
+
+ETIQUETA-4
+Mientras que el planeta peleaba por su supervivencia, nosotros huimos al subsuelo, era uno de los pocos lugares seguros donde ni los dioses ni el planeta podían dañarnos.
+
+ETIQUETA-4
+El planeta no tenía fuerzas para continuar y se rindió, la superficie quedó completamente destrozada por culpa de esos dos monstruos.
+
+ETIQUETA-4
+Los dos empezaron a pelearse el uno con el otro al no tener nada más que destruir, se mataron entre ellos poniendo fin a muchos años de sufrimiento.
+
+
+
+//LOS ELEMENTALES
+
+ETIQUETA-5
+En el inicio de los tiempos el planeta solo tenía 4 habitantes: el elemental de fuego, hielo, slime y roca.
+
+ETIQUETA-5
+Todo estaba en calma hasta que entre ellos surgió una gran pelea por ver quien era el más poderoso.
+
+ETIQUETA-5
+Durante 10000 años, cada uno preparó un ejército y se dispuso a la batalla. La guerra estaba a punto de destrozarlo todo.
+
+ETIQUETA-5
+El elemental de fuego construyó irónicamente y con mucho cuidado seres de madera, rápidos y eficaces contra sus adversarios.
+
+ETIQUETA-5
+El elemental de hielo construyó seres con partes afiladas a los lados, para así destruir las creaciones de madera de su archienemigo.
+
+ETIQUETA-5
+El elemental de slime construyó unos seres violetas, escurridizos y difíciles de ver.
+
+ETIQUETA-5
+El elemental de roca construyó seres pesados, lentos y con una gran vitalidad.
+
+ETIQUETA-5
+Cuenta la leyenda que los restos de estos 4 elementales aún se conservan en el subsuelo, aportando un gran poder al portador.
+
+
+
+
+
