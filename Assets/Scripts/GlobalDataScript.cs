@@ -22,15 +22,16 @@ public class GlobalDataScript : MonoBehaviour {
     public static bool PAUSE_MENU;
     public static bool CROUCHING;
     public static bool INPUT_ENABLED = true;
+    public static bool CRONOLINE;
 
 
 
     //data that has special conditions to be changed
-    private static bool tags_set = true;
-    private static int fragmentTags = 1;
+    private static bool tags_set = false;
+    private static int fragmentTags;
 
-    private static int minimumDate;
-    private static int maximumDate;
+    private static int minimumDate = 0;
+    private static int maximumDate = 1600;
     private static bool datesSet;
 
 
@@ -75,14 +76,9 @@ public class GlobalDataScript : MonoBehaviour {
     //returns an array with the minnimum and maximum dates
     public static int[] GetDates()
     {
-        if (datesSet)
-        {
             int[] aux = new int[2];
             aux[0] = minimumDate;
             aux[1] = maximumDate;
             return aux;
         }
-        else
-            return null;
     }
-}

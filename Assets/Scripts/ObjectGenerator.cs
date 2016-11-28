@@ -29,6 +29,7 @@ public class ObjectGenerator : MonoBehaviour
             fragments[i] = aux;
         }
 
+        GlobalDataScript.SetFragmentTags(UnityEngine.Random.Range(1, 6));
         loadFragments();
         prueba = fragments[1][0];
         InitializeObjects();
