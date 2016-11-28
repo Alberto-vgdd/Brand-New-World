@@ -78,8 +78,6 @@ public class CanvasControllerScript: MonoBehaviour {
             else if (GlobalDataScript.PAUSE_MENU)
                 ResumeGame();
 
-            else if (GlobalDataScript.CRONOLINE)
-                hideCronoLine();
         }
 
         if (Input.GetButtonUp("BallsMenu"))
@@ -221,10 +219,6 @@ public class CanvasControllerScript: MonoBehaviour {
         Time.fixedDeltaTime = GlobalDataScript.SLOW_FIXED_DELTA_TIME;
     }
 
-    private void hideCronoLine()
-    {
-        cronoLine.SetActive(false);
-    }
 
     public void PauseGame()
     {
@@ -329,7 +323,6 @@ public class CanvasControllerScript: MonoBehaviour {
         {
             if (templatesSet[i, 0] == -1)
             {
-                prueba = true;
                 templatesSet[i, 0] = position;
 
                 //up is occupied always (the fragment lays there or there was another there before), but down will only be occupied if up was occupied by another fragment
@@ -355,11 +348,11 @@ public class CanvasControllerScript: MonoBehaviour {
 
         if (upOccupied)
         {
-            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -cronoLineHeight + TEMPLATE_HEIGHT / 2 + 20);
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -cronoLineHeight + TEMPLATE_HEIGHT / 2 + 10);
         }
         else
         {
-            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -20 - TEMPLATE_HEIGHT / 2);
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -10 - TEMPLATE_HEIGHT / 2);
         }
 
         aux.SetActive(true);

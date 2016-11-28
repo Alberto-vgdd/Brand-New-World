@@ -7,6 +7,7 @@ public class CronoLineControl : MonoBehaviour {
     private RectTransform mainPanel;
     private float originalRight;
     private GameObject pauseMenu, cronoLine;
+    private CanvasControllerScript cControl;
 
     public bool prueba;
     public Vector3 pos;
@@ -18,6 +19,7 @@ public class CronoLineControl : MonoBehaviour {
         originalRight = mainPanel.localPosition.x;
         cronoLine = this.gameObject;
         pauseMenu = GameObject.Find("PauseMenu");
+        cControl = GameObject.Find("CanvasController").GetComponent<CanvasControllerScript>();
 	}
 	
 	// Update is called once per frame
@@ -49,11 +51,10 @@ public class CronoLineControl : MonoBehaviour {
                                                          mainPanel.localPosition.z);
          }
 
-         /*if (Input.GetKey("esc"))
+         if (Input.GetKey("escape"))
          {
-             pauseMenu.SetActive(true);
-             cronoLine.SetActive(false);
-         }*/
+             this.gameObject.SetActive(false);
+         }
             
 	
 	}
