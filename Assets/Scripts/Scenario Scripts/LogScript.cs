@@ -3,9 +3,9 @@ using System.Collections;
 
 public class LogScript : MonoBehaviour {
 
-    void OnCollisionEnter2D(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.tag == "Fireball")
+        if (col.collider.tag == "Fireball")
             Destroy(this.gameObject);
     }
 }

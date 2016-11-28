@@ -51,12 +51,16 @@ public class WormScript : MonoBehaviour
         ChangeColliderSize();
 
         if (GlobalDataScript.INPUT_ENABLED)
-        { 
+        {
             //Worm's Main Function.
             WormAI();
 
             //Move the worm
             m_WormRigidbody.velocity = new Vector2(m_WormSpeed*Time.fixedDeltaTime,  m_WormRigidbody.velocity.y);
+        }
+        else
+        {
+            m_WormRigidbody.velocity = new Vector2(0f, m_WormRigidbody.velocity.y);
         }
     }
 

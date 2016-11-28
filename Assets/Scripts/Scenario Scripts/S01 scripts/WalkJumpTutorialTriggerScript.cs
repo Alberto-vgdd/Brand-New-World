@@ -11,7 +11,7 @@ public class WalkJumpTutorialTriggerScript : MonoBehaviour {
         if (collider.tag.Equals("Player"))
         {
 
-            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 5);
+            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 10);
             DestroyObject(gameObject);
         }
     }
