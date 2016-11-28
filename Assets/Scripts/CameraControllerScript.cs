@@ -14,7 +14,7 @@ public class CameraControllerScript : MonoBehaviour
     private float m_MinSize =0.75f;
 
     //Camera target/s
-   /* [HideInInspector]*/ public Transform[] m_Targets;
+   public Transform[] m_Targets;
 
 
     private Camera m_Camera;
