@@ -205,6 +205,7 @@ public class CanvasControllerScript : MonoBehaviour
         m_ContextMenuTransform.position = new Vector3(centerX, centerY, 0);
 
         playerShoot = GameObject.Find("Player").GetComponent<PlayerShootScript>();
+        playerShoot.m_BulletPrefab = balls[0];///initialize to fireball;
     }
 
     private void hideContextMenu()

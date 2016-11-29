@@ -73,7 +73,9 @@ void FixedUpdate()
                     case GlobalDataScript.POWER_4:
                         break;
                 }
-                Destroy(gaObj);
+                obj.GetComponent<SpriteRenderer>().enabled = false;
+                obj.Play();
+                Destroy(gaObj, 1f);
                 return;
             }
         }

@@ -8,33 +8,46 @@ public class StalactiteScript : MonoBehaviour {
     public float dropdown;
     public bool falls;
 
+
+    private AudioSource audio;
+    private AudioClip clip;
+
+    private float actualVelocity;
     private float originalY;
     private bool falling;
 
 	void Start () {
+
+        audio = this.gameObject.GetComponent<AudioSource>();
+        clip = audio.clip;
         originalY = this.gameObject.transform.position.y;
         if (!falls)
         {
             Destroy(this);
         }
+
+        actualVelocity = 0.1f;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
         if (falling)
         {
-            this.gameObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - VELOCITY, this.transform.position.z);
+            this.gameObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - actualVelocity, this.transform.position.z);
+            if (actualVelocity < VELOCITY)
+                actualVelocity += 0.1f;
         }
 
         if (this.gameObject.transform.position.y < originalY - dropdown)
             Destroy(this);
 	}
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.tag == "Fireball")
+        if (col.collider.tag == "Fireball")
         {
             falling = true;
+            audio.PlayOneShot(clip);
         }
     }
 }

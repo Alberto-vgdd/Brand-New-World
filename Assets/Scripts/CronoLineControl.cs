@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CronoLineControl : MonoBehaviour {
 
-    private const float MOV_SPEED = 4f;
+    private const float MOV_SPEED = 8f;
     private RectTransform mainPanel;
     private float originalRight;
     private GameObject pauseMenu, cronoLine;

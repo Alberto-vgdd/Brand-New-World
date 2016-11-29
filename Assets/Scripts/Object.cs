@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Object : MonoBehaviour
 {
-
+    private AudioSource audio;
     public string attachedFragment;
     private int date;
     private int power = -1;
@@ -14,6 +14,7 @@ public class Object : MonoBehaviour
     void Start()
     {
         canvasController = GameObject.Find("CanvasController").GetComponent<CanvasControllerScript>();
+        audio = this.gameObject.GetComponent<AudioSource>();
     }
 
 
@@ -67,5 +68,10 @@ public class Object : MonoBehaviour
         return date;
     }
 
+    public void Play()
+    {
+        audio.PlayOneShot(audio.clip);
+    }
+    
 
 }
