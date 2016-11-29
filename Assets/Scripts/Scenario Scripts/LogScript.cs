@@ -23,7 +23,7 @@ public class LogScript : MonoBehaviour {
             audio.PlayOneShot(clip);
             col.collider.enabled= false;
             spriteRend.enabled = false;
-            Destroy(this.gameObject, 1.5f);
+            Destroy(this.gameObject, 0.2f);
         }
     }
 }

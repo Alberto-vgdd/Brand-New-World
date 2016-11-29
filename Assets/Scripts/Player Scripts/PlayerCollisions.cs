@@ -75,7 +75,7 @@ void FixedUpdate()
                 }
                 obj.GetComponent<SpriteRenderer>().enabled = false;
                 obj.Play();
-                Destroy(gaObj, 1f);
+                Destroy(gaObj, 0.5f);
                 return;
             }
         }
