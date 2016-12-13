@@ -242,8 +242,9 @@ public class PlayerMovementScript : MonoBehaviour
         }
 
         
-        m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
+       
         m_HorizontalVelocity *= m_IsWalking;
+        m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
     }
 
     void Jump()

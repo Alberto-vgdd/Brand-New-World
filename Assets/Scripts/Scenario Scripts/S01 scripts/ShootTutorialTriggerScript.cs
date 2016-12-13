@@ -14,10 +14,10 @@ public class ShootTutorialTriggerScript : MonoBehaviour {
         if (collider.tag.Equals("Player"))
         {
             LookAtBothPlayerAndEnemy();
-            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 10);
-            Invoke("LookAtPlayer", 8f);
+            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 6);
+            Invoke("LookAtPlayer", 4f);
 
-            Destroy(this.gameObject, 9f);
+            Destroy(this.gameObject, 5f);
         }
     }
 

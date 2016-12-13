@@ -11,7 +11,7 @@ public class CrouchTutorialTriggerScript : MonoBehaviour
         if (collider.tag.Equals("Player"))
         {
            
-            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 10);
+            m_CanvasController.GetComponent<CanvasControllerScript>().SendMessage(m_MessageImage, 6);
             DestroyObject(gameObject);
         }
     }
