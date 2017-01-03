@@ -11,6 +11,11 @@ public class GlobalDataScript : MonoBehaviour {
     public const int STICKY_POWER = 3;
     public const int POWER_4 = 4;
 
+    //TAG CONSTANTS
+    public const string PLAYER_TAG = "Player";
+    public const string FIREBALL_TAG = "Fireball";
+    public const string ICEBALL_TAG = "Iceball";
+    public const string STICKYBALL_TAG = "Stickyball";
 
     public const float NORMAL_TIME_SPEED = 1f;
     public const float NORMAL_FIXED_DELTA_TIME = 0.02f;

@@ -8,24 +8,25 @@ public class PuzzleControl : MonoBehaviour {
     public GameObject[] Elements; //stores the elements that have to be activated to solve the puzzle
 
     //variables that specify what will happen when the puzzle is solved
-    public bool destroy, move;
-    public GameObject objective; //the object that will suffer the changes
-    public float x, y; //to specify in which axis the object will move and how much
+    public bool Destroy, Move;
+    public GameObject Objective; //the object that will suffer the changes
+    public float X, Y; //to specify in which axis the object will move and how much
 
-
-    private bool[] completed; //each one corresponds to one element
     private bool moving;
     private Vector3 finalObjectivePosition, actualPosition;
     private bool done; //to stop checking coordinates when the object has moved
+    private int finalCount, currentCount; //number of elemnts that will have to be solved and number of the elements that have been solved
 
 	// Use this for initialization
 	void Start () {
-        completed = new bool[Elements.Length];
 
-        if (move)
+        finalCount = Elements.Length;
+        currentCount = 0;
+
+        if (Move)
         {
-            finalObjectivePosition = new Vector3(objective.transform.position.x + x, objective.transform.position.y + y, objective.transform.position.z);
-            actualPosition = objective.transform.position;
+            finalObjectivePosition = new Vector3(Objective.transform.position.x + X, Objective.transform.position.y + Y, Objective.transform.position.z);
+            actualPosition = Objective.transform.position;
         }
 	}
 
@@ -36,15 +37,7 @@ public class PuzzleControl : MonoBehaviour {
             done = true;
             
             //X AXIS
-            if (x < 0)
-            {
-                if (finalObjectivePosition.x > actualPosition.x)
-                {
-                    actualPosition.x += VELOCITY;
-                    done = false;
-                }
-            }
-            else if (x > 0)
+            if (X < 0)
             {
                 if (finalObjectivePosition.x < actualPosition.x)
                 {
@@ -52,17 +45,17 @@ public class PuzzleControl : MonoBehaviour {
                     done = false;
                 }
             }
-
-            //Y AXIS
-            if (y < 0)
+            else if (X > 0)
             {
-                if (finalObjectivePosition.y > actualPosition.y)
+                if (finalObjectivePosition.x > actualPosition.x)
                 {
-                    actualPosition.y += VELOCITY;
+                    actualPosition.x += VELOCITY;
                     done = false;
                 }
             }
-            else if (y > 0)
+
+            //Y AXIS
+            if (Y < 0)
             {
                 if (finalObjectivePosition.y < actualPosition.y)
                 {
@@ -70,38 +63,36 @@ public class PuzzleControl : MonoBehaviour {
                     done = false;
                 }
             }
+            else if (Y > 0)
+            {
+                if (finalObjectivePosition.y > actualPosition.y)
+                {
+                    actualPosition.y += VELOCITY;
+                    done = false;
+                }
+            }
 
-            objective.transform.position = actualPosition;
+            Objective.transform.position = actualPosition;
             if (done)
                 moving = false;
         }
 
     }
 
-    public void ElementCompleted(int id)
+    public void ActivateElement()
     {
-        int count = 0;
+        currentCount++;
 
-        completed[id] = true;
-
-        foreach (bool element in completed)
-        {
-            if (element)
-                count++;
-        }
-
-        if (count == Elements.Length)
+        if (currentCount == finalCount)
             SolvePuzzle();
     }
 
     private void SolvePuzzle()
     {
-        if (destroy)
-            Destroy(objective);
+        if (Destroy)
+            Object.Destroy(Objective);
 
-        else if(move)
-
-
-        return;
+        else if (Move)
+            moving = true;
     }
 }

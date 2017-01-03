@@ -18,7 +18,7 @@ public class LogScript : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.tag == "Fireball")
+        if (col.collider.tag == GlobalDataScript.FIREBALL_TAG)
         {
             audio.PlayOneShot(clip);
             col.collider.enabled= false;
