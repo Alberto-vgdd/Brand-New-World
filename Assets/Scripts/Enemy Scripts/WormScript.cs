@@ -60,7 +60,7 @@ public class WormScript : MonoBehaviour
         }
         else
         {
-            m_WormRigidbody.velocity = new Vector2(0f, /*m_WormRigidbody.velocity.y*/ 0f);
+            m_WormRigidbody.velocity = new Vector2(0f,m_WormRigidbody.velocity.y);
         }
     }
 
@@ -73,7 +73,7 @@ public class WormScript : MonoBehaviour
     void ChangeColliderSize()
     {
         //Set sprite's size as collider's size. You have to multiply the inversed local scale, otherwise the local scale will be applied again in the collider.
-        m_WormCollider.size = new Vector2(m_WormSpriteRenderer.bounds.size.x * 1f / transform.localScale.x, m_WormSpriteRenderer.bounds.size.y * 1f / transform.localScale.y);
+        m_WormCollider.size = new Vector2(m_WormSpriteRenderer.bounds.size.x * 1f / transform.localScale.x, m_WormCollider.size.y);
     }
 
     void WormAI()
@@ -119,14 +119,18 @@ public class WormScript : MonoBehaviour
             }
         }
 
-        if (m_IsFalling)
+        if (collision.transform.CompareTag("Platform"))
         {
-            if (collision.transform.CompareTag("Platform"))
+            if (m_IsFalling)
             {
                 m_PlatformCenter = collision.transform.position;
                 m_PlatformLength = collision.collider.bounds.extents.x;
 
                 m_IsFalling = false;
+            }
+            else if ((collision.transform.position.x <= m_WormRigidbody.position.x && !m_FacingRight) || (collision.transform.position.x >= m_WormRigidbody.position.x && m_FacingRight))
+            {
+                ChangeMovementDirection();
             }
         }
     }

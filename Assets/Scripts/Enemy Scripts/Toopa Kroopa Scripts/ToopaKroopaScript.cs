@@ -96,7 +96,7 @@ public class ToopaKroopaScript : MonoBehaviour
         }
         else
         {
-            m_KoopaTroopaRigidbody.velocity = new Vector2(0f, 0f);
+            m_KoopaTroopaRigidbody.velocity = new Vector2(0f, m_KoopaTroopaRigidbody.velocity.y);
         }
     }
 
@@ -282,14 +282,19 @@ public class ToopaKroopaScript : MonoBehaviour
             }
         }
 
-        if (m_IsFalling)
+        
+        if (collision.transform.CompareTag("Platform"))
         {
-            if (collision.transform.CompareTag("Platform"))
+            if (m_IsFalling)
             {
                 m_PlatformCenter = collision.transform.position;
                 m_PlatformLength = collision.collider.bounds.extents.x;
 
                 m_IsFalling = false;
+            }
+             else if ((collision.transform.position.x <= m_KoopaTroopaRigidbody.position.x && !m_IsFacingRight) || (collision.transform.position.x >= m_KoopaTroopaRigidbody.position.x && m_IsFacingRight))
+            {
+                ChangeMovementDirection();
             }
         }
     }
