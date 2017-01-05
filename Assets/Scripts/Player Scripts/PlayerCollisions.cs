@@ -8,7 +8,8 @@ public class PlayerCollisions : MonoBehaviour
     private BoxCollider2D m_PlayerBoxCollider;
     private BoxCollider2D m_PlayerFeetCollider;
 
-    private float m_BoxColliderSizeMultiplier;
+    private float m_PlayerHeight;
+    private bool m_IsOnGround;
 
     void Start()
     {
@@ -17,12 +18,10 @@ public class PlayerCollisions : MonoBehaviour
         m_PlayerBoxCollider = gameObject.GetComponent<BoxCollider2D>();
         m_PlayerFeetCollider = transform.FindChild("Feet").GetComponent<BoxCollider2D>();
 
-        //This variable ceates a smaller collider box.
-        m_BoxColliderSizeMultiplier = 0.75f;
-
+        m_PlayerHeight = m_PlayerSpriteRenderer.bounds.size.y / transform.localScale.y;
 }
 
-void FixedUpdate()
+    void FixedUpdate()
     {
         //Set sprite's size to the collider. Also place
         ChangePlayerColliderSize();
@@ -30,12 +29,18 @@ void FixedUpdate()
 
     void ChangePlayerColliderSize()
     {
+        
+
         //Set sprite's size as collider's size. You have to multiply the inversed local scale, otherwise the local scale will be applied again in the collider.
-        m_PlayerBoxCollider.size = new Vector2(m_PlayerSpriteRenderer.bounds.size.x * 1f / transform.localScale.x * m_BoxColliderSizeMultiplier, m_PlayerSpriteRenderer.bounds.size.y * 1f / transform.localScale.y);
+        m_PlayerBoxCollider.size = new Vector2(m_PlayerBoxCollider.size.x, m_PlayerSpriteRenderer.bounds.size.y/transform.localScale.y );
+
+        m_PlayerBoxCollider.offset = new Vector2(0f, (-m_PlayerHeight + m_PlayerSpriteRenderer.bounds.size.y / transform.localScale.y)/8);
 
         //Time to place the feet collider  according to  player's collider
-        m_PlayerFeetCollider.offset= m_PlayerBoxCollider.offset - new Vector2(0f, m_PlayerBoxCollider.bounds.extents.y * 1f / transform.localScale.y);
+        m_PlayerFeetCollider.offset = m_PlayerBoxCollider.offset - new Vector2(0f, m_PlayerBoxCollider.bounds.extents.y * 1f / transform.localScale.y);
         m_PlayerFeetCollider.size = new Vector2(m_PlayerBoxCollider.size.x, m_PlayerFeetCollider.size.y);
+
+
     }
 
     void OnTriggerEnter2D(Collider2D col)

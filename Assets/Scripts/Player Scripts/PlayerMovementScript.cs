@@ -241,10 +241,11 @@ public class PlayerMovementScript : MonoBehaviour
             m_HorizontalVelocity += m_RunSpeedModifier;
         }
 
-        
-       
+
+
         m_HorizontalVelocity *= m_IsWalking;
         m_PlayerAnimator.SetFloat("Speed", m_HorizontalVelocity);
+
     }
 
     void Jump()
@@ -298,7 +299,5 @@ public class PlayerMovementScript : MonoBehaviour
     {
         m_CrouchBlocked = false;
     }
-
-
 
 }
