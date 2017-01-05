@@ -26,8 +26,13 @@ public class CameraControllerScript : MonoBehaviour
     void Awake ()
     {
         m_Camera = transform.FindChild("Camera").GetComponent<Camera>();
-        SetStartPositionAndSize();
+        
+        Invoke("Go2PlayerFast", 0.05f);
+    }
 
+    void Go2PlayerFast()
+    {
+        transform.position = m_Targets[0].position;
     }
 
 
