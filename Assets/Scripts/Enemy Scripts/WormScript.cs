@@ -27,7 +27,7 @@ public class WormScript : MonoBehaviour
     void Start ()
     {
         //Variables initialization
-        m_WormSpeed = 15f;
+        m_WormSpeed = 0.3f;
         m_WormRigidbody = gameObject.GetComponent<Rigidbody2D>(); 
         m_WormCollider = gameObject.GetComponent<BoxCollider2D>();
         m_WormSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -56,7 +56,7 @@ public class WormScript : MonoBehaviour
             WormAI();
 
             //Move the worm
-            m_WormRigidbody.velocity = new Vector2(m_WormSpeed*Time.fixedDeltaTime,  m_WormRigidbody.velocity.y);
+            m_WormRigidbody.velocity = new Vector2(m_WormSpeed,  m_WormRigidbody.velocity.y);
         }
         else
         {

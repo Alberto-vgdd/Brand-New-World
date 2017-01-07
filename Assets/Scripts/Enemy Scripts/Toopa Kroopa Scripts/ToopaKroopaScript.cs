@@ -48,7 +48,7 @@ public class ToopaKroopaScript : MonoBehaviour
     void Start()
     {
         //Variables initialization
-        m_KoopaTroopaSpeed = 12.5f;
+        m_KoopaTroopaSpeed = 0.25f;
         
         m_KoopaTroopaRigidbody = gameObject.GetComponent<Rigidbody2D>();
         m_KoopaTroopaCollider = gameObject.GetComponent<BoxCollider2D>();
@@ -218,7 +218,7 @@ public class ToopaKroopaScript : MonoBehaviour
             }
         }
 
-        m_KoopaTroopaRigidbody.velocity = new Vector2(m_IsMoving * m_KoopaTroopaSpeed * Time.fixedDeltaTime, m_KoopaTroopaRigidbody.velocity.y);
+        m_KoopaTroopaRigidbody.velocity = new Vector2(m_IsMoving * m_KoopaTroopaSpeed, m_KoopaTroopaRigidbody.velocity.y);
 
     }
 
