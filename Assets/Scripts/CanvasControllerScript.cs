@@ -399,7 +399,6 @@ public class CanvasControllerScript : MonoBehaviour
 
 
 
-    //3===D
     public void SendMessage(Sprite NewImage, int TimeOnScreen)
     {
         //Update the image that is going to be shown.
@@ -414,14 +413,12 @@ public class CanvasControllerScript : MonoBehaviour
     }
 
 
-    //3===D
     void ShowMessage()
     {
         GlobalDataScript.INPUT_ENABLED = false;
         m_Message.gameObject.SetActive(true);
     }
 
-    //3===D
     void HideMessage()
     {
         m_Message.gameObject.SetActive(false);
