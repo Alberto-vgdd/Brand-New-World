@@ -28,7 +28,7 @@ public class GlobalDataScript : MonoBehaviour {
     public static bool CROUCHING;
     public static bool INPUT_ENABLED = true;
     public static bool CRONOLINE;
-    public static int ROOM_ENTRANCE = 1;
+    public static int ROOM_ENTRANCE = 0;
 
 
     //data that has special conditions to be changed
