@@ -79,10 +79,15 @@ public class PlayerCollisions : MonoBehaviour
                     case GlobalDataScript.POWER_4:
                         break;
                 }
-                obj.GetComponent<SpriteRenderer>().enabled = false;
+                if (obj.GetComponent<SpriteRenderer>().enabled == true)
+                {
+                    GlobalDataScript.ObjectsPicked++;
+                    obj.GetComponent<SpriteRenderer>().enabled = false;
+                }
+               
                 obj.Play();
                 Destroy(gaObj, 0.5f);
-                GlobalDataScript.ObjectsPicked++;
+                
                 return;
             }
         }
