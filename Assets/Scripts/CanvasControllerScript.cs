@@ -6,8 +6,8 @@ using System;
 public class CanvasControllerScript : MonoBehaviour
 {
 
-    private const float TEMPLATE_WIDTH = 140;
-    private const float TEMPLATE_HEIGHT = 178.5f;
+    private const float TEMPLATE_WIDTH = 270f;
+    private const float TEMPLATE_HEIGHT = 300f;
     private const float OCUPPIED = 0;
     private const float NOT_OCCUPIED = -1;
     private const int MAXIMMUM_FRAGMENTS = 20;  //number of objects that can be picked up
@@ -31,7 +31,7 @@ public class CanvasControllerScript : MonoBehaviour
     private float clickX, clickY;
 
     //CRONO LINE AND ITS ELEMENTS MEASURES
-    private float cronoLineLength, cronoLineHeight;
+    public float cronoLineLength, cronoLineHeight;
     private float templateWidth, templateHeight;
     private float[,] templatesSet = new float[MAXIMMUM_FRAGMENTS, 3];   //[position of the fragment, up occuped, down occuped]
 
@@ -175,7 +175,7 @@ public class CanvasControllerScript : MonoBehaviour
         templateDateUP = GameObject.Find("CLtemplateUP_date").GetComponent<Text>();
         templateFragmentUP = GameObject.Find("CLtemplateUP_fragment").GetComponent<Text>();
         cronoLineFragments = GameObject.Find("CLfragments");
-        cronoLineLength = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.width;
+        cronoLineLength = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.width * 1.55f;
         cronoLineHeight = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.height;
 
 
@@ -294,7 +294,8 @@ public class CanvasControllerScript : MonoBehaviour
             position = (cronoLineLength / (GlobalDataScript.GetDates()[1] - GlobalDataScript.GetDates()[0]) * date) - (TEMPLATE_WIDTH / 2f); //we obtain the corresponding x position of the fragment's left border
             prueba = true;
 
-            while (position < 0 + TEMPLATE_WIDTH / 2 + 10)
+            //to avoid placing the object outside the borders, it has to be > 4
+            while (position < 4 + TEMPLATE_WIDTH / 2 + 10)
                 position++;
 
             while (position > cronoLineLength - TEMPLATE_WIDTH / 2 - 10)
@@ -362,11 +363,11 @@ public class CanvasControllerScript : MonoBehaviour
 
         if (upOccupied)
         {
-            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -cronoLineHeight + TEMPLATE_HEIGHT / 2 + 10);
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -cronoLineHeight / 2 - 230f);
         }
         else
         {
-            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, -10 - TEMPLATE_HEIGHT / 2);
+            aux.GetComponent<RectTransform>().anchoredPosition = new Vector2(position, cronoLineHeight / 2 - 200f);
         }
 
         aux.SetActive(true);

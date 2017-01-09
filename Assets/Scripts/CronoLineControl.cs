@@ -9,7 +9,6 @@ public class CronoLineControl : MonoBehaviour {
     private GameObject pauseMenu, cronoLine;
     private CanvasControllerScript cControl;
 
-    public bool prueba;
     public Vector3 pos;
     public float right;
 
@@ -34,9 +33,9 @@ public class CronoLineControl : MonoBehaviour {
                
          if(Input.GetKey("a"))
          {
-            prueba = true;
 
             pos = mainPanel.localPosition;
+             //there is no displacement unlike the other case because we don't want it to get any further to the left than the original position
             if(mainPanel.localPosition.x <= originalRight)
                 mainPanel.localPosition = new Vector3(mainPanel.localPosition.x + MOV_SPEED,
                                                         mainPanel.localPosition.y,
@@ -45,8 +44,9 @@ public class CronoLineControl : MonoBehaviour {
 
          if (Input.GetKey("d"))
          {
-             prueba = true;
-             if (mainPanel.localPosition.x >= -originalRight)
+             pos = mainPanel.localPosition;
+             //we add a displacement, because it has to move half of the sprite width to right
+             if (mainPanel.localPosition.x >= -originalRight - 1080)
              mainPanel.localPosition = new Vector3(mainPanel.localPosition.x - MOV_SPEED,
                                                          mainPanel.localPosition.y,
                                                          mainPanel.localPosition.z);
@@ -54,6 +54,9 @@ public class CronoLineControl : MonoBehaviour {
 
          if (Input.GetKey("escape"))
          {
+             mainPanel.localPosition = new Vector3(originalRight,
+                                                        mainPanel.localPosition.y,
+                                                        mainPanel.localPosition.z);
              this.gameObject.SetActive(false);
          }
             

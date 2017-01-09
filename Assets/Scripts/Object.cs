@@ -5,7 +5,7 @@ public class Object : MonoBehaviour
 {
     private AudioSource audio;
     public string attachedFragment;
-    private int date;
+    public int date;
     private int power = -1;
     private CanvasControllerScript canvasController;
     public bool prueba;
