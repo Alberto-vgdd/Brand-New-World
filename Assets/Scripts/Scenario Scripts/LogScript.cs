@@ -23,6 +23,7 @@ public class LogScript : MonoBehaviour {
             audio.PlayOneShot(clip);
             col.collider.enabled= false;
             spriteRend.enabled = false;
+            GlobalDataScript.ObstaclesDestroyed = GlobalDataScript.ObstaclesDestroyed + 1;
             Destroy(this.gameObject, 0.2f);
         }
     }

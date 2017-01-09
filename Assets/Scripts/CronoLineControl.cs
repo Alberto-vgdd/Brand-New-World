@@ -32,7 +32,7 @@ public class CronoLineControl : MonoBehaviour {
             if (Input.GetAxis("MovementAxisX") > 0) //right
             {*/
                
-         if(Input.GetKey("d"))
+         if(Input.GetKey("a"))
          {
             prueba = true;
 
@@ -43,7 +43,7 @@ public class CronoLineControl : MonoBehaviour {
                                                         mainPanel.localPosition.z);
          }
 
-         if (Input.GetKey("a"))
+         if (Input.GetKey("d"))
          {
              prueba = true;
              if (mainPanel.localPosition.x >= -originalRight)

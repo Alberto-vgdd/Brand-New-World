@@ -46,6 +46,7 @@ public class StalactiteScript : MonoBehaviour {
     {
         if (col.collider.tag == "Fireball")
         {
+            GlobalDataScript.ObstaclesDestroyed = GlobalDataScript.ObstaclesDestroyed + 1;
             falling = true;
             audio.PlayOneShot(clip);
         }

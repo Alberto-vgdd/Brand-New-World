@@ -6,12 +6,10 @@ using System.IO;
 public class ObjectGenerator : MonoBehaviour
 {
 
-    public System.Collections.Generic.List<string>[] fragments;
     public string path;
-    public int actual;
+    public int actual, auxDate;
     public string[] auxiliar, aux;
     public string prueba;
-    public int asf;
 
 
 
@@ -20,18 +18,18 @@ public class ObjectGenerator : MonoBehaviour
         System.Collections.Generic.List<string> aux;
         //initializing variables
         auxiliar = new string[500];
-        fragments = new System.Collections.Generic.List<string>[20];
+        GlobalDataScript.Fragments = new System.Collections.Generic.List<string>[20];
         //fragments = new string[20][];
 
         for (int i = 0; i < 20; i++)
         {
             aux = new System.Collections.Generic.List<string>();
-            fragments[i] = aux;
+            GlobalDataScript.Fragments[i] = aux;
         }
 
         GlobalDataScript.SetFragmentTags(1);//UnityEngine.Random.Range(1, 5));
         loadFragments();
-        prueba = fragments[1][0];
+        prueba = GlobalDataScript.Fragments[1][0];
         InitializeObjects();
     }
 
@@ -72,7 +70,7 @@ public class ObjectGenerator : MonoBehaviour
 
                     for (int i = 1; i < aux.Length; i++)
                     {
-                        fragments[System.Convert.ToInt32(aux[i])].Add(auxiliar[actual + 1]);
+                        GlobalDataScript.Fragments[System.Convert.ToInt32(aux[i])].Add(auxiliar[actual + 1]);
                     }
 
                     actual += 2;
@@ -84,7 +82,7 @@ public class ObjectGenerator : MonoBehaviour
 
         else
         {
-            //ERRORACO GORDO
+            print("El archivo 'fragmentos.txt' no existe, comprobar que su subicación es correcta en la carpeta raiz del proyecto");
         }
 
     }
@@ -96,7 +94,7 @@ public class ObjectGenerator : MonoBehaviour
         Object[] objectArray;
         int[] aux = GlobalDataScript.GetDates();
         int iteration = 0, random;
-        asf = 0;
+        string fragment;
         
         //to store the minimmum and maximmum dates
         /*we ASSUME that every gameobject has an "object" script in it and a sprite renderer whoose image can be changed
@@ -112,9 +110,9 @@ public class ObjectGenerator : MonoBehaviour
 
                // code to give it a fragment, a date and a power if it unlocks one
             
-            random = Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count); //calculates a random number
-            obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()][0]); //sets the random fragment
-            fragments[GlobalDataScript.GetFragmentsTag()].Remove(obj.GetFragment()); //deletes that fragment from the list
+            random = Random.Range(0, GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Count); //calculates a random number
+            obj.SetFragment(GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()][0]); //sets the random fragment
+            GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Remove(obj.GetFragment()); //deletes that fragment from the list
             obj.SetFragment(prueba);
 
 
@@ -145,12 +143,16 @@ public class ObjectGenerator : MonoBehaviour
                     obj.SetPower(GlobalDataScript.NO_POWER);
 
                 //setting the objects fragment and date
-                obj.SetFragment(fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
-                    [Random.Range(0, fragments[GlobalDataScript.GetFragmentsTag()].Count)]); //we extract a random fragment
+                fragment = GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
+                    [Random.Range(0, GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Count)];
 
-                obj.SetDate(Random.Range(aux[0], aux[1]));
+                obj.SetFragment(fragment); //we extract a random fragment
+
+                auxDate = Random.Range(aux[0], aux[1]);
+                obj.SetDate(auxDate);
 
                 iteration++;
+
         }
     }
 }

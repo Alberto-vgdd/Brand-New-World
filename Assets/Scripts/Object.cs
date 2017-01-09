@@ -22,6 +22,7 @@ public class Object : MonoBehaviour
     void OnDestroy()
     {
         canvasController.NewFragment(attachedFragment, date);
+        GlobalDataScript.AddFragment(System.Convert.ToString(date), attachedFragment);
     }
 
     public bool SetPower(int pow)

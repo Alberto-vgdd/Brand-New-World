@@ -39,6 +39,26 @@ public class GlobalDataScript : MonoBehaviour {
     private static int maximumDate = 1600;
     private static bool datesSet;
 
+    //stats data
+    public static int EnemiesKilled = 0;
+    public static int TotalJumps = 0;
+    public static int ObstaclesDestroyed = 0;
+    public static int TotalDeaths = 0;
+    public static int ObjectsPicked = 0;
+
+    //fragments corresponding to the fragment's tag extracted
+    //they are stored here to avoid having to load them every time the scene changes
+    public static System.Collections.Generic.List<string>[] Fragments;
+
+
+    //this will store the fragments that have already been picked,
+    //so they can be loaded easily when the new scene loads
+    //this will be used until a proper room-change system is coded
+    public static string[][] PickedFragments = new string[20][];
+    public static int last = 0;
+    //it has 20 elements because that is the maxximum number of objects at the moment
+    //of 2 sub elements (date and fragment)
+
 
 
     //sets the tag that will be used for this game if it has'nt been set
@@ -87,7 +107,13 @@ public class GlobalDataScript : MonoBehaviour {
             return aux;
         }
 
-
+    public static void AddFragment(string date, string fragment)
+    {
+        PickedFragments[last] = new string[2];
+        PickedFragments[last][0] = date;
+        PickedFragments[last][1] = fragment;
+        last = last + 1;
+    }
 
 
     }

@@ -255,10 +255,12 @@ public class PlayerMovementScript : MonoBehaviour
         {
             if (m_IsRunning && m_IsWalking !=0)
             {
+                GlobalDataScript.TotalJumps = GlobalDataScript.TotalJumps + 1;
                 m_PlayerRigidbody.velocity = new Vector2(m_PlayerRigidbody.velocity.x, m_JumpSpeedValue * m_RunJumpBoost);
             }
             else if (m_IsWalking != 0)
             {
+                GlobalDataScript.TotalJumps = GlobalDataScript.TotalJumps + 1;
                 m_PlayerRigidbody.velocity = new Vector2(m_PlayerRigidbody.velocity.x, m_JumpSpeedValue * m_WalkJumpBoost);
             }
             else

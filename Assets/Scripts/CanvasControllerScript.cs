@@ -21,9 +21,9 @@ public class CanvasControllerScript : MonoBehaviour
     private GameObject cronoLineFragments;
 
     //CRONO LINE template
-    public RectTransform CLtemplateUP, CLTemplateDOWN;
-    private Text templateDateUP, templateDateDOWN;
-    private Text templateFragmentUP, templateFragmentDOWN;
+    public RectTransform CLtemplateUP;
+    private Text templateDateUP;
+    private Text templateFragmentUP;
 
     private PlayerShootScript playerShoot;
     private bool m_PauseGame;
@@ -57,6 +57,7 @@ public class CanvasControllerScript : MonoBehaviour
         initializeVariables();
         placeRectTransform();
         hideContextMenu();
+        reloadCronoLine();
     }
 
 
@@ -171,7 +172,6 @@ public class CanvasControllerScript : MonoBehaviour
         pauseMenu = GameObject.Find("PauseMenu");
         cronoLine = GameObject.Find("CronoLine");
         CLtemplateUP = GameObject.Find("CLtemplateUP").GetComponent<RectTransform>();
-        CLTemplateDOWN = GameObject.Find("CLtemplateDOWN").GetComponent<RectTransform>();
         templateDateUP = GameObject.Find("CLtemplateUP_date").GetComponent<Text>();
         templateFragmentUP = GameObject.Find("CLtemplateUP_fragment").GetComponent<Text>();
         cronoLineFragments = GameObject.Find("CLfragments");
@@ -180,9 +180,7 @@ public class CanvasControllerScript : MonoBehaviour
 
 
         CLtemplateUP.gameObject.SetActive(false);
-        CLTemplateDOWN.gameObject.SetActive(false);
 
-        //3==D
         m_Message = transform.Find("Canvas").Find("Message").GetComponent<Image>();
 
         //initializing templates array
@@ -283,6 +281,8 @@ public class CanvasControllerScript : MonoBehaviour
     {
         bool upOccupied, downOccupied, ok; //to see if there is free space and to exit the functions bucle when the work has been done correctly
         float position = 0;
+        string auxString;
+        int iteration = 0;
 
 
         upOccupied = downOccupied = ok = false;
@@ -290,7 +290,7 @@ public class CanvasControllerScript : MonoBehaviour
 
         while (!ok)  //we check until we find a free position
         {
-            
+
             position = (cronoLineLength / (GlobalDataScript.GetDates()[1] - GlobalDataScript.GetDates()[0]) * date) - (TEMPLATE_WIDTH / 2f); //we obtain the corresponding x position of the fragment's left border
             prueba = true;
 
@@ -300,7 +300,7 @@ public class CanvasControllerScript : MonoBehaviour
             while (position > cronoLineLength - TEMPLATE_WIDTH / 2 - 10)
                 position--;
 
-            
+
             f3 = position;
             for (int i = 0; i < MAXIMMUM_FRAGMENTS; i++)
             {
@@ -370,9 +370,30 @@ public class CanvasControllerScript : MonoBehaviour
         }
 
         aux.SetActive(true);
+
+
+        //to save the fragment so it can b reloadad when the scene changes
+
+
     }
 
+    private void reloadCronoLine()
+    {
+        int iterator = 0;
+        string aux = "algo";
 
+        while (true)
+        {
+            if (iterator == 20)
+                break;
+            aux = GlobalDataScript.PickedFragments[iterator][0];
+            if (aux == null)
+                break;
+            NewFragment(GlobalDataScript.PickedFragments[iterator][1], Convert.ToInt32(GlobalDataScript.PickedFragments[iterator][0]));
+            iterator++;
+        }
+
+    }
 
 
 

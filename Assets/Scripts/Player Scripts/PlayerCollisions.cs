@@ -81,6 +81,7 @@ public class PlayerCollisions : MonoBehaviour
                 obj.GetComponent<SpriteRenderer>().enabled = false;
                 obj.Play();
                 Destroy(gaObj, 0.5f);
+                GlobalDataScript.ObjectsPicked++;
                 return;
             }
         }
