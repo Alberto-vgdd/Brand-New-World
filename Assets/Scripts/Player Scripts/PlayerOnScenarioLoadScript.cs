@@ -22,6 +22,7 @@ public class PlayerOnScenarioLoadScript : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        gameObject.SetActive(true);
         switch (GlobalDataScript.ROOM_ENTRANCE)
         {
             case 0:

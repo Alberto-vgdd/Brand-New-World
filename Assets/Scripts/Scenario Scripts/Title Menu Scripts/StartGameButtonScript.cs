@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StartNewGameButtonScript : MonoBehaviour
+public class StartGameButtonScript : MonoBehaviour
 {
     private Button m_StartNewGameButton;
     public Sprite[] m_ButtonSprites;
@@ -25,7 +25,13 @@ public class StartNewGameButtonScript : MonoBehaviour
 
     public void StartNewGame()
     {
+        GlobalDataScript.ROOM_ENTRANCE = 0;
         SceneManager.LoadScene("S01");
+    }
+
+    public void ContinueGame()
+    {
+        SceneManager.LoadScene(GlobalDataScript.LAST_SCENE);
     }
    
 }

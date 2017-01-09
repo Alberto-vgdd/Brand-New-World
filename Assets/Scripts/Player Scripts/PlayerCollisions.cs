@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerCollisions : MonoBehaviour
@@ -86,5 +87,23 @@ public class PlayerCollisions : MonoBehaviour
             }
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Enemy")
+        {
+            gameObject.SetActive(false);
+            Invoke("SetGameOver", 2);
+
+        }
+    }
+
+    void SetGameOver()
+    {
+        GlobalDataScript.LAST_SCENE = SceneManager.GetActiveScene().name;
+        GlobalDataScript.TotalDeaths += 1;
+        SceneManager.LoadScene("Game Over");
+    }
+
 
 }
