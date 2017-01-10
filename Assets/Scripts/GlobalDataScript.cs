@@ -28,9 +28,9 @@ public class GlobalDataScript : MonoBehaviour {
     public static bool CROUCHING;
     public static bool INPUT_ENABLED = true;
     public static bool CRONOLINE;
+    public static bool OBJECT_PICKED_PANEL_ACTIVE = false;
     public static int ROOM_ENTRANCE = 0;
     public static string LAST_SCENE = "S01";
-
 
     //data that has special conditions to be changed
     private static bool tags_set = false;
@@ -90,7 +90,7 @@ public class GlobalDataScript : MonoBehaviour {
     {
         if (!datesSet)
         {
-            minimumDate = Random.Range(100, 9000);
+            minimumDate = Random.Range(0, 9000);
             maximumDate = minimumDate + Random.Range(10, 200);
             return true;
         }

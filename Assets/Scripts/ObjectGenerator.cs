@@ -6,11 +6,9 @@ using System.IO;
 public class ObjectGenerator : MonoBehaviour
 {
 
-    public string path;
-    public int actual, auxDate;
-    public string[] auxiliar, aux;
-    public string prueba;
-
+    private string path;
+    private int actual, auxDate;
+    private string[] auxiliar, aux;
 
 
     void Start()
@@ -26,10 +24,9 @@ public class ObjectGenerator : MonoBehaviour
             aux = new System.Collections.Generic.List<string>();
             GlobalDataScript.Fragments[i] = aux;
         }
-
-        GlobalDataScript.SetFragmentTags(1);//UnityEngine.Random.Range(1, 5));
+        GlobalDataScript.SetFragmentTags(Random.Range(1,6));
+        GlobalDataScript.setDates();
         loadFragments();
-        prueba = GlobalDataScript.Fragments[1][0];
         InitializeObjects();
     }
 
@@ -113,8 +110,8 @@ public class ObjectGenerator : MonoBehaviour
             random = Random.Range(0, GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Count); //calculates a random number
             obj.SetFragment(GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()][0]); //sets the random fragment
             GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Remove(obj.GetFragment()); //deletes that fragment from the list
-            obj.SetFragment(prueba);
-
+            auxDate = Random.Range(aux[0], aux[1]);
+            obj.SetDate(auxDate);
 
                 //DEPENDING ON THE ORDER WE GIVE THE OBJECT A POWER OR NONE
                 if (iteration < 4)
@@ -142,14 +139,18 @@ public class ObjectGenerator : MonoBehaviour
                 else
                     obj.SetPower(GlobalDataScript.NO_POWER);
 
+            /*
+                //we obtain the random fragment's number
+                
                 //setting the objects fragment and date
                 fragment = GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()] //we get the list
-                    [Random.Range(0, GlobalDataScript.Fragments[GlobalDataScript.GetFragmentsTag()].Count)];
+                    [random];
 
                 obj.SetFragment(fragment); //we extract a random fragment
 
-                auxDate = Random.Range(aux[0], aux[1]);
-                obj.SetDate(auxDate);
+                //we delete the fragment, to avoid repetition
+                GlobalDataScript.Fragments[System.Convert.ToInt32(aux[i])].Add(auxiliar[actual + 1]);*/
+
 
                 iteration++;
 

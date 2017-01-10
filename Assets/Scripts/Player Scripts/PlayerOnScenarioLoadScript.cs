@@ -20,7 +20,7 @@ public class PlayerOnScenarioLoadScript : MonoBehaviour
     private Vector3 m_RoomEntrance14 = new Vector3(-9.78f, 6.74f, 0f);
 
     // Use this for initialization
-    void Awake()
+  /*  void Awake()
     {
         gameObject.SetActive(true);
         switch (GlobalDataScript.ROOM_ENTRANCE)
@@ -72,5 +72,5 @@ public class PlayerOnScenarioLoadScript : MonoBehaviour
                 break;
         }
 
-    }
+    }*/
 }

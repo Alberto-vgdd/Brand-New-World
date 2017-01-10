@@ -8,9 +8,10 @@ public class CronoLineControl : MonoBehaviour {
     private float originalRight;
     private GameObject pauseMenu, cronoLine;
     private CanvasControllerScript cControl;
-
+    private float openTime; //time it has been opened
     public Vector3 pos;
     public float right;
+    public bool prueba;
 
 	// Use this for initialization
 	void Start () {
@@ -21,16 +22,17 @@ public class CronoLineControl : MonoBehaviour {
         pauseMenu = GameObject.Find("PauseMenu");
         cControl = GameObject.Find("CanvasController").GetComponent<CanvasControllerScript>();
 	}
-	
+
+
+    void OnEnable()
+    {
+        openTime = 0f;
+    }
 	// Update is called once per frame
 	void Update () {
 
-        /*if (Mathf.Abs(Input.GetAxis("MovementAxisX")) > 0.1)
-        {
-           
-            if (Input.GetAxis("MovementAxisX") > 0) //right
-            {*/
-               
+        openTime += 0.02f;   //1 second at 50fps
+
          if(Input.GetKey("a"))
          {
 
@@ -54,10 +56,16 @@ public class CronoLineControl : MonoBehaviour {
 
          if (Input.GetKey("escape"))
          {
-             mainPanel.localPosition = new Vector3(originalRight,
-                                                        mainPanel.localPosition.y,
-                                                        mainPanel.localPosition.z);
-             this.gameObject.SetActive(false);
+             //to avoid closing it when its opened after picking an object
+             if (openTime >= 1)
+             {
+                 mainPanel.localPosition = new Vector3(originalRight,
+                                                            mainPanel.localPosition.y,
+                                                            mainPanel.localPosition.z);
+                 GlobalDataScript.CRONOLINE = false;
+                 cControl.ResumeGame();
+                 this.gameObject.SetActive(false);
+             }
          }
             
 	

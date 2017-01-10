@@ -26,6 +26,7 @@ public class StartGameButtonScript : MonoBehaviour
     public void StartNewGame()
     {
         GlobalDataScript.ROOM_ENTRANCE = 0;
+        GlobalDataScript.SetFragmentTags(Random.Range(1,6));
         SceneManager.LoadScene("S01");
     }
 

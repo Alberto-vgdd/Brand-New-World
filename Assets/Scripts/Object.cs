@@ -22,6 +22,8 @@ public class Object : MonoBehaviour
     void OnDestroy()
     {
         canvasController.NewFragment(attachedFragment, date);
+
+        //we save the fragment, so it can be reloaded when the scene changes
         GlobalDataScript.AddFragment(System.Convert.ToString(date), attachedFragment);
     }
 

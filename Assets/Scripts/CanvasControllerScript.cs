@@ -10,18 +10,21 @@ public class CanvasControllerScript : MonoBehaviour
     private const float TEMPLATE_HEIGHT = 300f;
     private const float OCUPPIED = 0;
     private const float NOT_OCCUPIED = -1;
+    private const float OBJECT_PICKED_PANEL_TIME = 3f;
     private const int MAXIMMUM_FRAGMENTS = 20;  //number of objects that can be picked up
 
     //CANVAS ELEMENTS
     private GameObject m_Canvas;
     private GameObject m_ContextMenu;
-    public RectTransform m_ContextMenuTransform, a;
+    private RectTransform m_ContextMenuTransform, a;
     private GameObject pauseMenu;
     private GameObject cronoLine;
     private GameObject cronoLineFragments;
+    private GameObject objectPickedPanel;
+    private Image objectPickedPanelImage;
 
     //CRONO LINE template
-    public RectTransform CLtemplateUP;
+    private RectTransform CLtemplateUP;
     private Text templateDateUP;
     private Text templateFragmentUP;
 
@@ -31,20 +34,22 @@ public class CanvasControllerScript : MonoBehaviour
     private float clickX, clickY;
 
     //CRONO LINE AND ITS ELEMENTS MEASURES
-    public float cronoLineLength, cronoLineHeight;
+    private float cronoLineLength, cronoLineHeight;
     private float templateWidth, templateHeight;
-    private float[,] templatesSet = new float[MAXIMMUM_FRAGMENTS, 3];   //[position of the fragment, up occuped, down occuped]
-
     //LIST THAT STORES EVERY FRAGMENTS X POSITION AND IF THE UPPER AND LOWER SPACES HAVE BEEN OCUPIED
+     private float[,] templatesSet = new float[MAXIMMUM_FRAGMENTS, 3];   //[position of the fragment, up occuped, down occuped]
+
+    
+    //time remaining for the object picked pannel to disappear
+     private float objectPickedPanelRemainingTime;
+    //bool to keep substracting units to the time and to make it disappear
+     private bool countdown, vanishing;
 
 
 
-    public bool prueba;
-    public float f1, f2, f3;
     public Rigidbody2D[] balls = new Rigidbody2D[8];
 
 
-    //3===D
     private Image m_Message;
 
     //GlobalData should store Time.fixedDeltaTime for every different state to avoid bugs.
@@ -64,6 +69,33 @@ public class CanvasControllerScript : MonoBehaviour
 
     public void Update()
     {
+        if (countdown)
+        {
+            objectPickedPanelRemainingTime -= Time.deltaTime;
+            if (objectPickedPanelRemainingTime <= 0)
+            {
+                countdown = false;
+                vanishing = true;
+            }
+        }
+
+        //to vanish the sign before making disappear both it and its effects
+        if (vanishing)
+        {
+            objectPickedPanelImage.color = new Vector4(objectPickedPanelImage.color.r, objectPickedPanelImage.color.g,
+                objectPickedPanelImage.color.b, objectPickedPanelImage.color.a - Time.deltaTime);
+            if (objectPickedPanelImage.color.a <= 0)
+            {
+                vanishing = false;
+                //reset the alpha component
+                objectPickedPanelImage.color = new Vector4(objectPickedPanelImage.color.r, objectPickedPanelImage.color.g,
+                objectPickedPanelImage.color.b, 0.8f);
+
+                objectPickedPanel.SetActive(false);
+                GlobalDataScript.OBJECT_PICKED_PANEL_ACTIVE = false;
+            }
+        }
+
         if (GlobalDataScript.INPUT_ENABLED)
         {
             if (!GlobalDataScript.PAUSE_MENU)
@@ -78,13 +110,30 @@ public class CanvasControllerScript : MonoBehaviour
 
             if (Input.GetButtonDown("Pause"))
             {
+                if (!GlobalDataScript.CRONOLINE)
+                {
+                    if (!GlobalDataScript.PAUSE_MENU)
+                    {
+                        PauseGame();
 
-                if (!GlobalDataScript.PAUSE_MENU)
-                    PauseGame();
+                        //if the game is paused while the sign is visible, the cronoline is opened
+                        //and the sign disappears
+                        if (GlobalDataScript.OBJECT_PICKED_PANEL_ACTIVE)
+                        {
+                            countdown = false;
+                            vanishing = false;
+                            objectPickedPanelImage.color = new Vector4(objectPickedPanelImage.color.r, objectPickedPanelImage.color.g,
+                            objectPickedPanelImage.color.b, 0.8f);
 
-                else if (GlobalDataScript.PAUSE_MENU)
-                    ResumeGame();
+                            objectPickedPanel.SetActive(false);
+                            GlobalDataScript.OBJECT_PICKED_PANEL_ACTIVE = false;
+                            OnCronoLineButton();
+                        }
+                    }
 
+                    else if (GlobalDataScript.PAUSE_MENU)
+                        ResumeGame();
+                }
             }
 
             if (Input.GetButtonUp("BallsMenu"))
@@ -177,6 +226,8 @@ public class CanvasControllerScript : MonoBehaviour
         cronoLineFragments = GameObject.Find("CLfragments");
         cronoLineLength = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.width * 1.55f;
         cronoLineHeight = GameObject.Find("CronoLine_mainPanel").GetComponent<RectTransform>().rect.height;
+        objectPickedPanel = GameObject.Find("PickedObjectSign");
+        objectPickedPanelImage = GameObject.Find("PickedObjectSign_Panel").GetComponent<Image>();
 
 
         CLtemplateUP.gameObject.SetActive(false);
@@ -194,6 +245,7 @@ public class CanvasControllerScript : MonoBehaviour
         m_PauseGame = false;
         pauseMenu.SetActive(false);
         cronoLine.SetActive(false);
+        objectPickedPanel.SetActive(false);
 
 
 
@@ -292,7 +344,6 @@ public class CanvasControllerScript : MonoBehaviour
         {
 
             position = (cronoLineLength / (GlobalDataScript.GetDates()[1] - GlobalDataScript.GetDates()[0]) * date) - (TEMPLATE_WIDTH / 2f); //we obtain the corresponding x position of the fragment's left border
-            prueba = true;
 
             //to avoid placing the object outside the borders, it has to be > 4
             while (position < 4 + TEMPLATE_WIDTH / 2 + 10)
@@ -302,16 +353,14 @@ public class CanvasControllerScript : MonoBehaviour
                 position--;
 
 
-            f3 = position;
+
             for (int i = 0; i < MAXIMMUM_FRAGMENTS; i++)
             {
                 if (templatesSet[i, 0] == -1)
-                    continue;
+                    break;
 
                 if ((templatesSet[i, 0] + TEMPLATE_WIDTH > position - 10) && (templatesSet[i, 0] < position + TEMPLATE_WIDTH + 10)) //the position is occupied
                 {
-                    f1 = templatesSet[i, 0] + TEMPLATE_WIDTH;
-                    f2 = position + TEMPLATE_WIDTH + 10;
 
                     if (templatesSet[i, 1] == OCUPPIED) //which position is not available?
                         upOccupied = true;
@@ -325,7 +374,7 @@ public class CanvasControllerScript : MonoBehaviour
             {
                 date = UnityEngine.Random.Range(GlobalDataScript.GetDates()[0] + 10, GlobalDataScript.GetDates()[1] - 9);
                 upOccupied = downOccupied = false;
-                break;
+                continue;
             }
             else
                 ok = true;
@@ -346,6 +395,8 @@ public class CanvasControllerScript : MonoBehaviour
                     templatesSet[i, 2] = OCUPPIED;
                 else
                     templatesSet[i, 2] = NOT_OCCUPIED;
+
+                break;
             }
 
         }
@@ -373,8 +424,7 @@ public class CanvasControllerScript : MonoBehaviour
         aux.SetActive(true);
 
 
-        //to save the fragment so it can b reloadad when the scene changes
-
+        showObjectPickedPanel();
 
     }
 
@@ -385,7 +435,7 @@ public class CanvasControllerScript : MonoBehaviour
 
         while (true)
         {
-            if (iterator == 20)
+            if (iterator >= MAXIMMUM_FRAGMENTS)
                 break;
             aux = GlobalDataScript.PickedFragments[iterator][0];
             if (aux == null)
@@ -398,6 +448,13 @@ public class CanvasControllerScript : MonoBehaviour
 
 
 
+    private void showObjectPickedPanel()
+    {
+        objectPickedPanel.SetActive(true);
+        objectPickedPanelRemainingTime = OBJECT_PICKED_PANEL_TIME;
+        countdown = true;
+        GlobalDataScript.OBJECT_PICKED_PANEL_ACTIVE = true;
+    }
 
     //MENU BUTTON'S FUNCTIONS
 
