@@ -25,7 +25,7 @@ public class ObjectGenerator : MonoBehaviour
             GlobalDataScript.Fragments[i] = aux;
         }
         GlobalDataScript.SetFragmentTags(Random.Range(1,6));
-        GlobalDataScript.setDates();
+        //GlobalDataScript.setDates();
         loadFragments();
         InitializeObjects();
     }
