@@ -16,6 +16,7 @@ public class PuzzleControl : MonoBehaviour {
     private Vector3 finalObjectivePosition, actualPosition;
     private bool done; //to stop checking coordinates when the object has moved
     private int finalCount, currentCount; //number of elemnts that will have to be solved and number of the elements that have been solved
+    public bool activ;
 
 	// Use this for initialization
 	void Start () {
@@ -82,7 +83,7 @@ public class PuzzleControl : MonoBehaviour {
     public void ActivateElement()
     {
         currentCount++;
-
+        activ = !activ;
         if (currentCount == finalCount)
             SolvePuzzle();
     }

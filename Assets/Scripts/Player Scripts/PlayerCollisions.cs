@@ -98,7 +98,7 @@ public class PlayerCollisions : MonoBehaviour
         if (collision.collider.tag == "Enemy")
         {
             gameObject.SetActive(false);
-            Invoke("SetGameOver", 2);
+            Invoke("SetGameOver", 0.5f);
 
         }
     }

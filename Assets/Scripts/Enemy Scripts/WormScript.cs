@@ -109,6 +109,7 @@ public class WormScript : MonoBehaviour
         if (collision.transform.CompareTag("Fireball"))
         {
             GlobalDataScript.EnemiesKilled = GlobalDataScript.EnemiesKilled + 1;
+            GlobalDataScript.
             Destroy(gameObject, 0.05f);
         }
 
