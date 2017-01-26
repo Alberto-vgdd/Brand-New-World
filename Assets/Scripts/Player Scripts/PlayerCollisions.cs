@@ -11,7 +11,6 @@ public class PlayerCollisions : MonoBehaviour
 
     private float m_PlayerHeight;
     private bool m_IsOnGround;
-    public int punt;
 
     void Start()
     {
@@ -27,7 +26,6 @@ public class PlayerCollisions : MonoBehaviour
     {
         //Set sprite's size to the collider. Also place
         ChangePlayerColliderSize();
-        punt = GlobalDataScript.currentPuntuation;
     }
 
     void ChangePlayerColliderSize()
