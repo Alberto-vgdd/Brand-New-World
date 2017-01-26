@@ -47,6 +47,14 @@ public class GlobalDataScript : MonoBehaviour {
     public static int TotalDeaths = 0;
     public static int ObjectsPicked = 0;
 
+    //punctuation
+    private static int[] maxPuntuations = {500, 1000, 1500, 2000, 2500};
+    public static int currentPuntuation = 0;
+
+    public const int OBJECT_POINTS = 300;
+    public const int ENEMY_DESTRUCTION_POINTS = 150;
+    public const int DEATH_POINTS = -1000;
+
     //fragments corresponding to the fragment's tag extracted
     //they are stored here to avoid having to load them every time the scene changes
     public static System.Collections.Generic.List<string>[] Fragments;
@@ -116,5 +124,37 @@ public class GlobalDataScript : MonoBehaviour {
         last = last + 1;
     }
 
+    public static void IncreasePuntuation(int quantity)
+    {
+        currentPuntuation += quantity;
+    }
+
+    public static int[] CheckAndGetPuntuations()
+    {
+        //this method checks if the current puntuation is higher tan any of the max puntuations already registered and returns the
+        //new array of maximum puntuations with the new puntuation in its corresponding place
+        //+ the current puntuation
+        //[1-5] maximum puntuations updated [6] current puntuation
+
+        int[] aux = new int[6];
+        int lastPlace = -1;
+
+        for(int i = 0; i < 5; i++)
+        {
+            aux[i] = maxPuntuations[i];
+            if (currentPuntuation > maxPuntuations[i])
+                lastPlace = i;
+        }
+
+        aux[5] = currentPuntuation;
+
+        if (lastPlace != -1)
+            aux[lastPlace] = currentPuntuation;
+
+        maxPuntuations = aux;
+
+        return aux;
+
+    }
 
     }

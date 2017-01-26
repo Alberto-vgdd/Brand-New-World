@@ -23,6 +23,9 @@ public class Object : MonoBehaviour
     {
         canvasController.NewFragment(attachedFragment, date);
 
+        //puntuation increases
+        GlobalDataScript.IncreasePuntuation(GlobalDataScript.OBJECT_POINTS);
+
         //we save the fragment, so it can be reloaded when the scene changes
         GlobalDataScript.AddFragment(System.Convert.ToString(date), attachedFragment);
     }
