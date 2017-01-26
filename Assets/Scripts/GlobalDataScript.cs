@@ -139,14 +139,14 @@ public class GlobalDataScript : MonoBehaviour {
         int[] aux = new int[6];
         int lastPlace = -1;
 
-        for(int i = 0; i <= 5; i++)
+        for(int i = 0; i < 5; i++)
         {
             aux[i] = maxPuntuations[i];
             if (currentPuntuation > maxPuntuations[i])
                 lastPlace = i;
         }
 
-        aux[6] = currentPuntuation;
+        aux[5] = currentPuntuation;
 
         if (lastPlace != -1)
             aux[lastPlace] = currentPuntuation;
