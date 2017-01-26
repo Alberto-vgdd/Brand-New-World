@@ -11,8 +11,9 @@ public class ScenarioChangeScript : MonoBehaviour
     {
         if (collider.tag.Equals("Player"))
         {
+            GlobalDataScript.LAST_SCENE = m_ScenarioName;
             GlobalDataScript.ROOM_ENTRANCE = m_RoomEntranceNumber;
-            SceneManager.LoadScene(m_ScenarioName); 
+            SceneManager.LoadScene(GlobalDataScript.LAST_SCENE); 
         }
     }
 }

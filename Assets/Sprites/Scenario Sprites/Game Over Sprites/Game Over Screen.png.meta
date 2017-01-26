@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e6d3e5e7ff99b9d47b51bb8994f7c31c
-timeCreated: 1483972460
+timeCreated: 1485464731
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -79,9 +79,9 @@ TextureImporter:
     - name: Game Over Screen_2
       rect:
         serializedVersion: 2
-        x: 9
+        x: 8
         y: 11
-        width: 103
+        width: 104
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

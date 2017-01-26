@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 
@@ -107,6 +108,20 @@ public class PlayerMovementScript : MonoBehaviour
                 m_HasCrouch = false;
             }
         }
+
+        if (Input.GetKey("r"))
+        {
+            SceneManager.LoadScene(GlobalDataScript.LAST_SCENE);
+
+        }
+
+        if (Input.GetKey("t"))
+        {
+            
+            GlobalDataScript.ROOM_ENTRANCE = 12;
+            SceneManager.LoadScene("S07");
+        }
+
     }
 
     //FixedUpdate is called every frame in Time.fixedDeltaTime, physics related stuff here.
