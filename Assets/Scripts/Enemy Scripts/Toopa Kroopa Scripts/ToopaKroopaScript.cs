@@ -272,6 +272,7 @@ public class ToopaKroopaScript : MonoBehaviour
         if (collision.transform.CompareTag("Iceball"))
         {
             GlobalDataScript.EnemiesKilled = GlobalDataScript.EnemiesKilled + 1;
+            GlobalDataScript.IncreasePuntuation(GlobalDataScript.ENEMY_DESTRUCTION_POINTS);
             Destroy(gameObject, 0.05f);
         }
 
